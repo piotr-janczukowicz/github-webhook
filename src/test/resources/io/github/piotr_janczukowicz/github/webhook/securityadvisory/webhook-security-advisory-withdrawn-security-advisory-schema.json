@@ -1,0 +1,206 @@
+{
+  "description": "The details of the security advisory, including summary, description, and severity.",
+  "type": "object",
+  "properties": {
+    "cvss_severities": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "cvss_v3": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "vector_string": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The CVSS 3 vector string."
+            },
+            "score": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "The CVSS 3 score.",
+              "minimum": 0,
+              "maximum": 10,
+              "readOnly": true
+            }
+          },
+          "required": [
+            "vector_string",
+            "score"
+          ]
+        },
+        "cvss_v4": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "vector_string": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The CVSS 4 vector string."
+            },
+            "score": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "The CVSS 4 score.",
+              "minimum": 0,
+              "maximum": 10,
+              "readOnly": true
+            }
+          },
+          "required": [
+            "vector_string",
+            "score"
+          ]
+        }
+      }
+    },
+    "cwes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "cwe_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "cwe_id",
+          "name"
+        ]
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "ghsa_id": {
+      "type": "string"
+    },
+    "identifiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "value",
+          "type"
+        ]
+      }
+    },
+    "published_at": {
+      "type": "string"
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      }
+    },
+    "severity": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "vulnerabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "first_patched_version": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "identifier": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "identifier"
+            ]
+          },
+          "package": {
+            "type": "object",
+            "properties": {
+              "ecosystem": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "ecosystem",
+              "name"
+            ]
+          },
+          "severity": {
+            "type": "string"
+          },
+          "vulnerable_version_range": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "package",
+          "severity",
+          "vulnerable_version_range",
+          "first_patched_version"
+        ]
+      }
+    },
+    "withdrawn_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "cwes",
+    "ghsa_id",
+    "summary",
+    "description",
+    "severity",
+    "identifiers",
+    "references",
+    "published_at",
+    "updated_at",
+    "withdrawn_at",
+    "vulnerabilities"
+  ]
+}

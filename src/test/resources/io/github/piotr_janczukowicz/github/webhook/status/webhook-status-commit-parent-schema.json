@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "html_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "sha": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": [
+    "sha",
+    "url",
+    "html_url"
+  ]
+}

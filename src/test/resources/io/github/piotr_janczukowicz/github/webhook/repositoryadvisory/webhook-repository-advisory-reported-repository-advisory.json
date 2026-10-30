@@ -1,0 +1,282 @@
+{
+  "author": {
+    "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+    "email": "email",
+    "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+    "followers_url": "https://api.github.com/users/octocat/followers",
+    "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+    "gravatar_id": "41d064eb2195891e12d0413f63227ea7",
+    "html_url": "https://github.com/octocat",
+    "id": 1,
+    "login": "octocat",
+    "name": "name",
+    "node_id": "MDQ6VXNlcjE=",
+    "organizations_url": "https://api.github.com/users/octocat/orgs",
+    "received_events_url": "https://api.github.com/users/octocat/received_events",
+    "repos_url": "https://api.github.com/users/octocat/repos",
+    "site_admin": true,
+    "starred_at": "\"2020-07-09T00:17:55Z\"",
+    "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+    "type": "User",
+    "url": "https://api.github.com/users/octocat",
+    "user_view_type": "public"
+  },
+  "closed_at": "2026-01-01T00:00:00Z",
+  "collaborating_teams": [
+    {
+      "access_source": "direct",
+      "description": "description",
+      "enterprise_id": 42,
+      "html_url": "https://github.com/orgs/rails/teams/core",
+      "id": 1,
+      "members_url": "members_url",
+      "name": "name",
+      "node_id": "node_id",
+      "notification_setting": "notification_setting",
+      "organization_id": 37,
+      "parent": {
+        "description": "A great team.",
+        "enterprise_id": 42,
+        "html_url": "https://github.com/orgs/rails/teams/core",
+        "id": 1,
+        "ldap_dn": "uid=example,ou=users,dc=github,dc=com",
+        "members_url": "https://api.github.com/organizations/1/team/1/members{/member}",
+        "name": "Justice League",
+        "node_id": "MDQ6VGVhbTE=",
+        "notification_setting": "notifications_enabled",
+        "organization_id": 37,
+        "permission": "admin",
+        "privacy": "closed",
+        "repositories_url": "https://api.github.com/organizations/1/team/1/repos",
+        "slug": "justice-league",
+        "type": "enterprise",
+        "url": "https://api.github.com/organizations/1/team/1"
+      },
+      "permission": "permission",
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "pull": true,
+        "push": true,
+        "triage": true
+      },
+      "privacy": "privacy",
+      "repositories_url": "https://api.github.com/repositories_url",
+      "slug": "slug",
+      "type": "enterprise",
+      "url": "https://api.github.com/url"
+    }
+  ],
+  "collaborating_users": [
+    {
+      "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+      "email": "email",
+      "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+      "followers_url": "https://api.github.com/users/octocat/followers",
+      "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+      "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+      "gravatar_id": "41d064eb2195891e12d0413f63227ea7",
+      "html_url": "https://github.com/octocat",
+      "id": 1,
+      "login": "octocat",
+      "name": "name",
+      "node_id": "MDQ6VXNlcjE=",
+      "organizations_url": "https://api.github.com/users/octocat/orgs",
+      "received_events_url": "https://api.github.com/users/octocat/received_events",
+      "repos_url": "https://api.github.com/users/octocat/repos",
+      "site_admin": true,
+      "starred_at": "\"2020-07-09T00:17:55Z\"",
+      "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+      "type": "User",
+      "url": "https://api.github.com/users/octocat",
+      "user_view_type": "public"
+    }
+  ],
+  "created_at": "2026-01-01T00:00:00Z",
+  "credits": [
+    {
+      "login": "login",
+      "type": "analyst"
+    }
+  ],
+  "credits_detailed": [
+    {
+      "state": "accepted",
+      "type": "analyst",
+      "user": {
+        "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+        "email": "email",
+        "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+        "followers_url": "https://api.github.com/users/octocat/followers",
+        "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+        "gravatar_id": "41d064eb2195891e12d0413f63227ea7",
+        "html_url": "https://github.com/octocat",
+        "id": 1,
+        "login": "octocat",
+        "name": "name",
+        "node_id": "MDQ6VXNlcjE=",
+        "organizations_url": "https://api.github.com/users/octocat/orgs",
+        "received_events_url": "https://api.github.com/users/octocat/received_events",
+        "repos_url": "https://api.github.com/users/octocat/repos",
+        "site_admin": true,
+        "starred_at": "\"2020-07-09T00:17:55Z\"",
+        "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/octocat",
+        "user_view_type": "public"
+      }
+    }
+  ],
+  "cve_id": "cve_id",
+  "cvss_severities": {
+    "cvss_v3": {
+      "score": 1.5,
+      "vector_string": "vector_string"
+    },
+    "cvss_v4": {
+      "score": 1.5,
+      "vector_string": "vector_string"
+    }
+  },
+  "cwe_ids": [
+    "cwe_ids"
+  ],
+  "cwes": [
+    {
+      "cwe_id": "cwe_id",
+      "name": "name"
+    }
+  ],
+  "description": "description",
+  "ghsa_id": "ghsa_id",
+  "html_url": "https://api.github.com/html_url",
+  "identifiers": [
+    {
+      "type": "CVE",
+      "value": "value"
+    }
+  ],
+  "private_fork": {
+    "archive_url": "https://api.github.com/repos/octocat/Hello-World/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/octocat/Hello-World/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/octocat/Hello-World/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/octocat/Hello-World/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/octocat/Hello-World/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/octocat/Hello-World/comments{/number}",
+    "commits_url": "https://api.github.com/repos/octocat/Hello-World/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/octocat/Hello-World/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/octocat/Hello-World/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/octocat/Hello-World/contributors",
+    "deployments_url": "https://api.github.com/repos/octocat/Hello-World/deployments",
+    "description": "This your first repo!",
+    "downloads_url": "https://api.github.com/repos/octocat/Hello-World/downloads",
+    "events_url": "https://api.github.com/repos/octocat/Hello-World/events",
+    "fork": true,
+    "forks_url": "https://api.github.com/repos/octocat/Hello-World/forks",
+    "full_name": "octocat/Hello-World",
+    "git_commits_url": "https://api.github.com/repos/octocat/Hello-World/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/octocat/Hello-World/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/octocat/Hello-World/git/tags{/sha}",
+    "hooks_url": "https://api.github.com/repos/octocat/Hello-World/hooks",
+    "html_url": "https://github.com/octocat/Hello-World",
+    "id": 1296269,
+    "issue_comment_url": "https://api.github.com/repos/octocat/Hello-World/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/octocat/Hello-World/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/octocat/Hello-World/issues{/number}",
+    "keys_url": "https://api.github.com/repos/octocat/Hello-World/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/octocat/Hello-World/labels{/name}",
+    "languages_url": "https://api.github.com/repos/octocat/Hello-World/languages",
+    "merges_url": "https://api.github.com/repos/octocat/Hello-World/merges",
+    "milestones_url": "https://api.github.com/repos/octocat/Hello-World/milestones{/number}",
+    "name": "Hello-World",
+    "node_id": "MDEwOlJlcG9zaXRvcnkxMjk2MjY5",
+    "notifications_url": "https://api.github.com/repos/octocat/Hello-World/notifications{?since,all,participating}",
+    "owner": {
+      "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+      "email": "email",
+      "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+      "followers_url": "https://api.github.com/users/octocat/followers",
+      "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+      "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+      "gravatar_id": "41d064eb2195891e12d0413f63227ea7",
+      "html_url": "https://github.com/octocat",
+      "id": 1,
+      "login": "octocat",
+      "name": "name",
+      "node_id": "MDQ6VXNlcjE=",
+      "organizations_url": "https://api.github.com/users/octocat/orgs",
+      "received_events_url": "https://api.github.com/users/octocat/received_events",
+      "repos_url": "https://api.github.com/users/octocat/repos",
+      "site_admin": true,
+      "starred_at": "\"2020-07-09T00:17:55Z\"",
+      "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+      "type": "User",
+      "url": "https://api.github.com/users/octocat",
+      "user_view_type": "public"
+    },
+    "private": true,
+    "pulls_url": "https://api.github.com/repos/octocat/Hello-World/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/octocat/Hello-World/releases{/id}",
+    "stargazers_url": "https://api.github.com/repos/octocat/Hello-World/stargazers",
+    "statuses_url": "https://api.github.com/repos/octocat/Hello-World/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/octocat/Hello-World/subscribers",
+    "subscription_url": "https://api.github.com/repos/octocat/Hello-World/subscription",
+    "tags_url": "https://api.github.com/repos/octocat/Hello-World/tags",
+    "teams_url": "https://api.github.com/repos/octocat/Hello-World/teams",
+    "trees_url": "https://api.github.com/repos/octocat/Hello-World/git/trees{/sha}",
+    "url": "https://api.github.com/repos/octocat/Hello-World"
+  },
+  "published_at": "2026-01-01T00:00:00Z",
+  "publisher": {
+    "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+    "email": "email",
+    "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+    "followers_url": "https://api.github.com/users/octocat/followers",
+    "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+    "gravatar_id": "41d064eb2195891e12d0413f63227ea7",
+    "html_url": "https://github.com/octocat",
+    "id": 1,
+    "login": "octocat",
+    "name": "name",
+    "node_id": "MDQ6VXNlcjE=",
+    "organizations_url": "https://api.github.com/users/octocat/orgs",
+    "received_events_url": "https://api.github.com/users/octocat/received_events",
+    "repos_url": "https://api.github.com/users/octocat/repos",
+    "site_admin": true,
+    "starred_at": "\"2020-07-09T00:17:55Z\"",
+    "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+    "type": "User",
+    "url": "https://api.github.com/users/octocat",
+    "user_view_type": "public"
+  },
+  "severity": "critical",
+  "state": "published",
+  "submission": {
+    "accepted": true
+  },
+  "summary": "summary",
+  "updated_at": "2026-01-01T00:00:00Z",
+  "url": "https://api.github.com/url",
+  "vulnerabilities": [
+    {
+      "package": {
+        "ecosystem": "rubygems",
+        "name": "name"
+      },
+      "patched_versions": "patched_versions",
+      "vulnerable_functions": [
+        "vulnerable_functions"
+      ],
+      "vulnerable_version_range": "vulnerable_version_range"
+    }
+  ],
+  "withdrawn_at": "2026-01-01T00:00:00Z"
+}

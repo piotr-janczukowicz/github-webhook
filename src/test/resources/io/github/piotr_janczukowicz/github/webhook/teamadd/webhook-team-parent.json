@@ -1,0 +1,17 @@
+{
+  "description": "description",
+  "enterprise_id": 42,
+  "html_url": "https://api.github.com/html_url",
+  "id": 1,
+  "members_url": "https://api.github.com/members_url{/id}",
+  "name": "name",
+  "node_id": "node_id",
+  "notification_setting": "notifications_enabled",
+  "organization_id": 37,
+  "permission": "permission",
+  "privacy": "open",
+  "repositories_url": "https://api.github.com/repositories_url",
+  "slug": "slug",
+  "type": "enterprise",
+  "url": "https://api.github.com/url"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "enum": [
+    "PR_BODY",
+    "COMMIT_MESSAGES",
+    "BLANK"
+  ],
+  "description": "The default value for a squash merge commit message:\n\n- `PR_BODY` - default to the pull request's body.\n- `COMMIT_MESSAGES` - default to the branch's commit messages.\n- `BLANK` - default to a blank commit message."
+}

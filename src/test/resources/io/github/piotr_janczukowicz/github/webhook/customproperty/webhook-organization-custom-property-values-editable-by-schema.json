@@ -1,0 +1,15 @@
+{
+  "type": [
+    "string",
+    "null"
+  ],
+  "enum": [
+    "org_actors",
+    "org_and_repo_actors",
+    null
+  ],
+  "description": "Who can edit the values of the property",
+  "examples": [
+    "org_actors"
+  ]
+}

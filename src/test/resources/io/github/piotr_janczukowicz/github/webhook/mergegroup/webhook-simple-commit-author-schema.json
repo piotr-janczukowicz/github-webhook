@@ -1,0 +1,28 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "description": "Information about the Git author",
+  "properties": {
+    "name": {
+      "description": "Name of the commit's author",
+      "type": "string",
+      "examples": [
+        "Monalisa Octocat"
+      ]
+    },
+    "email": {
+      "description": "Git email address of the commit's author",
+      "type": "string",
+      "format": "email",
+      "examples": [
+        "monalisa.octocat@example.com"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "email"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-01-01T00:00:00Z",
+  "exemption_request_data": {
+    "data": [
+      {
+        "rule_type": "rule_type",
+        "ruleset_id": 1,
+        "ruleset_name": "ruleset_name",
+        "total_violations": 1
+      }
+    ],
+    "type": "push_ruleset_bypass"
+  },
+  "expires_at": "2026-01-01T00:00:00Z",
+  "html_url": "https://github.com/monalisa/smile/exemptions/1",
+  "id": 1,
+  "metadata": {
+    "alert_title": "alert_title",
+    "label": "label",
+    "reason": "fixed_later"
+  },
+  "number": 1,
+  "repository_id": 1,
+  "request_type": "push_ruleset_bypass",
+  "requester_comment": "requester_comment",
+  "requester_id": 1,
+  "requester_login": "requester_login",
+  "resource_identifier": "827efc6d56897b048c772eb4087f854f46256132",
+  "responses": [
+    {
+      "created_at": "2026-01-01T00:00:00Z",
+      "id": 1,
+      "reviewer_comment": "reviewer_comment",
+      "reviewer_id": 1,
+      "reviewer_login": "reviewer_login",
+      "status": "approved"
+    }
+  ],
+  "status": "pending"
+}

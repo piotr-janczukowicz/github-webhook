@@ -1,0 +1,27 @@
+{
+  "anyOf": [
+    {
+      "type": "null"
+    },
+    {
+      "title": "Minimized Issue Comment",
+      "description": "Details about why an issue comment was minimized.",
+      "type": "object",
+      "properties": {
+        "reason": {
+          "description": "The reason the comment was minimized.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "low-quality"
+          ]
+        }
+      },
+      "required": [
+        "reason"
+      ]
+    }
+  ]
+}

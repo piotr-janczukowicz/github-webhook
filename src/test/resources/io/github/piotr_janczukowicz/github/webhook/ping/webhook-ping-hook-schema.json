@@ -1,0 +1,140 @@
+{
+  "title": "Webhook",
+  "description": "The webhook that is being pinged",
+  "type": "object",
+  "properties": {
+    "active": {
+      "description": "Determines whether the hook is actually triggered for the events it subscribes to.",
+      "type": "boolean"
+    },
+    "app_id": {
+      "description": "Only included for GitHub Apps. When you register a new GitHub App, GitHub sends a ping event to the webhook URL you specified during registration. The GitHub App ID sent in this field is required for authenticating an app.",
+      "type": "integer"
+    },
+    "config": {
+      "type": "object",
+      "properties": {
+        "content_type": {
+          "type": "string",
+          "description": "The media type used to serialize the payloads. Supported values include `json` and `form`. The default is `form`.",
+          "examples": [
+            "\"json\""
+          ]
+        },
+        "insecure_ssl": {
+          "oneOf": [
+            {
+              "type": "string",
+              "description": "Determines whether the SSL certificate of the host for `url` will be verified when delivering payloads. Supported values include `0` (verification is performed) and `1` (verification is not performed). The default is `0`. **We strongly recommend not setting this to `1` as you are subject to man-in-the-middle and other attacks.**",
+              "examples": [
+                "\"0\""
+              ]
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "secret": {
+          "type": "string",
+          "description": "If provided, the `secret` will be used as the `key` to generate the HMAC hex digest value for [delivery signature headers](https://docs.github.com/webhooks/event-payloads/#delivery-headers).",
+          "examples": [
+            "\"********\""
+          ]
+        },
+        "url": {
+          "type": "string",
+          "description": "The URL to which the payloads will be delivered.",
+          "format": "uri",
+          "examples": [
+            "https://example.com/webhook"
+          ]
+        }
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "deliveries_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "events": {
+      "description": "Determines what events the hook is triggered for. Default: ['push'].",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "description": "Unique identifier of the webhook.",
+      "type": "integer"
+    },
+    "last_response": {
+      "title": "Hook Response",
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "status": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "message": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "code",
+        "status",
+        "message"
+      ]
+    },
+    "name": {
+      "description": "The type of webhook. The only valid value is 'web'.",
+      "type": "string",
+      "enum": [
+        "web"
+      ]
+    },
+    "ping_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "test_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "name",
+    "active",
+    "events",
+    "config",
+    "created_at",
+    "updated_at"
+  ]
+}

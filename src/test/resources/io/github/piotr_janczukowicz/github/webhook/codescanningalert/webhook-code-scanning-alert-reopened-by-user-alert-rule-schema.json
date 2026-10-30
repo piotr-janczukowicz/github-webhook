@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "description": {
+      "description": "A short description of the rule used to detect the alert.",
+      "type": "string"
+    },
+    "id": {
+      "description": "A unique identifier for the rule used to detect the alert.",
+      "type": "string"
+    },
+    "severity": {
+      "description": "The severity of the alert.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "none",
+        "note",
+        "warning",
+        "error",
+        null
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "severity",
+    "description"
+  ]
+}

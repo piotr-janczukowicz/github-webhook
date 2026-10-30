@@ -1,0 +1,16 @@
+{
+  "title": "required_signatures",
+  "description": "Commits pushed to matching refs must have verified signatures.",
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "required_signatures"
+      ]
+    }
+  }
+}

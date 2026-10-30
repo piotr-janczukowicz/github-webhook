@@ -1,0 +1,15 @@
+{
+  "avatar_url": "https://api.github.com/avatar_url",
+  "description": "description",
+  "events_url": "https://api.github.com/events_url",
+  "hooks_url": "https://api.github.com/hooks_url",
+  "html_url": "https://api.github.com/html_url",
+  "id": 1,
+  "issues_url": "https://api.github.com/issues_url",
+  "login": "login",
+  "members_url": "https://api.github.com/members_url{/id}",
+  "node_id": "node_id",
+  "public_members_url": "https://api.github.com/public_members_url{/id}",
+  "repos_url": "https://api.github.com/repos_url",
+  "url": "https://api.github.com/url"
+}

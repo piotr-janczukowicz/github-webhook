@@ -1,0 +1,9 @@
+{
+  "parameters": {
+    "name": "name",
+    "negate": true,
+    "operator": "starts_with",
+    "pattern": "pattern"
+  },
+  "type": "commit_message_pattern"
+}

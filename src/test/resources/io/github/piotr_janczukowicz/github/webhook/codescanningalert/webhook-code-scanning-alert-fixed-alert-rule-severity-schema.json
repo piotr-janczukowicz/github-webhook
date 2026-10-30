@@ -1,0 +1,14 @@
+{
+  "description": "The severity of the alert.",
+  "type": [
+    "string",
+    "null"
+  ],
+  "enum": [
+    "none",
+    "note",
+    "warning",
+    "error",
+    null
+  ]
+}

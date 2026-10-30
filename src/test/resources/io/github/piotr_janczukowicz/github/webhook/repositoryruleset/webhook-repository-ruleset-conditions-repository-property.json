@@ -1,0 +1,20 @@
+{
+  "exclude": [
+    {
+      "name": "name",
+      "property_values": [
+        "property_values"
+      ],
+      "source": "custom"
+    }
+  ],
+  "include": [
+    {
+      "name": "name",
+      "property_values": [
+        "property_values"
+      ],
+      "source": "custom"
+    }
+  ]
+}

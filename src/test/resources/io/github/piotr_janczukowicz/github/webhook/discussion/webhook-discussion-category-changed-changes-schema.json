@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "category": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "object",
+          "properties": {
+            "created_at": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "description": {
+              "type": "string"
+            },
+            "emoji": {
+              "type": "string"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "is_answerable": {
+              "type": "boolean"
+            },
+            "name": {
+              "type": "string"
+            },
+            "node_id": {
+              "type": "string"
+            },
+            "repository_id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "repository_id",
+            "emoji",
+            "name",
+            "description",
+            "created_at",
+            "updated_at",
+            "slug",
+            "is_answerable"
+          ]
+        }
+      },
+      "required": [
+        "from"
+      ]
+    }
+  },
+  "required": [
+    "category"
+  ]
+}

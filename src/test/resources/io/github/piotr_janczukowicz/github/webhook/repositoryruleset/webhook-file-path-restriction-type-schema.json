@@ -1,0 +1,6 @@
+{
+  "type": "string",
+  "enum": [
+    "file_path_restriction"
+  ]
+}

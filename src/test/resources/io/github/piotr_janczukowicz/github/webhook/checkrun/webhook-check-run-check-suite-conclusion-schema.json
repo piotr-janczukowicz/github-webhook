@@ -1,0 +1,21 @@
+{
+  "type": [
+    "string",
+    "null"
+  ],
+  "enum": [
+    "success",
+    "failure",
+    "neutral",
+    "cancelled",
+    "skipped",
+    "timed_out",
+    "action_required",
+    "stale",
+    "startup_failure",
+    null
+  ],
+  "examples": [
+    "neutral"
+  ]
+}

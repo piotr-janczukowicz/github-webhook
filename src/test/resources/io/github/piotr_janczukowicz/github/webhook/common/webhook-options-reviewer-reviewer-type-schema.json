@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "description": "The type of the bypass reviewer",
+  "enum": [
+    "TEAM",
+    "ROLE"
+  ]
+}

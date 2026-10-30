@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "annotations_count": {
+      "type": "integer"
+    },
+    "annotations_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "title",
+    "summary",
+    "text",
+    "annotations_count",
+    "annotations_url"
+  ]
+}

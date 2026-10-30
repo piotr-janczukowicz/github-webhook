@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "guid": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "name": {
+      "description": "The name of the tool used to generate the code scanning analysis alert.",
+      "type": "string"
+    },
+    "version": {
+      "description": "The version of the tool used to detect the alert.",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "version"
+  ]
+}

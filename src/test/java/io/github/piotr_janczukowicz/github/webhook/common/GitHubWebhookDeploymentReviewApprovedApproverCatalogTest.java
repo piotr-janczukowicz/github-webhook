@@ -1,0 +1,26 @@
+package io.github.piotr_janczukowicz.github.webhook.common;
+
+import io.github.piotr_janczukowicz.github.webhook.BaseCatalogTest;
+
+class GitHubWebhookDeploymentReviewApprovedApproverCatalogTest extends BaseCatalogTest {
+
+    @Override
+    protected Class<?> type() {
+        return GitHubWebhookDeploymentReviewApprovedApprover.class;
+    }
+
+    @Override
+    protected String fixture() {
+        return "webhook-deployment-review-approved-approver.json";
+    }
+
+    @Override
+    protected String schema() {
+        return "webhook-deployment-review-approved-approver-schema.json";
+    }
+
+    @Override
+    protected Object expected() {
+        return CommonCatalogFixtures.webhookDeploymentReviewApprovedApprover();
+    }
+}

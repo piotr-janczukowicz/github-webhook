@@ -1,0 +1,12 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "properties": {
+    "href": {
+      "type": "string",
+      "description": "The html URL of the ruleset"
+    }
+  }
+}

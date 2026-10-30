@@ -1,0 +1,13 @@
+{
+  "content_type": "content_type",
+  "created_at": "created_at",
+  "download_url": "download_url",
+  "id": 1,
+  "md5": "md5",
+  "name": "name",
+  "sha1": "sha1",
+  "sha256": "sha256",
+  "size": 1,
+  "state": "state",
+  "updated_at": "updated_at"
+}

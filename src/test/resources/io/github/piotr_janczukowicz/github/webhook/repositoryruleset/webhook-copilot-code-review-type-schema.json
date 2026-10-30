@@ -1,0 +1,6 @@
+{
+  "type": "string",
+  "enum": [
+    "copilot_code_review"
+  ]
+}

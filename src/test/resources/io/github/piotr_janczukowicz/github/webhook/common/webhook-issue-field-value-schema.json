@@ -1,0 +1,152 @@
+{
+  "title": "Issue Field Value",
+  "description": "A value assigned to an issue field",
+  "type": "object",
+  "properties": {
+    "issue_field_id": {
+      "description": "Unique identifier for the issue field.",
+      "type": "integer",
+      "format": "int64",
+      "examples": [
+        1
+      ]
+    },
+    "issue_field_name": {
+      "description": "The human-readable name of the issue field.",
+      "type": "string",
+      "examples": [
+        "Priority"
+      ]
+    },
+    "node_id": {
+      "type": "string",
+      "examples": [
+        "IFT_GDKND"
+      ]
+    },
+    "data_type": {
+      "description": "The data type of the issue field",
+      "type": "string",
+      "enum": [
+        "text",
+        "single_select",
+        "multi_select",
+        "number",
+        "date"
+      ],
+      "examples": [
+        "text"
+      ]
+    },
+    "value": {
+      "description": "The value of the issue field",
+      "anyOf": [
+        {
+          "type": "string",
+          "examples": [
+            "Sample text"
+          ]
+        },
+        {
+          "type": "number",
+          "examples": [
+            42.5
+          ]
+        },
+        {
+          "type": "integer",
+          "examples": [
+            1
+          ]
+        }
+      ],
+      "type": [
+        "null",
+        "string",
+        "number",
+        "integer"
+      ]
+    },
+    "single_select_option": {
+      "description": "Details about the selected option (only present for single_select fields)",
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "id": {
+          "description": "Unique identifier for the option.",
+          "type": "integer",
+          "format": "int64",
+          "examples": [
+            1
+          ]
+        },
+        "name": {
+          "description": "The name of the option",
+          "type": "string",
+          "examples": [
+            "High"
+          ]
+        },
+        "color": {
+          "description": "The color of the option",
+          "type": "string",
+          "examples": [
+            "red"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "color"
+      ]
+    },
+    "multi_select_options": {
+      "description": "Details about the selected options",
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Unique identifier for the option.",
+            "type": "integer",
+            "format": "int64",
+            "examples": [
+              1
+            ]
+          },
+          "name": {
+            "description": "The name of the option",
+            "type": "string",
+            "examples": [
+              "High"
+            ]
+          },
+          "color": {
+            "description": "The color of the option",
+            "type": "string",
+            "examples": [
+              "red"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "color"
+        ]
+      }
+    }
+  },
+  "required": [
+    "issue_field_id",
+    "node_id",
+    "data_type",
+    "value"
+  ]
+}

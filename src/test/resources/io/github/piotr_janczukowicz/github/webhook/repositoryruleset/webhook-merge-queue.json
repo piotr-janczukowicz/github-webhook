@@ -1,0 +1,12 @@
+{
+  "parameters": {
+    "check_response_timeout_minutes": 1,
+    "grouping_strategy": "ALLGREEN",
+    "max_entries_to_build": 0,
+    "max_entries_to_merge": 0,
+    "merge_method": "MERGE",
+    "min_entries_to_merge": 0,
+    "min_entries_to_merge_wait_minutes": 0
+  },
+  "type": "merge_queue"
+}

@@ -1,0 +1,36 @@
+{
+  "check_run_url": "check_run_url",
+  "completed_at": "completed_at",
+  "conclusion": "success",
+  "created_at": "created_at",
+  "head_branch": "head_branch",
+  "head_sha": "head_sha",
+  "html_url": "html_url",
+  "id": 1,
+  "labels": [
+    "labels"
+  ],
+  "name": "name",
+  "node_id": "node_id",
+  "run_attempt": 1,
+  "run_id": 1,
+  "run_url": "run_url",
+  "runner_group_id": 1,
+  "runner_group_name": "runner_group_name",
+  "runner_id": 1,
+  "runner_name": "runner_name",
+  "started_at": "started_at",
+  "status": "in_progress",
+  "steps": [
+    {
+      "completed_at": "completed_at",
+      "conclusion": "failure",
+      "name": "name",
+      "number": 1,
+      "started_at": "started_at",
+      "status": "in_progress"
+    }
+  ],
+  "url": "url",
+  "workflow_name": "workflow_name"
+}

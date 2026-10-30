@@ -1,0 +1,10 @@
+{
+  "manifest_path": "manifest_path",
+  "package": {
+    "ecosystem": "ecosystem",
+    "name": "name"
+  },
+  "relationship": "unknown",
+  "scope": "development",
+  "version_requirement": "version_requirement"
+}

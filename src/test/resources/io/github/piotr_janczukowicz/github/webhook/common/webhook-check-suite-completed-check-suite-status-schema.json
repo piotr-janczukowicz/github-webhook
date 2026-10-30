@@ -1,0 +1,15 @@
+{
+  "description": "The summary status for all check runs that are part of the check suite. Can be `requested`, `in_progress`, or `completed`.",
+  "type": [
+    "string",
+    "null"
+  ],
+  "enum": [
+    "requested",
+    "in_progress",
+    "completed",
+    "queued",
+    null,
+    "pending"
+  ]
+}

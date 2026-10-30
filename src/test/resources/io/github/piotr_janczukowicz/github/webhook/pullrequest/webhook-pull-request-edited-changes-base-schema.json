@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "ref": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    },
+    "sha": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    }
+  },
+  "required": [
+    "ref",
+    "sha"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "digest": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

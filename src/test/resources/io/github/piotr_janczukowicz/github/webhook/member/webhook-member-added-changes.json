@@ -1,0 +1,8 @@
+{
+  "permission": {
+    "to": "write"
+  },
+  "role_name": {
+    "to": "to"
+  }
+}

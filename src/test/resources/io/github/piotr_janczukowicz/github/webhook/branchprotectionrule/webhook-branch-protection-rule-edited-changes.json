@@ -1,0 +1,39 @@
+{
+  "admin_enforced": {
+    "from": true
+  },
+  "authorized_actor_names": {
+    "from": [
+      "from"
+    ]
+  },
+  "authorized_actors_only": {
+    "from": true
+  },
+  "authorized_dismissal_actors_only": {
+    "from": true
+  },
+  "linear_history_requirement_enforcement_level": {
+    "from": "off"
+  },
+  "lock_allows_fork_sync": {
+    "from": true
+  },
+  "lock_branch_enforcement_level": {
+    "from": "off"
+  },
+  "pull_request_reviews_enforcement_level": {
+    "from": "off"
+  },
+  "require_last_push_approval": {
+    "from": true
+  },
+  "required_status_checks": {
+    "from": [
+      "from"
+    ]
+  },
+  "required_status_checks_enforcement_level": {
+    "from": "off"
+  }
+}

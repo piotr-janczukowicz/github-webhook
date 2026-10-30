@@ -1,0 +1,77 @@
+{
+  "author": {
+    "key": "author"
+  },
+  "bin": {
+    "key": {}
+  },
+  "bugs": {
+    "key": "bugs"
+  },
+  "commit_oid": "commit_oid",
+  "contributors": [
+    "contributors"
+  ],
+  "cpu": [
+    "cpu"
+  ],
+  "deleted_by_id": 1,
+  "dependencies": {
+    "key": {}
+  },
+  "description": "description",
+  "dev_dependencies": {
+    "key": {}
+  },
+  "directories": {
+    "key": "directories"
+  },
+  "dist": {
+    "key": "dist"
+  },
+  "engines": {
+    "key": {}
+  },
+  "files": [
+    "files"
+  ],
+  "git_head": "git_head",
+  "has_shrinkwrap": true,
+  "homepage": "homepage",
+  "id": "id",
+  "installation_command": "installation_command",
+  "keywords": [
+    "keywords"
+  ],
+  "license": "license",
+  "main": "main",
+  "maintainers": [
+    "maintainers"
+  ],
+  "man": {
+    "key": {}
+  },
+  "name": "name",
+  "node_version": "node_version",
+  "npm_user": "npm_user",
+  "npm_version": "npm_version",
+  "optional_dependencies": {
+    "key": {}
+  },
+  "os": [
+    "os"
+  ],
+  "peer_dependencies": {
+    "key": {}
+  },
+  "published_via_actions": true,
+  "readme": "readme",
+  "release_id": 1,
+  "repository": {
+    "key": "repository"
+  },
+  "scripts": {
+    "key": {}
+  },
+  "version": "version"
+}

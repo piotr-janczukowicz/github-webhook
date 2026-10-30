@@ -1,0 +1,99 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "required": [
+    "url",
+    "id",
+    "number",
+    "head",
+    "base"
+  ],
+  "properties": {
+    "base": {
+      "type": "object",
+      "required": [
+        "ref",
+        "sha",
+        "repo"
+      ],
+      "properties": {
+        "ref": {
+          "type": "string"
+        },
+        "repo": {
+          "title": "Repo Ref",
+          "type": "object",
+          "required": [
+            "id",
+            "url",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        },
+        "sha": {
+          "type": "string"
+        }
+      }
+    },
+    "head": {
+      "type": "object",
+      "required": [
+        "ref",
+        "sha",
+        "repo"
+      ],
+      "properties": {
+        "ref": {
+          "type": "string"
+        },
+        "repo": {
+          "title": "Repo Ref",
+          "type": "object",
+          "required": [
+            "id",
+            "url",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        },
+        "sha": {
+          "type": "string"
+        }
+      }
+    },
+    "id": {
+      "type": "number"
+    },
+    "number": {
+      "type": "number"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "properties": {
+    "completed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "conclusion": {
+      "description": "The result of the completed check run. This value will be `null` until the check run has completed.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "success",
+        "failure",
+        "neutral",
+        "cancelled",
+        "timed_out",
+        "action_required",
+        "stale",
+        "skipped",
+        null
+      ]
+    },
+    "details_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "external_id": {
+      "type": "string"
+    },
+    "head_sha": {
+      "description": "The SHA of the commit that is being checked.",
+      "type": "string"
+    },
+    "html_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "id": {
+      "description": "The id of the check.",
+      "type": "integer"
+    },
+    "name": {
+      "description": "The name of the check run.",
+      "type": "string"
+    },
+    "node_id": {
+      "type": "string"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "description": "The current status of the check run. Can be `queued`, `in_progress`, or `completed`.",
+      "type": "string",
+      "enum": [
+        "queued",
+        "in_progress",
+        "completed",
+        "waiting",
+        "pending"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "node_id",
+    "head_sha",
+    "external_id",
+    "url",
+    "html_url",
+    "details_url",
+    "status",
+    "conclusion",
+    "started_at",
+    "completed_at"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "description": "The operator to use for matching.",
+  "enum": [
+    "starts_with",
+    "ends_with",
+    "contains",
+    "regex"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "default_branch": {
+    "from": "from"
+  },
+  "description": {
+    "from": "from"
+  },
+  "homepage": {
+    "from": "from"
+  },
+  "topics": {
+    "from": [
+      "from"
+    ]
+  }
+}

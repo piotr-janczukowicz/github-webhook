@@ -1,0 +1,12 @@
+{
+  "labels": {
+    "key": {}
+  },
+  "manifest": {
+    "key": {}
+  },
+  "tag": {
+    "digest": "digest",
+    "name": "name"
+  }
+}

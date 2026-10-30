@@ -1,0 +1,87 @@
+{
+  "description": "The changes to the team if the action was `edited`.",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "description": "The previous version of the description if the action was `edited`.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    },
+    "name": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "description": "The previous version of the name if the action was `edited`.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    },
+    "privacy": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "description": "The previous version of the team's privacy if the action was `edited`.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    },
+    "notification_setting": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "description": "The previous version of the team's notification setting if the action was `edited`.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    },
+    "repository": {
+      "type": "object",
+      "properties": {
+        "permissions": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "type": "object",
+              "properties": {
+                "admin": {
+                  "description": "The previous version of the team member's `admin` permission on a repository, if the action was `edited`.",
+                  "type": "boolean"
+                },
+                "pull": {
+                  "description": "The previous version of the team member's `pull` permission on a repository, if the action was `edited`.",
+                  "type": "boolean"
+                },
+                "push": {
+                  "description": "The previous version of the team member's `push` permission on a repository, if the action was `edited`.",
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "required": [
+            "from"
+          ]
+        }
+      },
+      "required": [
+        "permissions"
+      ]
+    }
+  }
+}

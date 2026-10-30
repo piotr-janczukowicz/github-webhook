@@ -1,0 +1,9 @@
+{
+  "id": {
+    "key": "id"
+  },
+  "name": "name",
+  "value": {
+    "key": true
+  }
+}

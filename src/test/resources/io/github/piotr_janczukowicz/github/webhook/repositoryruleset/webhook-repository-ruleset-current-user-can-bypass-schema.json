@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "description": "The bypass type of the user making the API request for this ruleset. This field is only returned when\nquerying the repository-level endpoint.",
+  "enum": [
+    "always",
+    "pull_requests_only",
+    "never",
+    "exempt"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "type": "object",
+  "properties": {
+    "comments": {
+      "title": "Link",
+      "description": "Hypermedia Link",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ]
+    },
+    "commits": {
+      "title": "Link",
+      "description": "Hypermedia Link",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ]
+    },
+    "statuses": {
+      "title": "Link",
+      "description": "Hypermedia Link",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ]
+    },
+    "html": {
+      "title": "Link",
+      "description": "Hypermedia Link",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ]
+    },
+    "issue": {
+      "title": "Link",
+      "description": "Hypermedia Link",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ]
+    },
+    "review_comments": {
+      "title": "Link",
+      "description": "Hypermedia Link",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ]
+    },
+    "review_comment": {
+      "title": "Link",
+      "description": "Hypermedia Link",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ]
+    },
+    "self": {
+      "title": "Link",
+      "description": "Hypermedia Link",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "href"
+      ]
+    }
+  },
+  "required": [
+    "comments",
+    "commits",
+    "statuses",
+    "html",
+    "issue",
+    "review_comments",
+    "review_comment",
+    "self"
+  ]
+}

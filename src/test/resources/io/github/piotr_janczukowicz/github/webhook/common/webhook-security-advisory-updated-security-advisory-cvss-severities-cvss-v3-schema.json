@@ -1,0 +1,29 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "properties": {
+    "vector_string": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The CVSS 3 vector string."
+    },
+    "score": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "The CVSS 3 score.",
+      "minimum": 0,
+      "maximum": 10,
+      "readOnly": true
+    }
+  },
+  "required": [
+    "vector_string",
+    "score"
+  ]
+}

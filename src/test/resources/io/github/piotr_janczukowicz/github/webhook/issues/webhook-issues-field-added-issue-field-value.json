@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "option": {
+    "color": "color",
+    "description": "description",
+    "id": 1,
+    "name": "name"
+  },
+  "options": [
+    {
+      "color": "color",
+      "description": "description",
+      "id": 1,
+      "name": "name"
+    }
+  ],
+  "value": "value",
+  "value_id": 1,
+  "value_ids": [
+    1
+  ]
+}

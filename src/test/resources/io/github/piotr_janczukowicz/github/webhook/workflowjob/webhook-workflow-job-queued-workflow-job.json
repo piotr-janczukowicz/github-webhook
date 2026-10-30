@@ -1,0 +1,36 @@
+{
+  "check_run_url": "https://api.github.com/check_run_url",
+  "completed_at": "completed_at",
+  "conclusion": "conclusion",
+  "created_at": "created_at",
+  "head_branch": "head_branch",
+  "head_sha": "head_sha",
+  "html_url": "https://api.github.com/html_url",
+  "id": 1,
+  "labels": [
+    "labels"
+  ],
+  "name": "name",
+  "node_id": "node_id",
+  "run_attempt": 1,
+  "run_id": 1.5,
+  "run_url": "https://api.github.com/run_url",
+  "runner_group_id": 1,
+  "runner_group_name": "runner_group_name",
+  "runner_id": 1,
+  "runner_name": "runner_name",
+  "started_at": "2026-01-01T00:00:00Z",
+  "status": "queued",
+  "steps": [
+    {
+      "completed_at": "completed_at",
+      "conclusion": "failure",
+      "name": "name",
+      "number": 1,
+      "started_at": "started_at",
+      "status": "completed"
+    }
+  ],
+  "url": "https://api.github.com/url",
+  "workflow_name": "workflow_name"
+}

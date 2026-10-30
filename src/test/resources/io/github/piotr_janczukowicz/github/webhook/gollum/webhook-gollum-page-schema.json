@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "action": {
+      "description": "The action that was performed on the page. Can be `created` or `edited`.",
+      "type": "string",
+      "enum": [
+        "created",
+        "edited"
+      ]
+    },
+    "html_url": {
+      "description": "Points to the HTML wiki page.",
+      "type": "string",
+      "format": "uri"
+    },
+    "page_name": {
+      "description": "The name of the page.",
+      "type": "string"
+    },
+    "sha": {
+      "description": "The latest commit SHA of the page.",
+      "type": "string"
+    },
+    "summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "description": "The current page title.",
+      "type": "string"
+    }
+  },
+  "required": [
+    "page_name",
+    "title",
+    "summary",
+    "action",
+    "sha",
+    "html_url"
+  ]
+}

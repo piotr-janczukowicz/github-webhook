@@ -1,0 +1,17 @@
+{
+  "active": true,
+  "config": {
+    "content_type": "json",
+    "insecure_ssl": "insecure_ssl",
+    "secret": "secret",
+    "url": "https://api.github.com/url"
+  },
+  "created_at": "created_at",
+  "events": [
+    "*"
+  ],
+  "id": 1,
+  "name": "name",
+  "type": "type",
+  "updated_at": "updated_at"
+}

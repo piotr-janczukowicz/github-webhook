@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "description": "The state of the advisory.",
+  "enum": [
+    "published",
+    "closed",
+    "withdrawn",
+    "draft",
+    "triage"
+  ]
+}

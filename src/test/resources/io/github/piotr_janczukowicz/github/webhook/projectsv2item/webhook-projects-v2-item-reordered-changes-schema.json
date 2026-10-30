@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "previous_projects_v2_item_node_id": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "to": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

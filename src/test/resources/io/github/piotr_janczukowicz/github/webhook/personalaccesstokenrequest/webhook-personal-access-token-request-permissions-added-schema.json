@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "description": "New requested permissions, categorized by type of permission.",
+  "properties": {
+    "organization": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "repository": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "other": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}

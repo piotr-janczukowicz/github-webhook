@@ -1,0 +1,18 @@
+{
+  "description": {
+    "from": "from",
+    "to": "to"
+  },
+  "public": {
+    "from": true,
+    "to": true
+  },
+  "short_description": {
+    "from": "from",
+    "to": "to"
+  },
+  "title": {
+    "from": "from",
+    "to": "to"
+  }
+}

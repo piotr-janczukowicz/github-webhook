@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "description": "The status of the code search index for this repository",
+  "properties": {
+    "lexical_search_ok": {
+      "type": "boolean"
+    },
+    "lexical_commit_sha": {
+      "type": "string"
+    }
+  }
+}

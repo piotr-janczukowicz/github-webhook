@@ -1,0 +1,6 @@
+{
+  "type": "string",
+  "enum": [
+    "file_extension_restriction"
+  ]
+}

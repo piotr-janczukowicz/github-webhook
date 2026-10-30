@@ -1,0 +1,6 @@
+{
+  "type": "string",
+  "enum": [
+    "max_file_size"
+  ]
+}

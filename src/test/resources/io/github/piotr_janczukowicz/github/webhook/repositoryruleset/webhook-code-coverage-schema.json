@@ -1,0 +1,35 @@
+{
+  "title": "code_coverage",
+  "description": "Enforce minimum line coverage thresholds on pull requests. This rule evaluates uploaded coverage data but does not wait for coverage uploads. To ensure coverage is evaluated before merging, make each status check associated with a coverage upload a required status check.",
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "code_coverage"
+      ]
+    },
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "max_coverage_drop": {
+          "type": "number",
+          "format": "float",
+          "description": "The maximum percentage points that line coverage may drop relative to the default branch. Pull requests that reduce line coverage by more than this amount will be blocked.",
+          "minimum": 0.0,
+          "maximum": 100.0
+        },
+        "minimum_coverage": {
+          "type": "number",
+          "format": "float",
+          "description": "The absolute minimum line coverage percentage required. Pull requests with line coverage below this threshold will be blocked.",
+          "minimum": 0.0,
+          "maximum": 100.0
+        }
+      }
+    }
+  }
+}

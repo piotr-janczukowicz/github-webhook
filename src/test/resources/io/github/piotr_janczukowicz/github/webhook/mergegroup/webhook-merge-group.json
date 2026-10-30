@@ -1,0 +1,20 @@
+{
+  "base_ref": "base_ref",
+  "base_sha": "base_sha",
+  "head_commit": {
+    "author": {
+      "email": "monalisa.octocat@example.com",
+      "name": "Monalisa Octocat"
+    },
+    "committer": {
+      "email": "monalisa.octocat@example.com",
+      "name": "Monalisa Octocat"
+    },
+    "id": "7638417db6d59f3c431d3e1f261cc637155684cd",
+    "message": "Fix #42",
+    "timestamp": "2026-01-01T00:00:00Z",
+    "tree_id": "tree_id"
+  },
+  "head_ref": "head_ref",
+  "head_sha": "head_sha"
+}

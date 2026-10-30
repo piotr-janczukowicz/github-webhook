@@ -1,0 +1,43 @@
+{
+  "title": "DismissalRestriction",
+  "description": "Specify people, teams, or apps allowed to dismiss pull request reviews.",
+  "type": "object",
+  "properties": {
+    "allowed_actors": {
+      "type": "array",
+      "description": "Specify people, teams, or apps allowed to dismiss pull request reviews.",
+      "items": {
+        "title": "Actor",
+        "description": "An actor allowed to dismiss pull request reviews",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "ID of the actor that can dismiss reviews."
+          },
+          "type": {
+            "type": "string",
+            "description": "The type of the actor",
+            "enum": [
+              "User",
+              "Team",
+              "IntegrationInstallation",
+              "RepositoryRole"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "type"
+        ]
+      }
+    },
+    "enabled": {
+      "type": "boolean",
+      "description": "Whether to restrict review dismissal to specific actors."
+    }
+  },
+  "required": [
+    "enabled"
+  ]
+}

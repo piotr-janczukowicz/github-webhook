@@ -1,0 +1,181 @@
+{
+  "type": "object",
+  "properties": {
+    "author": {
+      "allOf": [
+        {
+          "title": "Committer",
+          "description": "Metaproperties for Git author/committer information.",
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "username": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "email",
+            "name"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "date"
+          ]
+        }
+      ]
+    },
+    "comment_count": {
+      "type": "integer"
+    },
+    "committer": {
+      "allOf": [
+        {
+          "title": "Committer",
+          "description": "Metaproperties for Git author/committer information.",
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "username": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "email",
+            "name"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "date"
+          ]
+        }
+      ]
+    },
+    "message": {
+      "type": "string"
+    },
+    "tree": {
+      "type": "object",
+      "properties": {
+        "sha": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "sha",
+        "url"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "verification": {
+      "type": "object",
+      "properties": {
+        "payload": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "enum": [
+            "expired_key",
+            "not_signing_key",
+            "gpgverify_error",
+            "gpgverify_unavailable",
+            "unsigned",
+            "unknown_signature_type",
+            "no_user",
+            "unverified_email",
+            "bad_email",
+            "unknown_key",
+            "malformed_signature",
+            "invalid",
+            "valid",
+            "bad_cert",
+            "ocsp_pending"
+          ]
+        },
+        "signature": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "verified_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "verified",
+        "reason",
+        "signature",
+        "payload",
+        "verified_at"
+      ]
+    }
+  },
+  "required": [
+    "author",
+    "committer",
+    "message",
+    "tree",
+    "url",
+    "comment_count",
+    "verification"
+  ]
+}

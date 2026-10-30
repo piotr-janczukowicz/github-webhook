@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "description": "When the specified actor can bypass the ruleset. `pull_request` means that an actor can only bypass rules on pull requests. `pull_request` is not applicable for the `DeployKey` actor type. Also, `pull_request` is only applicable to branch rulesets. When `bypass_mode` is `exempt`, rules will not be run for that actor and a bypass audit entry will not be created.",
+  "enum": [
+    "always",
+    "pull_request",
+    "exempt"
+  ],
+  "default": "always"
+}

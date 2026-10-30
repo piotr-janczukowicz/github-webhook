@@ -1,0 +1,73 @@
+{
+  "type": "object",
+  "properties": {
+    "include": {
+      "type": "array",
+      "description": "The repository properties and values to include. All of these properties must match for the condition to pass.",
+      "items": {
+        "title": "Repository ruleset property targeting definition",
+        "type": "object",
+        "description": "Parameters for a targeting a repository property",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the repository property to target"
+          },
+          "property_values": {
+            "type": "array",
+            "description": "The values to match for the repository property",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source": {
+            "type": "string",
+            "description": "The source of the repository property. Defaults to 'custom' if not specified.",
+            "enum": [
+              "custom",
+              "system"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "property_values"
+        ]
+      }
+    },
+    "exclude": {
+      "type": "array",
+      "description": "The repository properties and values to exclude. The condition will not pass if any of these properties match.",
+      "items": {
+        "title": "Repository ruleset property targeting definition",
+        "type": "object",
+        "description": "Parameters for a targeting a repository property",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the repository property to target"
+          },
+          "property_values": {
+            "type": "array",
+            "description": "The values to match for the repository property",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source": {
+            "type": "string",
+            "description": "The source of the repository property. Defaults to 'custom' if not specified.",
+            "enum": [
+              "custom",
+              "system"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "property_values"
+        ]
+      }
+    }
+  }
+}

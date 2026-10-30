@@ -1,0 +1,11 @@
+{
+  "html": {
+    "href": "https://api.github.com/href{/id}"
+  },
+  "pull_request": {
+    "href": "https://api.github.com/href{/id}"
+  },
+  "self": {
+    "href": "https://api.github.com/href{/id}"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "license_compliance_scanning",
+  "description": "Enforce any added or changed dependencies to comply with the organization's license policy.",
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "license_compliance_scanning"
+      ]
+    }
+  }
+}

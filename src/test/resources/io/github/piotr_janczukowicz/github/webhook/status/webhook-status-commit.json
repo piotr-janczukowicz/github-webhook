@@ -1,0 +1,88 @@
+{
+  "author": {
+    "avatar_url": "https://api.github.com/avatar_url",
+    "deleted": true,
+    "email": "email",
+    "events_url": "https://api.github.com/events_url{/id}",
+    "followers_url": "https://api.github.com/followers_url",
+    "following_url": "https://api.github.com/following_url{/id}",
+    "gists_url": "https://api.github.com/gists_url{/id}",
+    "gravatar_id": "gravatar_id",
+    "html_url": "https://api.github.com/html_url",
+    "id": 1,
+    "login": "login",
+    "name": "name",
+    "node_id": "node_id",
+    "organizations_url": "https://api.github.com/organizations_url",
+    "received_events_url": "https://api.github.com/received_events_url",
+    "repos_url": "https://api.github.com/repos_url",
+    "site_admin": true,
+    "starred_url": "https://api.github.com/starred_url{/id}",
+    "subscriptions_url": "https://api.github.com/subscriptions_url",
+    "type": "Bot",
+    "url": "https://api.github.com/url"
+  },
+  "comments_url": "https://api.github.com/comments_url",
+  "commit": {
+    "author": {
+      "date": "date",
+      "email": "email",
+      "name": "name",
+      "username": "username"
+    },
+    "comment_count": 1,
+    "committer": {
+      "date": "date",
+      "email": "email",
+      "name": "name",
+      "username": "username"
+    },
+    "message": "message",
+    "tree": {
+      "sha": "sha",
+      "url": "https://api.github.com/url"
+    },
+    "url": "https://api.github.com/url",
+    "verification": {
+      "payload": "payload",
+      "reason": "expired_key",
+      "signature": "signature",
+      "verified": true,
+      "verified_at": "verified_at"
+    }
+  },
+  "committer": {
+    "avatar_url": "https://api.github.com/avatar_url",
+    "deleted": true,
+    "email": "email",
+    "events_url": "https://api.github.com/events_url{/id}",
+    "followers_url": "https://api.github.com/followers_url",
+    "following_url": "https://api.github.com/following_url{/id}",
+    "gists_url": "https://api.github.com/gists_url{/id}",
+    "gravatar_id": "gravatar_id",
+    "html_url": "https://api.github.com/html_url",
+    "id": 1,
+    "login": "login",
+    "name": "name",
+    "node_id": "node_id",
+    "organizations_url": "https://api.github.com/organizations_url",
+    "received_events_url": "https://api.github.com/received_events_url",
+    "repos_url": "https://api.github.com/repos_url",
+    "site_admin": true,
+    "starred_url": "https://api.github.com/starred_url{/id}",
+    "subscriptions_url": "https://api.github.com/subscriptions_url",
+    "type": "Bot",
+    "url": "https://api.github.com/url"
+  },
+  "html_url": "https://api.github.com/html_url",
+  "node_id": "node_id",
+  "parents": [
+    {
+      "html_url": "https://api.github.com/html_url",
+      "sha": "sha",
+      "url": "https://api.github.com/url"
+    }
+  ],
+  "sha": "sha",
+  "url": "https://api.github.com/url"
+}

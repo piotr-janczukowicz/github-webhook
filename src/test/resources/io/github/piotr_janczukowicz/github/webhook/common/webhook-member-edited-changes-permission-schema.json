@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "from": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "to": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

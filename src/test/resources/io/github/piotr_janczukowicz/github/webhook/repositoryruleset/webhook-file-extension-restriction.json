@@ -1,0 +1,8 @@
+{
+  "parameters": {
+    "restricted_file_extensions": [
+      "restricted_file_extensions"
+    ]
+  },
+  "type": "file_extension_restriction"
+}

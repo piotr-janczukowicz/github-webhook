@@ -1,0 +1,9 @@
+{
+  "description": "State of a code scanning alert.",
+  "type": "string",
+  "enum": [
+    "open",
+    "dismissed",
+    "fixed"
+  ]
+}

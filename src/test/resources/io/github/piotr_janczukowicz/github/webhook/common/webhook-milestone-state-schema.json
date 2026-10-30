@@ -1,0 +1,12 @@
+{
+  "description": "The state of the milestone.",
+  "type": "string",
+  "enum": [
+    "open",
+    "closed"
+  ],
+  "default": "open",
+  "examples": [
+    "open"
+  ]
+}

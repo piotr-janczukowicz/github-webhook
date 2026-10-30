@@ -1,0 +1,7 @@
+{
+  "description": "The scope of the membership. Currently, can only be `team`.",
+  "type": "string",
+  "enum": [
+    "team"
+  ]
+}

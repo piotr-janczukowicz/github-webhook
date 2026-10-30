@@ -1,0 +1,140 @@
+{
+  "type": "object",
+  "properties": {
+    "added": {
+      "type": "array",
+      "items": {
+        "title": "Repository ruleset conditions for ref names",
+        "type": "object",
+        "description": "Parameters for a repository ruleset ref name condition",
+        "properties": {
+          "ref_name": {
+            "type": "object",
+            "properties": {
+              "include": {
+                "type": "array",
+                "description": "Array of ref names or patterns to include. One of these patterns must match for the condition to pass. Also accepts `~DEFAULT_BRANCH` to include the default branch or `~ALL` to include all branches.",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "exclude": {
+                "type": "array",
+                "description": "Array of ref names or patterns to exclude. The condition will not pass if any of these patterns match.",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "deleted": {
+      "type": "array",
+      "items": {
+        "title": "Repository ruleset conditions for ref names",
+        "type": "object",
+        "description": "Parameters for a repository ruleset ref name condition",
+        "properties": {
+          "ref_name": {
+            "type": "object",
+            "properties": {
+              "include": {
+                "type": "array",
+                "description": "Array of ref names or patterns to include. One of these patterns must match for the condition to pass. Also accepts `~DEFAULT_BRANCH` to include the default branch or `~ALL` to include all branches.",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "exclude": {
+                "type": "array",
+                "description": "Array of ref names or patterns to exclude. The condition will not pass if any of these patterns match.",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "updated": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition": {
+            "title": "Repository ruleset conditions for ref names",
+            "type": "object",
+            "description": "Parameters for a repository ruleset ref name condition",
+            "properties": {
+              "ref_name": {
+                "type": "object",
+                "properties": {
+                  "include": {
+                    "type": "array",
+                    "description": "Array of ref names or patterns to include. One of these patterns must match for the condition to pass. Also accepts `~DEFAULT_BRANCH` to include the default branch or `~ALL` to include all branches.",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "exclude": {
+                    "type": "array",
+                    "description": "Array of ref names or patterns to exclude. The condition will not pass if any of these patterns match.",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "changes": {
+            "type": "object",
+            "properties": {
+              "condition_type": {
+                "type": "object",
+                "properties": {
+                  "from": {
+                    "type": "string"
+                  }
+                }
+              },
+              "target": {
+                "type": "object",
+                "properties": {
+                  "from": {
+                    "type": "string"
+                  }
+                }
+              },
+              "include": {
+                "type": "object",
+                "properties": {
+                  "from": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "exclude": {
+                "type": "object",
+                "properties": {
+                  "from": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

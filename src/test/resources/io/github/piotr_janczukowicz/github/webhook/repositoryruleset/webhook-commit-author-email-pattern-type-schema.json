@@ -1,0 +1,6 @@
+{
+  "type": "string",
+  "enum": [
+    "commit_author_email_pattern"
+  ]
+}

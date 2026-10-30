@@ -1,0 +1,13 @@
+{
+  "type": [
+    "string",
+    "null"
+  ],
+  "enum": [
+    "resolved",
+    "off-topic",
+    "too heated",
+    "spam",
+    null
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "enum": [
+    "completed",
+    "in_progress",
+    "queued",
+    "pending"
+  ]
+}

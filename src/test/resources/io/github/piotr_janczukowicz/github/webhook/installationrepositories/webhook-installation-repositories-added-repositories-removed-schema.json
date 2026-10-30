@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string"
+    },
+    "id": {
+      "description": "Unique identifier of the repository",
+      "type": "integer"
+    },
+    "name": {
+      "description": "The name of the repository.",
+      "type": "string"
+    },
+    "node_id": {
+      "type": "string"
+    },
+    "private": {
+      "description": "Whether the repository is private or public.",
+      "type": "boolean"
+    }
+  }
+}

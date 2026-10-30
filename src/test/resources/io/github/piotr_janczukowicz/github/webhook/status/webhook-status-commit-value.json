@@ -1,0 +1,28 @@
+{
+  "author": {
+    "date": "date",
+    "email": "email",
+    "name": "name",
+    "username": "username"
+  },
+  "comment_count": 1,
+  "committer": {
+    "date": "date",
+    "email": "email",
+    "name": "name",
+    "username": "username"
+  },
+  "message": "message",
+  "tree": {
+    "sha": "sha",
+    "url": "https://api.github.com/url"
+  },
+  "url": "https://api.github.com/url",
+  "verification": {
+    "payload": "payload",
+    "reason": "expired_key",
+    "signature": "signature",
+    "verified": true,
+    "verified_at": "verified_at"
+  }
+}

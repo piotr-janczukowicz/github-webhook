@@ -1,0 +1,29 @@
+{
+  "title": "Hook Response",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "message": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "code",
+    "status",
+    "message"
+  ]
+}

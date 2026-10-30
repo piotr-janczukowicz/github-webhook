@@ -1,0 +1,8 @@
+{
+  "parameters": {
+    "restricted_file_paths": [
+      "restricted_file_paths"
+    ]
+  },
+  "type": "file_path_restriction"
+}

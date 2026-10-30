@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "description": "The data type of the issue field.",
+  "enum": [
+    "text",
+    "date",
+    "single_select",
+    "multi_select",
+    "number"
+  ]
+}

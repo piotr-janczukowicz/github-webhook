@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "from": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "from"
+  ]
+}

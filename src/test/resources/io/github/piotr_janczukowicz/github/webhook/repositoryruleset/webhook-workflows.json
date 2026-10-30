@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "do_not_enforce_on_create": true,
+    "workflows": [
+      {
+        "path": "path",
+        "ref": "ref",
+        "repository_id": 1,
+        "sha": "sha"
+      }
+    ]
+  },
+  "type": "workflows"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "The new state. Can be `pending`, `success`, `failure`, or `error`.",
+  "type": "string",
+  "enum": [
+    "pending",
+    "success",
+    "failure",
+    "error"
+  ]
+}

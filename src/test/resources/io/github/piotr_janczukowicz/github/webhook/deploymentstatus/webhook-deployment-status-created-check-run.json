@@ -1,0 +1,14 @@
+{
+  "completed_at": "2026-01-01T00:00:00Z",
+  "conclusion": "success",
+  "details_url": "https://api.github.com/details_url",
+  "external_id": "external_id",
+  "head_sha": "head_sha",
+  "html_url": "https://api.github.com/html_url",
+  "id": 1,
+  "name": "name",
+  "node_id": "node_id",
+  "started_at": "2026-01-01T00:00:00Z",
+  "status": "queued",
+  "url": "https://api.github.com/url"
+}

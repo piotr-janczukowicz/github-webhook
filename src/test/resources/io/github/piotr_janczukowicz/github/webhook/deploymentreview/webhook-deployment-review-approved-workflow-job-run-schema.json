@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "created_at": {
+      "type": "string"
+    },
+    "environment": {
+      "type": "string"
+    },
+    "html_url": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "status",
+    "html_url",
+    "created_at",
+    "updated_at",
+    "environment"
+  ]
+}

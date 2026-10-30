@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "admin": {
+      "description": "The previous version of the team member's `admin` permission on a repository, if the action was `edited`.",
+      "type": "boolean"
+    },
+    "pull": {
+      "description": "The previous version of the team member's `pull` permission on a repository, if the action was `edited`.",
+      "type": "boolean"
+    },
+    "push": {
+      "description": "The previous version of the team member's `push` permission on a repository, if the action was `edited`.",
+      "type": "boolean"
+    }
+  }
+}

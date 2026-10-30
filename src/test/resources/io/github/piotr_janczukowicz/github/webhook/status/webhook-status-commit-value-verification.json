@@ -1,0 +1,7 @@
+{
+  "payload": "payload",
+  "reason": "expired_key",
+  "signature": "signature",
+  "verified": true,
+  "verified_at": "verified_at"
+}

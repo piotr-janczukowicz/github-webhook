@@ -1,0 +1,12 @@
+{
+  "description": "The role assigned to the collaborator.",
+  "type": "object",
+  "properties": {
+    "to": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "to"
+  ]
+}

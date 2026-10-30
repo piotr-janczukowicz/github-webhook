@@ -1,0 +1,29 @@
+{
+  "added": [
+    "added"
+  ],
+  "author": {
+    "date": "2026-01-01T00:00:00Z",
+    "email": "octocat@github.com",
+    "name": "name",
+    "username": "username"
+  },
+  "committer": {
+    "date": "2026-01-01T00:00:00Z",
+    "email": "octocat@github.com",
+    "name": "name",
+    "username": "username"
+  },
+  "distinct": true,
+  "id": "id",
+  "message": "message",
+  "modified": [
+    "modified"
+  ],
+  "removed": [
+    "removed"
+  ],
+  "timestamp": "2026-01-01T00:00:00Z",
+  "tree_id": "tree_id",
+  "url": "https://api.github.com/url"
+}

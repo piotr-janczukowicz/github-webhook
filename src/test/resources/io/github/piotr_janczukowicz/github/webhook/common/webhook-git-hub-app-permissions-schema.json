@@ -1,0 +1,28 @@
+{
+  "description": "The set of permissions for the GitHub app",
+  "type": "object",
+  "properties": {
+    "issues": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "string"
+    },
+    "contents": {
+      "type": "string"
+    },
+    "deployments": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": {
+    "type": "string"
+  },
+  "example": {
+    "issues": "read",
+    "deployments": "write"
+  }
+}

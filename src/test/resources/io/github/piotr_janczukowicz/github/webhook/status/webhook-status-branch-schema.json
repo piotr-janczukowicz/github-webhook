@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "commit": {
+      "type": "object",
+      "properties": {
+        "sha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        }
+      },
+      "required": [
+        "sha",
+        "url"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "protected": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "name",
+    "commit",
+    "protected"
+  ]
+}

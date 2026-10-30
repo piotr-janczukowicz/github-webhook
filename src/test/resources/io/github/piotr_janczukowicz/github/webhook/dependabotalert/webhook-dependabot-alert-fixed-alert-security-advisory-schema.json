@@ -1,0 +1,329 @@
+{
+  "type": "object",
+  "description": "Details for the GitHub Security Advisory.",
+  "readOnly": true,
+  "properties": {
+    "ghsa_id": {
+      "type": "string",
+      "description": "The unique GitHub Security Advisory ID assigned to the advisory.",
+      "readOnly": true
+    },
+    "cve_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The unique CVE ID assigned to the advisory.",
+      "readOnly": true
+    },
+    "summary": {
+      "type": "string",
+      "description": "A short, plain text summary of the advisory.",
+      "readOnly": true,
+      "maxLength": 1024
+    },
+    "description": {
+      "type": "string",
+      "description": "A long-form Markdown-supported description of the advisory.",
+      "readOnly": true
+    },
+    "vulnerabilities": {
+      "type": "array",
+      "description": "Vulnerable version range information for the advisory.",
+      "readOnly": true,
+      "items": {
+        "type": "object",
+        "description": "Details pertaining to one vulnerable version range for the advisory.",
+        "readOnly": true,
+        "properties": {
+          "package": {
+            "type": "object",
+            "description": "Details for the vulnerable package.",
+            "readOnly": true,
+            "properties": {
+              "ecosystem": {
+                "type": "string",
+                "description": "The package's language or package management ecosystem.",
+                "readOnly": true
+              },
+              "name": {
+                "type": "string",
+                "description": "The unique package name within its ecosystem.",
+                "readOnly": true
+              }
+            },
+            "required": [
+              "ecosystem",
+              "name"
+            ],
+            "additionalProperties": false
+          },
+          "severity": {
+            "type": "string",
+            "description": "The severity of the vulnerability.",
+            "readOnly": true,
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "critical"
+            ]
+          },
+          "vulnerable_version_range": {
+            "type": "string",
+            "description": "Conditions that identify vulnerable versions of this vulnerability's package.",
+            "readOnly": true
+          },
+          "first_patched_version": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "description": "Details pertaining to the package version that patches this vulnerability.",
+            "readOnly": true,
+            "properties": {
+              "identifier": {
+                "type": "string",
+                "description": "The package version that patches this vulnerability.",
+                "readOnly": true
+              }
+            },
+            "required": [
+              "identifier"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "package",
+          "severity",
+          "vulnerable_version_range",
+          "first_patched_version"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "severity": {
+      "type": "string",
+      "description": "The severity of the advisory.",
+      "readOnly": true,
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "classification": {
+      "type": "string",
+      "description": "The classification of the advisory.",
+      "readOnly": true,
+      "enum": [
+        "general",
+        "malware"
+      ]
+    },
+    "cvss_severities": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "cvss_v3": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "vector_string": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The CVSS 3 vector string."
+            },
+            "score": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "The CVSS 3 score.",
+              "minimum": 0,
+              "maximum": 10,
+              "readOnly": true
+            }
+          },
+          "required": [
+            "vector_string",
+            "score"
+          ]
+        },
+        "cvss_v4": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "vector_string": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The CVSS 4 vector string."
+            },
+            "score": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "The CVSS 4 score.",
+              "minimum": 0,
+              "maximum": 10,
+              "readOnly": true
+            }
+          },
+          "required": [
+            "vector_string",
+            "score"
+          ]
+        }
+      }
+    },
+    "epss": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "readOnly": true,
+      "description": "The EPSS scores as calculated by the [Exploit Prediction Scoring System](https://www.first.org/epss).",
+      "properties": {
+        "percentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "percentile": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "cwes": {
+      "type": "array",
+      "description": "Details for the advisory pertaining to Common Weakness Enumeration.",
+      "readOnly": true,
+      "items": {
+        "type": "object",
+        "description": "A CWE weakness assigned to the advisory.",
+        "readOnly": true,
+        "properties": {
+          "cwe_id": {
+            "type": "string",
+            "description": "The unique CWE ID.",
+            "readOnly": true
+          },
+          "name": {
+            "type": "string",
+            "description": "The short, plain text name of the CWE.",
+            "readOnly": true
+          }
+        },
+        "required": [
+          "cwe_id",
+          "name"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "identifiers": {
+      "type": "array",
+      "description": "Values that identify this advisory among security information sources.",
+      "readOnly": true,
+      "items": {
+        "type": "object",
+        "description": "An advisory identifier.",
+        "readOnly": true,
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "The type of advisory identifier.",
+            "readOnly": true,
+            "enum": [
+              "CVE",
+              "GHSA"
+            ]
+          },
+          "value": {
+            "type": "string",
+            "description": "The value of the advisory identifer.",
+            "readOnly": true
+          }
+        },
+        "required": [
+          "value",
+          "type"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "references": {
+      "type": "array",
+      "description": "Links to additional advisory information.",
+      "readOnly": true,
+      "items": {
+        "type": "object",
+        "description": "A link to additional advisory information.",
+        "readOnly": true,
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "The URL of the reference.",
+            "format": "uri",
+            "readOnly": true
+          }
+        },
+        "required": [
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "published_at": {
+      "type": "string",
+      "description": "The time that the advisory was published in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.",
+      "format": "date-time",
+      "readOnly": true
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "The time that the advisory was last modified in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.",
+      "format": "date-time",
+      "readOnly": true
+    },
+    "withdrawn_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The time that the advisory was withdrawn in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.",
+      "format": "date-time",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "ghsa_id",
+    "cve_id",
+    "summary",
+    "description",
+    "vulnerabilities",
+    "severity",
+    "cwes",
+    "identifiers",
+    "references",
+    "published_at",
+    "updated_at",
+    "withdrawn_at"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "max_file_size": {
+      "type": "integer",
+      "description": "The maximum file size allowed in megabytes. This limit does not apply to Git Large File Storage (Git LFS).",
+      "minimum": 1,
+      "maximum": 100
+    }
+  },
+  "required": [
+    "max_file_size"
+  ]
+}

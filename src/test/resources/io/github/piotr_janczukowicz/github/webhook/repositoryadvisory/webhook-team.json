@@ -1,0 +1,43 @@
+{
+  "access_source": "direct",
+  "description": "description",
+  "enterprise_id": 42,
+  "html_url": "https://github.com/orgs/rails/teams/core",
+  "id": 1,
+  "members_url": "members_url",
+  "name": "name",
+  "node_id": "node_id",
+  "notification_setting": "notification_setting",
+  "organization_id": 37,
+  "parent": {
+    "description": "A great team.",
+    "enterprise_id": 42,
+    "html_url": "https://github.com/orgs/rails/teams/core",
+    "id": 1,
+    "ldap_dn": "uid=example,ou=users,dc=github,dc=com",
+    "members_url": "https://api.github.com/organizations/1/team/1/members{/member}",
+    "name": "Justice League",
+    "node_id": "MDQ6VGVhbTE=",
+    "notification_setting": "notifications_enabled",
+    "organization_id": 37,
+    "permission": "admin",
+    "privacy": "closed",
+    "repositories_url": "https://api.github.com/organizations/1/team/1/repos",
+    "slug": "justice-league",
+    "type": "enterprise",
+    "url": "https://api.github.com/organizations/1/team/1"
+  },
+  "permission": "permission",
+  "permissions": {
+    "admin": true,
+    "maintain": true,
+    "pull": true,
+    "push": true,
+    "triage": true
+  },
+  "privacy": "privacy",
+  "repositories_url": "https://api.github.com/repositories_url",
+  "slug": "slug",
+  "type": "enterprise",
+  "url": "https://api.github.com/url"
+}

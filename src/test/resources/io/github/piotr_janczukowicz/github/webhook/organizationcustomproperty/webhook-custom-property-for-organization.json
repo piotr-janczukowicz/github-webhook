@@ -1,0 +1,15 @@
+{
+  "allowed_values": [
+    "allowed_values"
+  ],
+  "default_value": [
+    "default_value"
+  ],
+  "description": "description",
+  "property_name": "property_name",
+  "required": true,
+  "source_type": "organization",
+  "url": "https://api.github.com/url",
+  "value_type": "string",
+  "values_editable_by": "enterprise_actors"
+}

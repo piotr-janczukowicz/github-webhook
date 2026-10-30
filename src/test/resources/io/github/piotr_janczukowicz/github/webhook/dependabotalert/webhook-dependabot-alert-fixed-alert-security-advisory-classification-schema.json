@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "description": "The classification of the advisory.",
+  "readOnly": true,
+  "enum": [
+    "general",
+    "malware"
+  ]
+}

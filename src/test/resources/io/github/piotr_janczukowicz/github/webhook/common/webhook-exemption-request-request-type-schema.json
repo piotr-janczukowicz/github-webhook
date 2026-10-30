@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "description": "The type of request.",
+  "enum": [
+    "push_ruleset_bypass",
+    "secret_scanning",
+    "secret_scanning_closure",
+    "code_scanning_alert_dismissal",
+    "dependabot_alert_dismissal",
+    "license_compliance_dismissal"
+  ]
+}

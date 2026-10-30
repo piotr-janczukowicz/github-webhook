@@ -1,0 +1,26 @@
+package io.github.piotr_janczukowicz.github.webhook.dismissalrequestsecretscanning;
+
+import io.github.piotr_janczukowicz.github.webhook.BaseCatalogTest;
+
+class GitHubWebhookDismissalRequestSecretScanningCreatedEventCatalogTest extends BaseCatalogTest {
+
+    @Override
+    protected Class<?> type() {
+        return GitHubWebhookDismissalRequestSecretScanningCreatedEvent.class;
+    }
+
+    @Override
+    protected String fixture() {
+        return "webhook-dismissal-request-secret-scanning-created-event.json";
+    }
+
+    @Override
+    protected String schema() {
+        return "webhook-dismissal-request-secret-scanning-created-event-schema.json";
+    }
+
+    @Override
+    protected Object expected() {
+        return DismissalRequestSecretScanningCatalogFixtures.webhookDismissalRequestSecretScanningCreatedEvent();
+    }
+}

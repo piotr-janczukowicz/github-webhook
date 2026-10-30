@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "description": "The source of the repository property. Defaults to 'custom' if not specified.",
+  "enum": [
+    "custom",
+    "system"
+  ]
+}

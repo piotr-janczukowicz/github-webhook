@@ -1,0 +1,18 @@
+{
+  "type": [
+    "string",
+    "null"
+  ],
+  "description": "The color of the issue type.",
+  "enum": [
+    "gray",
+    "blue",
+    "green",
+    "yellow",
+    "orange",
+    "red",
+    "pink",
+    "purple",
+    null
+  ]
+}

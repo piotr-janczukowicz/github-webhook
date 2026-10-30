@@ -1,0 +1,12 @@
+{
+  "description": "description",
+  "full_description": "full_description",
+  "help": "help",
+  "help_uri": "help_uri",
+  "id": "id",
+  "name": "name",
+  "severity": "none",
+  "tags": [
+    "tags"
+  ]
+}

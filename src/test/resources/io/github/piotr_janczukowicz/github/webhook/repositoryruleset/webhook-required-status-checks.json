@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "do_not_enforce_on_create": true,
+    "required_status_checks": [
+      {
+        "context": "context",
+        "integration_id": 1
+      }
+    ],
+    "strict_required_status_checks_policy": true
+  },
+  "type": "required_status_checks"
+}

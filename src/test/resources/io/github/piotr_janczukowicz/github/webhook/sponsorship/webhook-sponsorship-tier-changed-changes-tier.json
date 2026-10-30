@@ -1,0 +1,13 @@
+{
+  "from": {
+    "created_at": "created_at",
+    "description": "description",
+    "is_custom_ammount": true,
+    "is_custom_amount": true,
+    "is_one_time": true,
+    "monthly_price_in_cents": 1,
+    "monthly_price_in_dollars": 1,
+    "name": "name",
+    "node_id": "node_id"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "changes": {
+    "condition_type": {
+      "from": "from"
+    },
+    "exclude": {
+      "from": [
+        "from"
+      ]
+    },
+    "include": {
+      "from": [
+        "from"
+      ]
+    },
+    "target": {
+      "from": "from"
+    }
+  },
+  "condition": {
+    "ref_name": {
+      "exclude": [
+        "exclude"
+      ],
+      "include": [
+        "include"
+      ]
+    }
+  }
+}

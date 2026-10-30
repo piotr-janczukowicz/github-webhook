@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "description": "Type of repository selection requested.",
+  "enum": [
+    "none",
+    "all",
+    "subset"
+  ]
+}

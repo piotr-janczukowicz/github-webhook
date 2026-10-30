@@ -1,0 +1,12 @@
+{
+  "added_by": "added_by",
+  "created_at": "created_at",
+  "enabled": true,
+  "id": 1,
+  "key": "key",
+  "last_used": "last_used",
+  "read_only": true,
+  "title": "title",
+  "url": "https://api.github.com/url",
+  "verified": true
+}

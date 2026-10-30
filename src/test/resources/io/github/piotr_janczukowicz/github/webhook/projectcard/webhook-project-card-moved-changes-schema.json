@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "column_id": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    }
+  },
+  "required": [
+    "column_id"
+  ]
+}

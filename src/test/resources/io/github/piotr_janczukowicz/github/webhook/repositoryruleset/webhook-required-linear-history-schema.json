@@ -1,0 +1,16 @@
+{
+  "title": "required_linear_history",
+  "description": "Prevent merge commits from being pushed to matching refs.",
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "required_linear_history"
+      ]
+    }
+  }
+}
