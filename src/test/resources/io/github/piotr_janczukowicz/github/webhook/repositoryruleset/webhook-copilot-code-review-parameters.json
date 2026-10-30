@@ -1,0 +1,4 @@
+{
+  "review_draft_pull_requests": true,
+  "review_on_push": true
+}

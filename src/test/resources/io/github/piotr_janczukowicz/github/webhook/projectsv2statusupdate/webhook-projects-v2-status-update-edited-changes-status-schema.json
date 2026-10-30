@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "from": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "INACTIVE",
+        "ON_TRACK",
+        "AT_RISK",
+        "OFF_TRACK",
+        "COMPLETE",
+        null
+      ]
+    },
+    "to": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "INACTIVE",
+        "ON_TRACK",
+        "AT_RISK",
+        "OFF_TRACK",
+        "COMPLETE",
+        null
+      ]
+    }
+  }
+}

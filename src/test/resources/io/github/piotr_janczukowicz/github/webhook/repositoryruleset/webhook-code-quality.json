@@ -1,0 +1,6 @@
+{
+  "parameters": {
+    "severity": "errors"
+  },
+  "type": "code_quality"
+}

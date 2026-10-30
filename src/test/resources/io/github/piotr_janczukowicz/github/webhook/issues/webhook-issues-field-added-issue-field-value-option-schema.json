@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "description": "The previously selected option details. Present for single_select field types.",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

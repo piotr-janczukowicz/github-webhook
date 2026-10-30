@@ -1,0 +1,17 @@
+{
+  "description": "The reason for the current state",
+  "type": [
+    "string",
+    "null"
+  ],
+  "enum": [
+    "completed",
+    "reopened",
+    "not_planned",
+    "duplicate",
+    null
+  ],
+  "examples": [
+    "not_planned"
+  ]
+}

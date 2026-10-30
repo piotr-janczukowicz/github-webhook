@@ -1,0 +1,11 @@
+{
+  "description": "The current status of the check run. Can be `queued`, `in_progress`, or `completed`.",
+  "type": "string",
+  "enum": [
+    "queued",
+    "in_progress",
+    "completed",
+    "waiting",
+    "pending"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "description": "The action requested by the user.",
+  "type": "object",
+  "properties": {
+    "identifier": {
+      "description": "The integrator reference of the action requested by the user.",
+      "type": "string"
+    }
+  }
+}

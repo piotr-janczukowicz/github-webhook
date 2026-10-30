@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "ref": {
+      "type": "string",
+      "description": "The base ref of the stack this pull request belongs to."
+    },
+    "sha": {
+      "type": "string",
+      "description": "The base SHA of the stack this pull request belongs to."
+    }
+  },
+  "required": [
+    "ref",
+    "sha"
+  ]
+}

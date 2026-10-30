@@ -1,0 +1,50 @@
+package io.github.piotr_janczukowicz.github.webhook.registrypackage;
+
+import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import io.github.piotr_janczukowicz.annotation.RecordBuilder;
+import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+
+/**
+ * The registry package updated registry package package version release payload.
+ *
+ * @param author author
+ * @param createdAt created_at
+ * @param draft draft
+ * @param htmlUrl html_url
+ * @param id id
+ * @param name name
+ * @param prerelease prerelease
+ * @param publishedAt published_at
+ * @param tagName tag_name
+ * @param targetCommitish target_commitish
+ * @param url url
+ */
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@RecordBuilder
+@CatalogSchema(
+        "webhooks/registry-package-updated/requestBody/properties/registry_package/properties/package_version/properties/release")
+public record GitHubWebhookRegistryPackageUpdatedRegistryPackagePackageVersionRelease(
+        GitHubWebhookRegistryPackageUpdatedRegistryPackageOwner author,
+        String createdAt,
+        boolean draft,
+        String htmlUrl,
+        long id,
+        String name,
+        boolean prerelease,
+        String publishedAt,
+        String tagName,
+        String targetCommitish,
+        String url) {
+    public GitHubWebhookRegistryPackageUpdatedRegistryPackagePackageVersionRelease {
+        requireNonNull(author, "author");
+        requireNonNull(createdAt, "createdAt");
+        requireNonNull(htmlUrl, "htmlUrl");
+        requireNonNull(name, "name");
+        requireNonNull(publishedAt, "publishedAt");
+        requireNonNull(tagName, "tagName");
+        requireNonNull(targetCommitish, "targetCommitish");
+        requireNonNull(url, "url");
+    }
+}

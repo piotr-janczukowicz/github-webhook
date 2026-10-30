@@ -1,0 +1,42 @@
+{
+  "description": "The changes to the label if the action was `edited`.",
+  "type": "object",
+  "properties": {
+    "color": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "description": "The previous version of the color if the action was `edited`.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    },
+    "description": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "description": "The previous version of the description if the action was `edited`.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    },
+    "name": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "description": "The previous version of the name if the action was `edited`.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    }
+  }
+}

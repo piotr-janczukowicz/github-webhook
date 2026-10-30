@@ -1,0 +1,13 @@
+{
+  "description": "description",
+  "html_url": "https://api.github.com/html_url",
+  "id": 1,
+  "members_url": "https://api.github.com/members_url{/id}",
+  "name": "name",
+  "node_id": "node_id",
+  "permission": "permission",
+  "privacy": "open",
+  "repositories_url": "https://api.github.com/repositories_url",
+  "slug": "slug",
+  "url": "https://api.github.com/url"
+}

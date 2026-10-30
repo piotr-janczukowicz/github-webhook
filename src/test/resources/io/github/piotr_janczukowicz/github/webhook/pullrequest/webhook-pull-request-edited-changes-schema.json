@@ -1,0 +1,61 @@
+{
+  "description": "The changes to the comment if the action was `edited`.",
+  "type": "object",
+  "properties": {
+    "base": {
+      "type": "object",
+      "properties": {
+        "ref": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "from"
+          ]
+        },
+        "sha": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "from"
+          ]
+        }
+      },
+      "required": [
+        "ref",
+        "sha"
+      ]
+    },
+    "body": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "description": "The previous version of the body if the action was `edited`.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    },
+    "title": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "description": "The previous version of the title if the action was `edited`.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    }
+  }
+}

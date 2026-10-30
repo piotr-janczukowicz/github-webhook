@@ -1,0 +1,23 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "properties": {
+    "about_url": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "vendor": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier for the option.",
+      "type": "integer",
+      "format": "int64",
+      "examples": [
+        1
+      ]
+    },
+    "name": {
+      "description": "The name of the option",
+      "type": "string",
+      "examples": [
+        "High"
+      ]
+    },
+    "color": {
+      "description": "The color of the option",
+      "type": "string",
+      "examples": [
+        "red"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "color"
+  ]
+}

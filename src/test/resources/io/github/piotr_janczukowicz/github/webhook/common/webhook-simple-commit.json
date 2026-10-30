@@ -1,0 +1,18 @@
+{
+  "author": {
+    "date": "2026-01-01T00:00:00Z",
+    "email": "octocat@github.com",
+    "name": "name",
+    "username": "username"
+  },
+  "committer": {
+    "date": "2026-01-01T00:00:00Z",
+    "email": "octocat@github.com",
+    "name": "name",
+    "username": "username"
+  },
+  "id": "id",
+  "message": "message",
+  "timestamp": "timestamp",
+  "tree_id": "tree_id"
+}

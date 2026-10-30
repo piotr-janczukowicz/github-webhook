@@ -1,0 +1,13 @@
+{
+  "type": [
+    "string",
+    "null"
+  ],
+  "description": "The execution scope of the vulnerable dependency.",
+  "readOnly": true,
+  "enum": [
+    "development",
+    "runtime",
+    null
+  ]
+}

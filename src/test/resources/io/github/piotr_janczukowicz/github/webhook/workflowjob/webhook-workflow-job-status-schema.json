@@ -1,0 +1,10 @@
+{
+  "description": "The current status of the job. Can be `queued`, `in_progress`, `waiting`, or `completed`.",
+  "type": "string",
+  "enum": [
+    "queued",
+    "in_progress",
+    "completed",
+    "waiting"
+  ]
+}

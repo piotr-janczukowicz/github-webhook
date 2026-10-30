@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "admin": {
+      "type": "boolean"
+    },
+    "pull": {
+      "type": "boolean"
+    },
+    "triage": {
+      "type": "boolean"
+    },
+    "push": {
+      "type": "boolean"
+    },
+    "maintain": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "admin",
+    "pull",
+    "push"
+  ]
+}

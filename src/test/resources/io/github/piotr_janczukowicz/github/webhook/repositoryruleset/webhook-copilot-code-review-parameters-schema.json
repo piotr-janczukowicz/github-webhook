@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "review_draft_pull_requests": {
+      "type": "boolean",
+      "description": "Copilot automatically reviews draft pull requests before they are marked as ready for review."
+    },
+    "review_on_push": {
+      "type": "boolean",
+      "description": "Copilot automatically reviews each new push to the pull request."
+    }
+  }
+}

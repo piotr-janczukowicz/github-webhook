@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "self": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "description": "The URL of the ruleset"
+        }
+      }
+    },
+    "html": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "href": {
+          "type": "string",
+          "description": "The html URL of the ruleset"
+        }
+      }
+    }
+  }
+}

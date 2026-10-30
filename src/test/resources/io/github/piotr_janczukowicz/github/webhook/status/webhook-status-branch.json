@@ -1,0 +1,8 @@
+{
+  "commit": {
+    "sha": "sha",
+    "url": "https://api.github.com/url"
+  },
+  "name": "name",
+  "protected": true
+}

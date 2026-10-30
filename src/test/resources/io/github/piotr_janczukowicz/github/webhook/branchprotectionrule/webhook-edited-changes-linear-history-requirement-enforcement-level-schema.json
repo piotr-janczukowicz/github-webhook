@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "from": {
+      "type": "string",
+      "enum": [
+        "off",
+        "non_admins",
+        "everyone"
+      ]
+    }
+  },
+  "required": [
+    "from"
+  ]
+}

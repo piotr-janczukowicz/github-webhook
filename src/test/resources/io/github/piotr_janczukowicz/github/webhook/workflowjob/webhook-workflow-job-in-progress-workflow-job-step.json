@@ -1,0 +1,8 @@
+{
+  "completed_at": "completed_at",
+  "conclusion": "failure",
+  "name": "name",
+  "number": 1,
+  "started_at": "started_at",
+  "status": "in_progress"
+}

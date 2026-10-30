@@ -1,0 +1,11 @@
+{
+  "after_id": 1,
+  "cards_url": "https://api.github.com/cards_url",
+  "created_at": "2026-01-01T00:00:00Z",
+  "id": 1,
+  "name": "name",
+  "node_id": "node_id",
+  "project_url": "https://api.github.com/project_url",
+  "updated_at": "2026-01-01T00:00:00Z",
+  "url": "https://api.github.com/url"
+}

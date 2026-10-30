@@ -1,0 +1,17 @@
+{
+  "description": "The reason for the current state",
+  "type": [
+    "string",
+    "null"
+  ],
+  "enum": [
+    "resolved",
+    "outdated",
+    "duplicate",
+    "reopened",
+    null
+  ],
+  "examples": [
+    "resolved"
+  ]
+}

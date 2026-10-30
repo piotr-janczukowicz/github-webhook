@@ -1,0 +1,44 @@
+{
+  "ref_name": {
+    "exclude": [
+      "exclude"
+    ],
+    "include": [
+      "include"
+    ]
+  },
+  "repository_id": {
+    "repository_ids": [
+      1
+    ]
+  },
+  "repository_name": {
+    "exclude": [
+      "exclude"
+    ],
+    "include": [
+      "include"
+    ],
+    "protected": true
+  },
+  "repository_property": {
+    "exclude": [
+      {
+        "name": "name",
+        "property_values": [
+          "property_values"
+        ],
+        "source": "custom"
+      }
+    ],
+    "include": [
+      {
+        "name": "name",
+        "property_values": [
+          "property_values"
+        ],
+        "source": "custom"
+      }
+    ]
+  }
+}

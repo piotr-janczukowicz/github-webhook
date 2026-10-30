@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "description": "Identifiers of the advisory that produced the withdrawn alert.",
+  "readOnly": true,
+  "properties": {
+    "ghsa_id": {
+      "type": "string",
+      "description": "The unique GitHub identifier assigned to the advisory.",
+      "readOnly": true
+    },
+    "cve_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The CVE identifier assigned to the advisory, if any.",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "ghsa_id",
+    "cve_id"
+  ],
+  "additionalProperties": false
+}

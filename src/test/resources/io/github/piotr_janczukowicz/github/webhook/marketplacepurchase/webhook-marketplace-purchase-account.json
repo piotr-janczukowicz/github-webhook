@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "login": "login",
+  "node_id": "node_id",
+  "organization_billing_email": "organization_billing_email",
+  "type": "type"
+}

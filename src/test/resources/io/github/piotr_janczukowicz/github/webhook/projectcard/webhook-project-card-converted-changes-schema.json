@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "note": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "from"
+      ]
+    }
+  },
+  "required": [
+    "note"
+  ]
+}

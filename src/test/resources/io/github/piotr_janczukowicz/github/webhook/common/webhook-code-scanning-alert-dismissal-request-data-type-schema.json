@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "description": "The type of request",
+  "enum": [
+    "code_scanning_alert_dismissal"
+  ]
+}

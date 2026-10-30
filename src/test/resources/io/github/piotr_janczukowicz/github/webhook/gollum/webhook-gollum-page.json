@@ -1,0 +1,8 @@
+{
+  "action": "created",
+  "html_url": "https://api.github.com/html_url",
+  "page_name": "page_name",
+  "sha": "sha",
+  "summary": "summary",
+  "title": "title"
+}

@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "content_type": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "download_url": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "md5": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "sha1": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sha256": {
+      "type": "string"
+    },
+    "size": {
+      "type": "integer"
+    },
+    "state": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

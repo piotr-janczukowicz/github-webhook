@@ -1,0 +1,32 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "properties": {
+    "about_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "vendor": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "about_url",
+    "name",
+    "type",
+    "url",
+    "vendor"
+  ]
+}

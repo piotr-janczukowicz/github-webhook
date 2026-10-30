@@ -1,0 +1,122 @@
+{
+  "assignees": [
+    {
+      "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+      "email": "email",
+      "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+      "followers_url": "https://api.github.com/users/octocat/followers",
+      "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+      "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+      "gravatar_id": "41d064eb2195891e12d0413f63227ea7",
+      "html_url": "https://github.com/octocat",
+      "id": 1,
+      "login": "octocat",
+      "name": "name",
+      "node_id": "MDQ6VXNlcjE=",
+      "organizations_url": "https://api.github.com/users/octocat/orgs",
+      "received_events_url": "https://api.github.com/users/octocat/received_events",
+      "repos_url": "https://api.github.com/users/octocat/repos",
+      "site_admin": true,
+      "starred_at": "\"2020-07-09T00:17:55Z\"",
+      "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+      "type": "User",
+      "url": "https://api.github.com/users/octocat",
+      "user_view_type": "public"
+    }
+  ],
+  "created_at": "2026-01-01T00:00:00Z",
+  "dismissal_approved_by": {
+    "avatar_url": "https://api.github.com/avatar_url",
+    "deleted": true,
+    "email": "email",
+    "events_url": "https://api.github.com/events_url{/id}",
+    "followers_url": "https://api.github.com/followers_url",
+    "following_url": "https://api.github.com/following_url{/id}",
+    "gists_url": "https://api.github.com/gists_url{/id}",
+    "gravatar_id": "gravatar_id",
+    "html_url": "https://api.github.com/html_url",
+    "id": 1,
+    "login": "login",
+    "name": "name",
+    "node_id": "node_id",
+    "organizations_url": "https://api.github.com/organizations_url",
+    "received_events_url": "https://api.github.com/received_events_url",
+    "repos_url": "https://api.github.com/repos_url",
+    "site_admin": true,
+    "starred_url": "https://api.github.com/starred_url{/id}",
+    "subscriptions_url": "https://api.github.com/subscriptions_url",
+    "type": "Bot",
+    "url": "https://api.github.com/url",
+    "user_view_type": "user_view_type"
+  },
+  "dismissed_at": "2026-01-01T00:00:00Z",
+  "dismissed_by": {
+    "avatar_url": "https://api.github.com/avatar_url",
+    "deleted": true,
+    "email": "email",
+    "events_url": "https://api.github.com/events_url{/id}",
+    "followers_url": "https://api.github.com/followers_url",
+    "following_url": "https://api.github.com/following_url{/id}",
+    "gists_url": "https://api.github.com/gists_url{/id}",
+    "gravatar_id": "gravatar_id",
+    "html_url": "https://api.github.com/html_url",
+    "id": 1,
+    "login": "login",
+    "name": "name",
+    "node_id": "node_id",
+    "organizations_url": "https://api.github.com/organizations_url",
+    "received_events_url": "https://api.github.com/received_events_url",
+    "repos_url": "https://api.github.com/repos_url",
+    "site_admin": true,
+    "starred_url": "https://api.github.com/starred_url{/id}",
+    "subscriptions_url": "https://api.github.com/subscriptions_url",
+    "type": "Bot",
+    "url": "https://api.github.com/url",
+    "user_view_type": "user_view_type"
+  },
+  "dismissed_comment": "dismissed_comment",
+  "dismissed_reason": "false positive",
+  "html_url": "https://api.github.com/html_url",
+  "most_recent_instance": {
+    "analysis_key": "analysis_key",
+    "category": "category",
+    "classifications": [
+      "classifications"
+    ],
+    "commit_sha": "commit_sha",
+    "environment": "environment",
+    "location": {
+      "end_column": 1,
+      "end_line": 1,
+      "path": "path",
+      "start_column": 1,
+      "start_line": 1
+    },
+    "message": {
+      "text": "text"
+    },
+    "ref": "ref",
+    "state": "open"
+  },
+  "number": 1,
+  "rule": {
+    "description": "description",
+    "full_description": "full_description",
+    "help": "help",
+    "help_uri": "help_uri",
+    "id": "id",
+    "name": "name",
+    "severity": "none",
+    "tags": [
+      "tags"
+    ]
+  },
+  "state": "dismissed",
+  "tool": {
+    "guid": "guid",
+    "name": "name",
+    "version": "version"
+  },
+  "url": "https://api.github.com/url"
+}

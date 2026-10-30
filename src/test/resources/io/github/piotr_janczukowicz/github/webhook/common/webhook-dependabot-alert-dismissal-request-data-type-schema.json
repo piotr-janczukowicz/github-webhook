@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "description": "The type of request",
+  "enum": [
+    "dependabot_alert_dismissal"
+  ]
+}

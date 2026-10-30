@@ -1,0 +1,10 @@
+{
+  "color": "gray",
+  "created_at": "2026-01-01T00:00:00Z",
+  "description": "description",
+  "id": 1,
+  "is_enabled": true,
+  "name": "name",
+  "node_id": "node_id",
+  "updated_at": "2026-01-01T00:00:00Z"
+}

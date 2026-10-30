@@ -1,0 +1,16 @@
+{
+  "changes": {
+    "configuration": {
+      "from": "from"
+    },
+    "pattern": {
+      "from": "from"
+    },
+    "rule_type": {
+      "from": "from"
+    }
+  },
+  "rule": {
+    "type": "creation"
+  }
+}

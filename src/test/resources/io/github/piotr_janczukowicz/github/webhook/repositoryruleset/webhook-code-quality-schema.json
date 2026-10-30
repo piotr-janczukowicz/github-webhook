@@ -1,0 +1,34 @@
+{
+  "title": "code_quality",
+  "description": "Choose which severity levels of code quality results should block pull request merges. When configured, a code quality analysis must be done on the pull request before the changes can be merged.",
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "code_quality"
+      ]
+    },
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "severity": {
+          "type": "string",
+          "description": "The lowest severity level at which code quality reviews need to be resolved before commits can be merged.",
+          "enum": [
+            "errors",
+            "warnings",
+            "notes",
+            "all"
+          ]
+        }
+      },
+      "required": [
+        "severity"
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "old_permission": {
+    "from": "from"
+  },
+  "permission": {
+    "from": "from",
+    "to": "to"
+  }
+}

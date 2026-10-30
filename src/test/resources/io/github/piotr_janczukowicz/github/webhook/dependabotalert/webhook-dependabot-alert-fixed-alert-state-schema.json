@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "description": "The state of the Dependabot alert.",
+  "readOnly": true,
+  "enum": [
+    "auto_dismissed",
+    "dismissed",
+    "fixed",
+    "open"
+  ]
+}

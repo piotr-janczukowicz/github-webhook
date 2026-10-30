@@ -1,0 +1,8 @@
+{
+  "parameters": {
+    "required_deployment_environments": [
+      "required_deployment_environments"
+    ]
+  },
+  "type": "required_deployments"
+}

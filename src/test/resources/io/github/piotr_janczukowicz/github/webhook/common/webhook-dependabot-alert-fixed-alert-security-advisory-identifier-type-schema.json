@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "description": "The type of advisory identifier.",
+  "readOnly": true,
+  "enum": [
+    "CVE",
+    "GHSA"
+  ]
+}

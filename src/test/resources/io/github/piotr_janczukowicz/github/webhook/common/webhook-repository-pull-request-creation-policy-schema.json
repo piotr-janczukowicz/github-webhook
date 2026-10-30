@@ -1,0 +1,8 @@
+{
+  "description": "The policy controlling who can create pull requests: all or collaborators_only.",
+  "type": "string",
+  "enum": [
+    "all",
+    "collaborators_only"
+  ]
+}

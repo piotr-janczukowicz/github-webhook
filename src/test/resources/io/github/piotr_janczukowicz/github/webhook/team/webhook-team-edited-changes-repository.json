@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "from": {
+      "admin": true,
+      "pull": true,
+      "push": true
+    }
+  }
+}

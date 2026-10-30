@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "description": "The user who requested the dismissal.",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "The unique identifier of the user."
+    },
+    "login": {
+      "type": "string",
+      "description": "The login name of the user."
+    }
+  }
+}

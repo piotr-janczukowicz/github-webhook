@@ -1,0 +1,18 @@
+{
+  "body": {
+    "from": "from",
+    "to": "to"
+  },
+  "start_date": {
+    "from": "from",
+    "to": "to"
+  },
+  "status": {
+    "from": "INACTIVE",
+    "to": "INACTIVE"
+  },
+  "target_date": {
+    "from": "from",
+    "to": "to"
+  }
+}

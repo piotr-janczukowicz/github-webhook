@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "max_coverage_drop": {
+      "type": "number",
+      "format": "float",
+      "description": "The maximum percentage points that line coverage may drop relative to the default branch. Pull requests that reduce line coverage by more than this amount will be blocked.",
+      "minimum": 0.0,
+      "maximum": 100.0
+    },
+    "minimum_coverage": {
+      "type": "number",
+      "format": "float",
+      "description": "The absolute minimum line coverage percentage required. Pull requests with line coverage below this threshold will be blocked.",
+      "minimum": 0.0,
+      "maximum": 100.0
+    }
+  }
+}

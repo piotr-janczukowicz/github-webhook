@@ -1,0 +1,27 @@
+{
+  "active": true,
+  "app_id": 1,
+  "config": {
+    "content_type": "\"json\"",
+    "insecure_ssl": "\"0\"",
+    "secret": "\"********\"",
+    "url": "https://example.com/webhook"
+  },
+  "created_at": "2026-01-01T00:00:00Z",
+  "deliveries_url": "https://api.github.com/deliveries_url",
+  "events": [
+    "events"
+  ],
+  "id": 1,
+  "last_response": {
+    "code": 1,
+    "message": "message",
+    "status": "status"
+  },
+  "name": "web",
+  "ping_url": "https://api.github.com/ping_url",
+  "test_url": "https://api.github.com/test_url",
+  "type": "type",
+  "updated_at": "2026-01-01T00:00:00Z",
+  "url": "https://api.github.com/url"
+}

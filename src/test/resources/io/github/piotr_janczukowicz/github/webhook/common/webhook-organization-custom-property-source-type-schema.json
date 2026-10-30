@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "description": "The source type of the property",
+  "enum": [
+    "organization",
+    "enterprise"
+  ],
+  "examples": [
+    "organization"
+  ]
+}

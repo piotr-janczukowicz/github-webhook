@@ -1,0 +1,26 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "properties": {
+    "key": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "spdx_id": {
+      "type": "string"
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "node_id": {
+      "type": "string"
+    }
+  }
+}

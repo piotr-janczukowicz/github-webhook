@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "description": "The target of the ruleset",
+  "enum": [
+    "branch",
+    "tag",
+    "push",
+    "repository"
+  ]
+}

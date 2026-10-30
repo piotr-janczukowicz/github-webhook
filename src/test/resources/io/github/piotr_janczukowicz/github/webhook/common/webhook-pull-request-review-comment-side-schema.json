@@ -1,0 +1,8 @@
+{
+  "description": "The side of the first line of the range for a multi-line comment.",
+  "type": "string",
+  "enum": [
+    "LEFT",
+    "RIGHT"
+  ]
+}

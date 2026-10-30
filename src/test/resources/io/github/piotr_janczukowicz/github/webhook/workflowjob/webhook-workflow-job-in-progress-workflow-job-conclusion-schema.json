@@ -1,0 +1,13 @@
+{
+  "type": [
+    "string",
+    "null"
+  ],
+  "enum": [
+    "success",
+    "failure",
+    null,
+    "cancelled",
+    "neutral"
+  ]
+}

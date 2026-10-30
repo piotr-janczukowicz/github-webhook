@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "condition_type": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string"
+        }
+      }
+    },
+    "target": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string"
+        }
+      }
+    },
+    "include": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "exclude": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

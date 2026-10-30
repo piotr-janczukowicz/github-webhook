@@ -1,0 +1,7 @@
+{
+  "about_url": "https://api.github.com/about_url",
+  "name": "name",
+  "type": "type",
+  "url": "https://api.github.com/url",
+  "vendor": "vendor"
+}

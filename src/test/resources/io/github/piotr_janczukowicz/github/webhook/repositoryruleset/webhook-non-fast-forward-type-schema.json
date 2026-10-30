@@ -1,0 +1,6 @@
+{
+  "type": "string",
+  "enum": [
+    "non_fast_forward"
+  ]
+}

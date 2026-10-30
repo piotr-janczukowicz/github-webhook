@@ -1,0 +1,13 @@
+{
+  "title": "Link",
+  "description": "Hypermedia Link",
+  "type": "object",
+  "properties": {
+    "href": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "href"
+  ]
+}

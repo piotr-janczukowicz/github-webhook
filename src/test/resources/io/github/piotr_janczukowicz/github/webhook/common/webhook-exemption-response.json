@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-01-01T00:00:00Z",
+  "id": 1,
+  "reviewer_comment": "reviewer_comment",
+  "reviewer_id": 1,
+  "reviewer_login": "reviewer_login",
+  "status": "approved"
+}

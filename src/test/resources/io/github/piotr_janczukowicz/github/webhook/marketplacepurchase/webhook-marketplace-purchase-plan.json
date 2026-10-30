@@ -1,0 +1,13 @@
+{
+  "bullets": [
+    "bullets"
+  ],
+  "description": "description",
+  "has_free_trial": true,
+  "id": 1,
+  "monthly_price_in_cents": 1,
+  "name": "name",
+  "price_model": "FREE",
+  "unit_name": "unit_name",
+  "yearly_price_in_cents": 1
+}

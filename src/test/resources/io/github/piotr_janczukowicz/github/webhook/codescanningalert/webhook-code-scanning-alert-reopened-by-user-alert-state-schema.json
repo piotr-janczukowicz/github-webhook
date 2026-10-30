@@ -1,0 +1,12 @@
+{
+  "description": "State of a code scanning alert. Events for alerts found outside the default branch will return a `null` value until they are dismissed or fixed.",
+  "type": [
+    "string",
+    "null"
+  ],
+  "enum": [
+    "open",
+    "fixed",
+    null
+  ]
+}

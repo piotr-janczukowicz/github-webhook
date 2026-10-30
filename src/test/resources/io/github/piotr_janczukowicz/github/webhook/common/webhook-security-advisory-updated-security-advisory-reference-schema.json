@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "description": "A link to additional advisory information.",
+  "readOnly": true,
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "The URL of the reference.",
+      "format": "uri",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "url"
+  ],
+  "additionalProperties": false
+}

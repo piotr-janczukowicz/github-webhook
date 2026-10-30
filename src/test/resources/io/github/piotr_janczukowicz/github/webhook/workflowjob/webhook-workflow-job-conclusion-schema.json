@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "success",
+    "failure",
+    "skipped",
+    "cancelled",
+    "action_required",
+    "neutral",
+    "timed_out"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "properties": {
+    "description": {
+      "description": "A short description of the rule used to detect the alert.",
+      "type": "string"
+    },
+    "full_description": {
+      "type": "string"
+    },
+    "help": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "help_uri": {
+      "description": "A link to the documentation for the rule used to detect the alert.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "id": {
+      "description": "A unique identifier for the rule used to detect the alert.",
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "severity": {
+      "description": "The severity of the alert.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "none",
+        "note",
+        "warning",
+        "error",
+        null
+      ]
+    },
+    "tags": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "severity",
+    "description"
+  ]
+}

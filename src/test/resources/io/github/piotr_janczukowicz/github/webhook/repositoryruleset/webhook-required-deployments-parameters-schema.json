@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "required_deployment_environments": {
+      "type": "array",
+      "description": "The environments that must be successfully deployed to before branches can be merged.",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "required_deployment_environments"
+  ]
+}

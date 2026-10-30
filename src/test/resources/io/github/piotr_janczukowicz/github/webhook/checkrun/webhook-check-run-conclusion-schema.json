@@ -1,0 +1,23 @@
+{
+  "type": [
+    "string",
+    "null"
+  ],
+  "enum": [
+    "waiting",
+    "pending",
+    "startup_failure",
+    "stale",
+    "success",
+    "failure",
+    "neutral",
+    "cancelled",
+    "skipped",
+    "timed_out",
+    "action_required",
+    null
+  ],
+  "examples": [
+    "neutral"
+  ]
+}

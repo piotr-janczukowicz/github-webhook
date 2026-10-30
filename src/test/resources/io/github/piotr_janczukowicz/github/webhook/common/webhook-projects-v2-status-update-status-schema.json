@@ -1,0 +1,15 @@
+{
+  "type": [
+    "string",
+    "null"
+  ],
+  "enum": [
+    "INACTIVE",
+    "ON_TRACK",
+    "AT_RISK",
+    "OFF_TRACK",
+    "COMPLETE",
+    null
+  ],
+  "description": "The current status."
+}

@@ -1,0 +1,17 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "readOnly": true,
+  "properties": {
+    "accepted": {
+      "type": "boolean",
+      "description": "Whether a private vulnerability report was accepted by the repository's administrators.",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "accepted"
+  ]
+}

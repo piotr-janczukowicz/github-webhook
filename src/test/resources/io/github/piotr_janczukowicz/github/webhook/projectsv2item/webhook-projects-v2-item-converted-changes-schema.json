@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "content_type": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "to": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

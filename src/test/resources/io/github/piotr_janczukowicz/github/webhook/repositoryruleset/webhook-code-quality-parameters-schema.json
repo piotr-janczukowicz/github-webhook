@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "severity": {
+      "type": "string",
+      "description": "The lowest severity level at which code quality reviews need to be resolved before commits can be merged.",
+      "enum": [
+        "errors",
+        "warnings",
+        "notes",
+        "all"
+      ]
+    }
+  },
+  "required": [
+    "severity"
+  ]
+}

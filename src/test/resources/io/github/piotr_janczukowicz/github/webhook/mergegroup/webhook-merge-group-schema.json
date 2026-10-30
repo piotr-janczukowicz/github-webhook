@@ -1,0 +1,127 @@
+{
+  "type": "object",
+  "title": "Merge Group",
+  "description": "A group of pull requests that the merge queue has grouped together to be merged.",
+  "properties": {
+    "head_sha": {
+      "description": "The SHA of the merge group.",
+      "type": "string"
+    },
+    "head_ref": {
+      "description": "The full ref of the merge group.",
+      "type": "string"
+    },
+    "base_sha": {
+      "description": "The SHA of the merge group's parent commit.",
+      "type": "string"
+    },
+    "base_ref": {
+      "description": "The full ref of the branch the merge group will be merged into.",
+      "type": "string"
+    },
+    "head_commit": {
+      "title": "Simple Commit",
+      "description": "A commit.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "SHA for the commit",
+          "examples": [
+            "7638417db6d59f3c431d3e1f261cc637155684cd"
+          ]
+        },
+        "tree_id": {
+          "type": "string",
+          "description": "SHA for the commit's tree"
+        },
+        "message": {
+          "description": "Message describing the purpose of the commit",
+          "type": "string",
+          "examples": [
+            "Fix #42"
+          ]
+        },
+        "timestamp": {
+          "description": "Timestamp of the commit",
+          "format": "date-time",
+          "type": "string",
+          "examples": [
+            "2014-08-09T08:02:04+12:00"
+          ]
+        },
+        "author": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Information about the Git author",
+          "properties": {
+            "name": {
+              "description": "Name of the commit's author",
+              "type": "string",
+              "examples": [
+                "Monalisa Octocat"
+              ]
+            },
+            "email": {
+              "description": "Git email address of the commit's author",
+              "type": "string",
+              "format": "email",
+              "examples": [
+                "monalisa.octocat@example.com"
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "email"
+          ]
+        },
+        "committer": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Information about the Git committer",
+          "properties": {
+            "name": {
+              "description": "Name of the commit's committer",
+              "type": "string",
+              "examples": [
+                "Monalisa Octocat"
+              ]
+            },
+            "email": {
+              "description": "Git email address of the commit's committer",
+              "type": "string",
+              "format": "email",
+              "examples": [
+                "monalisa.octocat@example.com"
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "email"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "tree_id",
+        "message",
+        "timestamp",
+        "author",
+        "committer"
+      ]
+    }
+  },
+  "required": [
+    "head_sha",
+    "head_ref",
+    "base_sha",
+    "base_ref",
+    "head_commit"
+  ]
+}

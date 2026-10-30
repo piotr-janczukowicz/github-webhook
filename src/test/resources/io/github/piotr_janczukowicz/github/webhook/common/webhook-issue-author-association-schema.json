@@ -1,0 +1,15 @@
+{
+  "title": "AuthorAssociation",
+  "description": "How the author is associated with the repository.",
+  "type": "string",
+  "enum": [
+    "COLLABORATOR",
+    "CONTRIBUTOR",
+    "FIRST_TIMER",
+    "FIRST_TIME_CONTRIBUTOR",
+    "MANNEQUIN",
+    "MEMBER",
+    "NONE",
+    "OWNER"
+  ]
+}

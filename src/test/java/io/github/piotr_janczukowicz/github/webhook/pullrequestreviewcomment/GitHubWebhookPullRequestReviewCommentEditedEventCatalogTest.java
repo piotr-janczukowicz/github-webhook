@@ -1,0 +1,26 @@
+package io.github.piotr_janczukowicz.github.webhook.pullrequestreviewcomment;
+
+import io.github.piotr_janczukowicz.github.webhook.BaseCatalogTest;
+
+class GitHubWebhookPullRequestReviewCommentEditedEventCatalogTest extends BaseCatalogTest {
+
+    @Override
+    protected Class<?> type() {
+        return GitHubWebhookPullRequestReviewCommentEditedEvent.class;
+    }
+
+    @Override
+    protected String fixture() {
+        return "webhook-pull-request-review-comment-edited-event.json";
+    }
+
+    @Override
+    protected String schema() {
+        return "webhook-pull-request-review-comment-edited-event-schema.json";
+    }
+
+    @Override
+    protected Object expected() {
+        return PullRequestReviewCommentCatalogFixtures.webhookPullRequestReviewCommentEditedEvent();
+    }
+}

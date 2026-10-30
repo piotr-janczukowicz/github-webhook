@@ -1,0 +1,13 @@
+{
+  "description": "Enable or disable GitHub Advanced Security for the repository.\n\nFor standalone Code Scanning or Secret Protection products, this parameter cannot be used.\n",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "enabled",
+        "disabled"
+      ]
+    }
+  }
+}

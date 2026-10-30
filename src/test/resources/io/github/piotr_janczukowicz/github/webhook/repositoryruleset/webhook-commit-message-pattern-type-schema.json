@@ -1,0 +1,6 @@
+{
+  "type": "string",
+  "enum": [
+    "commit_message_pattern"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "cvss_v3": {
+    "score": 1.5,
+    "vector_string": "vector_string"
+  },
+  "cvss_v4": {
+    "score": 1.5,
+    "vector_string": "vector_string"
+  }
+}

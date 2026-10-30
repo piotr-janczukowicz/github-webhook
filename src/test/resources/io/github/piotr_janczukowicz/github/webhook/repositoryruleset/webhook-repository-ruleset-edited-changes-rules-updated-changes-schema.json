@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string"
+        }
+      }
+    },
+    "rule_type": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string"
+        }
+      }
+    },
+    "pattern": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

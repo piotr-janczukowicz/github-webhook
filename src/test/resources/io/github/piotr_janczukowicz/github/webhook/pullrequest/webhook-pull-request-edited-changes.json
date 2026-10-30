@@ -1,0 +1,16 @@
+{
+  "base": {
+    "ref": {
+      "from": "from"
+    },
+    "sha": {
+      "from": "from"
+    }
+  },
+  "body": {
+    "from": "from"
+  },
+  "title": {
+    "from": "from"
+  }
+}

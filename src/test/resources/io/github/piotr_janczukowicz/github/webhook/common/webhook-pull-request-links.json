@@ -1,0 +1,26 @@
+{
+  "comments": {
+    "href": "https://api.github.com/href{/id}"
+  },
+  "commits": {
+    "href": "https://api.github.com/href{/id}"
+  },
+  "html": {
+    "href": "https://api.github.com/href{/id}"
+  },
+  "issue": {
+    "href": "https://api.github.com/href{/id}"
+  },
+  "review_comment": {
+    "href": "https://api.github.com/href{/id}"
+  },
+  "review_comments": {
+    "href": "https://api.github.com/href{/id}"
+  },
+  "self": {
+    "href": "https://api.github.com/href{/id}"
+  },
+  "statuses": {
+    "href": "https://api.github.com/href{/id}"
+  }
+}

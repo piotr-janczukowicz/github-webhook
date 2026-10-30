@@ -1,0 +1,14 @@
+{
+  "type": "string",
+  "enum": [
+    "Integration",
+    "OrganizationAdmin",
+    "RepositoryRole",
+    "Team",
+    "DeployKey",
+    "User",
+    "EnterpriseOwner",
+    "EnterpriseRole"
+  ],
+  "description": "The type of actor that can bypass a ruleset."
+}

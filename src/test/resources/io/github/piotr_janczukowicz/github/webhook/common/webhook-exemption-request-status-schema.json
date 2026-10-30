@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "description": "The status of the exemption request.",
+  "enum": [
+    "pending",
+    "rejected",
+    "cancelled",
+    "completed"
+  ]
+}

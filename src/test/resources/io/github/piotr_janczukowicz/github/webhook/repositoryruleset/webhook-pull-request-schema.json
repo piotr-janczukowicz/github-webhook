@@ -1,0 +1,154 @@
+{
+  "title": "pull_request",
+  "description": "Require all commits be made to a non-target branch and submitted via a pull request before they can be merged.",
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "pull_request"
+      ]
+    },
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "allowed_merge_methods": {
+          "type": "array",
+          "description": "Array of allowed merge methods. Allowed values include `merge`, `squash`, and `rebase`. At least one option must be enabled.",
+          "items": {
+            "type": "string",
+            "enum": [
+              "merge",
+              "squash",
+              "rebase"
+            ]
+          }
+        },
+        "dismiss_stale_reviews_on_push": {
+          "type": "boolean",
+          "description": "New, reviewable commits pushed will dismiss previous pull request review approvals."
+        },
+        "dismissal_restriction": {
+          "title": "DismissalRestriction",
+          "description": "Specify people, teams, or apps allowed to dismiss pull request reviews.",
+          "type": "object",
+          "properties": {
+            "allowed_actors": {
+              "type": "array",
+              "description": "Specify people, teams, or apps allowed to dismiss pull request reviews.",
+              "items": {
+                "title": "Actor",
+                "description": "An actor allowed to dismiss pull request reviews",
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "description": "ID of the actor that can dismiss reviews."
+                  },
+                  "type": {
+                    "type": "string",
+                    "description": "The type of the actor",
+                    "enum": [
+                      "User",
+                      "Team",
+                      "IntegrationInstallation",
+                      "RepositoryRole"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "type"
+                ]
+              }
+            },
+            "enabled": {
+              "type": "boolean",
+              "description": "Whether to restrict review dismissal to specific actors."
+            }
+          },
+          "required": [
+            "enabled"
+          ]
+        },
+        "require_code_owner_review": {
+          "type": "boolean",
+          "description": "Require an approving review in pull requests that modify files that have a designated code owner."
+        },
+        "require_last_push_approval": {
+          "type": "boolean",
+          "description": "Whether the most recent reviewable push must be approved by someone other than the person who pushed it."
+        },
+        "required_approving_review_count": {
+          "type": "integer",
+          "description": "The number of approving reviews that are required before a pull request can be merged.",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "required_review_thread_resolution": {
+          "type": "boolean",
+          "description": "All conversations on code must be resolved before a pull request can be merged."
+        },
+        "required_reviewers": {
+          "type": "array",
+          "description": "A collection of reviewers and associated file patterns. Each reviewer has a list of file patterns which determine the files that reviewer is required to review.",
+          "items": {
+            "title": "RequiredReviewerConfiguration",
+            "description": "A reviewing team, and file patterns describing which files they must approve changes to.",
+            "type": "object",
+            "properties": {
+              "file_patterns": {
+                "type": "array",
+                "description": "Array of file patterns. Pull requests which change matching files must be approved by the specified team. File patterns use fnmatch syntax.",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "minimum_approvals": {
+                "type": "integer",
+                "description": "Minimum number of approvals required from the specified team. If set to zero, the team will be added to the pull request but approval is optional."
+              },
+              "reviewer": {
+                "title": "Reviewer",
+                "description": "A required reviewing team",
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "description": "ID of the reviewer which must review changes to matching files."
+                  },
+                  "type": {
+                    "type": "string",
+                    "description": "The type of the reviewer",
+                    "enum": [
+                      "Team"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "type"
+                ]
+              }
+            },
+            "required": [
+              "file_patterns",
+              "minimum_approvals",
+              "reviewer"
+            ]
+          }
+        }
+      },
+      "required": [
+        "dismiss_stale_reviews_on_push",
+        "require_code_owner_review",
+        "require_last_push_approval",
+        "required_approving_review_count",
+        "required_review_thread_resolution"
+      ]
+    }
+  }
+}

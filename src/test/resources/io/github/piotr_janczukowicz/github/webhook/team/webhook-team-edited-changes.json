@@ -1,0 +1,23 @@
+{
+  "description": {
+    "from": "from"
+  },
+  "name": {
+    "from": "from"
+  },
+  "notification_setting": {
+    "from": "from"
+  },
+  "privacy": {
+    "from": "from"
+  },
+  "repository": {
+    "permissions": {
+      "from": {
+        "admin": true,
+        "pull": true,
+        "push": true
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "organization": {
+    "key": "organization"
+  },
+  "other": {
+    "key": "other"
+  },
+  "repository": {
+    "key": "repository"
+  }
+}

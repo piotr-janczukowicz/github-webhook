@@ -1,0 +1,20 @@
+{
+  "commit_oid": "commit_oid",
+  "dependencies": [
+    {
+      "key": "dependencies"
+    }
+  ],
+  "description": "description",
+  "homepage": "homepage",
+  "metadata": {
+    "key": "metadata"
+  },
+  "name": "name",
+  "platform": "platform",
+  "readme": "readme",
+  "repo": "repo",
+  "version_info": {
+    "version": "version"
+  }
+}

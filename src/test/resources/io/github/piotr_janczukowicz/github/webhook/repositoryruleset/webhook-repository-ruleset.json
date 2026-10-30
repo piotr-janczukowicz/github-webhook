@@ -1,0 +1,76 @@
+{
+  "_links": {
+    "html": {
+      "href": "href"
+    },
+    "self": {
+      "href": "href"
+    }
+  },
+  "bypass_actors": [
+    {
+      "actor_id": 1,
+      "actor_type": "Integration",
+      "bypass_mode": "always"
+    }
+  ],
+  "conditions": {
+    "ref_name": {
+      "exclude": [
+        "exclude"
+      ],
+      "include": [
+        "include"
+      ]
+    },
+    "repository_id": {
+      "repository_ids": [
+        1
+      ]
+    },
+    "repository_name": {
+      "exclude": [
+        "exclude"
+      ],
+      "include": [
+        "include"
+      ],
+      "protected": true
+    },
+    "repository_property": {
+      "exclude": [
+        {
+          "name": "name",
+          "property_values": [
+            "property_values"
+          ],
+          "source": "custom"
+        }
+      ],
+      "include": [
+        {
+          "name": "name",
+          "property_values": [
+            "property_values"
+          ],
+          "source": "custom"
+        }
+      ]
+    }
+  },
+  "created_at": "2026-01-01T00:00:00Z",
+  "current_user_can_bypass": "always",
+  "enforcement": "disabled",
+  "id": 1,
+  "name": "name",
+  "node_id": "node_id",
+  "rules": [
+    {
+      "type": "creation"
+    }
+  ],
+  "source": "source",
+  "source_type": "Repository",
+  "target": "branch",
+  "updated_at": "2026-01-01T00:00:00Z"
+}

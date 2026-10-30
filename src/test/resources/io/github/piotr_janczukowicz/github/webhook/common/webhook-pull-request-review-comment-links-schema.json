@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "html": {
+      "title": "Link",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "format": "uri-template"
+        }
+      },
+      "required": [
+        "href"
+      ]
+    },
+    "pull_request": {
+      "title": "Link",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "format": "uri-template"
+        }
+      },
+      "required": [
+        "href"
+      ]
+    },
+    "self": {
+      "title": "Link",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "format": "uri-template"
+        }
+      },
+      "required": [
+        "href"
+      ]
+    }
+  },
+  "required": [
+    "self",
+    "html",
+    "pull_request"
+  ]
+}

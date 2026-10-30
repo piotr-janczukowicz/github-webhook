@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "required": [
+    "type",
+    "id",
+    "node_id",
+    "login",
+    "organization_billing_email"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "login": {
+      "type": "string"
+    },
+    "node_id": {
+      "type": "string"
+    },
+    "organization_billing_email": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

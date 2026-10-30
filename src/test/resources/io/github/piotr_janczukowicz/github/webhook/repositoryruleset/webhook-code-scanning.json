@@ -1,0 +1,12 @@
+{
+  "parameters": {
+    "code_scanning_tools": [
+      {
+        "alerts_threshold": "none",
+        "security_alerts_threshold": "none",
+        "tool": "tool"
+      }
+    ]
+  },
+  "type": "code_scanning"
+}

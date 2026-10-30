@@ -1,0 +1,14 @@
+{
+  "body": {
+    "from": "from"
+  },
+  "make_latest": {
+    "to": true
+  },
+  "name": {
+    "from": "from"
+  },
+  "tag_name": {
+    "from": "from"
+  }
+}

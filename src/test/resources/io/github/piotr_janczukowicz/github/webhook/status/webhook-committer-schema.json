@@ -1,0 +1,44 @@
+{
+  "allOf": [
+    {
+      "title": "Committer",
+      "description": "Metaproperties for Git author/committer information.",
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "email",
+        "name"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "date"
+      ]
+    }
+  ]
+}

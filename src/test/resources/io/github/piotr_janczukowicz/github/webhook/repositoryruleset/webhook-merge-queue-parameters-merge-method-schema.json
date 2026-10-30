@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "description": "Method to use when merging changes from queued pull requests.",
+  "enum": [
+    "MERGE",
+    "SQUASH",
+    "REBASE"
+  ]
+}

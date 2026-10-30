@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-01-01T00:00:00Z",
+  "dependency": {
+    "manifest_path": "manifest_path",
+    "package": {
+      "ecosystem": "ecosystem",
+      "name": "name"
+    },
+    "relationship": "unknown",
+    "scope": "development",
+    "version_requirement": "version_requirement"
+  },
+  "html_url": "https://api.github.com/html_url",
+  "id": 1,
+  "node_id": "node_id",
+  "number": 1,
+  "security_advisory": {
+    "cve_id": "cve_id",
+    "ghsa_id": "ghsa_id"
+  },
+  "state": "withdrawn",
+  "url": "https://api.github.com/url",
+  "withdrawn_at": "2026-01-01T00:00:00Z"
+}

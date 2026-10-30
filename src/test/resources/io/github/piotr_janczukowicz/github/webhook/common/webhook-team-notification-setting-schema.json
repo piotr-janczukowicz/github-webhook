@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "enum": [
+    "notifications_enabled",
+    "notifications_disabled"
+  ]
+}

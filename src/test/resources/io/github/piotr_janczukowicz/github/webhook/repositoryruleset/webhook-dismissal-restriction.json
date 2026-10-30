@@ -1,0 +1,9 @@
+{
+  "allowed_actors": [
+    {
+      "id": 1,
+      "type": "User"
+    }
+  ],
+  "enabled": true
+}

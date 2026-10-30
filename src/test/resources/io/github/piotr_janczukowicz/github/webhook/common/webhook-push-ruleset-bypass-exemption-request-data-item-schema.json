@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "ruleset_id": {
+      "type": "integer",
+      "description": "The ID of the ruleset for the rules that were violated"
+    },
+    "ruleset_name": {
+      "type": "string",
+      "description": "The name of the ruleset for the rules that were violated"
+    },
+    "total_violations": {
+      "type": "integer",
+      "description": "The number of violations"
+    },
+    "rule_type": {
+      "type": "string",
+      "description": "The type of rule that was violated"
+    }
+  }
+}

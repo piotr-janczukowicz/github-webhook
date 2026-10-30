@@ -1,0 +1,276 @@
+{
+  "created_at": "created_at",
+  "description": "description",
+  "ecosystem": "ecosystem",
+  "html_url": "https://api.github.com/html_url",
+  "id": 1,
+  "name": "name",
+  "namespace": "namespace",
+  "owner": {
+    "avatar_url": "https://api.github.com/avatar_url",
+    "deleted": true,
+    "email": "email",
+    "events_url": "https://api.github.com/events_url{/id}",
+    "followers_url": "https://api.github.com/followers_url",
+    "following_url": "https://api.github.com/following_url{/id}",
+    "gists_url": "https://api.github.com/gists_url{/id}",
+    "gravatar_id": "gravatar_id",
+    "html_url": "https://api.github.com/html_url",
+    "id": 1,
+    "login": "login",
+    "name": "name",
+    "node_id": "node_id",
+    "organizations_url": "https://api.github.com/organizations_url",
+    "received_events_url": "https://api.github.com/received_events_url",
+    "repos_url": "https://api.github.com/repos_url",
+    "site_admin": true,
+    "starred_url": "https://api.github.com/starred_url{/id}",
+    "subscriptions_url": "https://api.github.com/subscriptions_url",
+    "type": "Bot",
+    "url": "https://api.github.com/url",
+    "user_view_type": "user_view_type"
+  },
+  "package_type": "package_type",
+  "package_version": {
+    "author": {
+      "avatar_url": "https://api.github.com/avatar_url",
+      "deleted": true,
+      "email": "email",
+      "events_url": "https://api.github.com/events_url{/id}",
+      "followers_url": "https://api.github.com/followers_url",
+      "following_url": "https://api.github.com/following_url{/id}",
+      "gists_url": "https://api.github.com/gists_url{/id}",
+      "gravatar_id": "gravatar_id",
+      "html_url": "https://api.github.com/html_url",
+      "id": 1,
+      "login": "login",
+      "name": "name",
+      "node_id": "node_id",
+      "organizations_url": "https://api.github.com/organizations_url",
+      "received_events_url": "https://api.github.com/received_events_url",
+      "repos_url": "https://api.github.com/repos_url",
+      "site_admin": true,
+      "starred_url": "https://api.github.com/starred_url{/id}",
+      "subscriptions_url": "https://api.github.com/subscriptions_url",
+      "type": "Bot",
+      "url": "https://api.github.com/url",
+      "user_view_type": "user_view_type"
+    },
+    "body": {
+      "key": "body"
+    },
+    "body_html": "body_html",
+    "container_metadata": {
+      "labels": {
+        "key": {}
+      },
+      "manifest": {
+        "key": {}
+      },
+      "tag": {
+        "digest": "digest",
+        "name": "name"
+      }
+    },
+    "created_at": "created_at",
+    "description": "description",
+    "docker_metadata": [
+      {
+        "tags": [
+          "tags"
+        ]
+      }
+    ],
+    "draft": true,
+    "html_url": "https://api.github.com/html_url",
+    "id": 1,
+    "installation_command": "installation_command",
+    "manifest": "manifest",
+    "metadata": [
+      {
+        "key": {}
+      }
+    ],
+    "name": "name",
+    "npm_metadata": {
+      "author": {
+        "key": {}
+      },
+      "bin": {
+        "key": {}
+      },
+      "bugs": {
+        "key": {}
+      },
+      "commit_oid": "commit_oid",
+      "contributors": [
+        {
+          "key": {}
+        }
+      ],
+      "cpu": [
+        "cpu"
+      ],
+      "deleted_by_id": 1,
+      "dependencies": {
+        "key": {}
+      },
+      "description": "description",
+      "dev_dependencies": {
+        "key": {}
+      },
+      "directories": {
+        "key": {}
+      },
+      "dist": {
+        "key": {}
+      },
+      "engines": {
+        "key": {}
+      },
+      "files": [
+        "files"
+      ],
+      "git_head": "git_head",
+      "has_shrinkwrap": true,
+      "homepage": "homepage",
+      "id": "id",
+      "installation_command": "installation_command",
+      "keywords": [
+        "keywords"
+      ],
+      "license": "license",
+      "main": "main",
+      "maintainers": [
+        {
+          "key": {}
+        }
+      ],
+      "man": {
+        "key": {}
+      },
+      "name": "name",
+      "node_version": "node_version",
+      "npm_user": "npm_user",
+      "npm_version": "npm_version",
+      "optional_dependencies": {
+        "key": {}
+      },
+      "os": [
+        "os"
+      ],
+      "peer_dependencies": {
+        "key": {}
+      },
+      "published_via_actions": true,
+      "readme": "readme",
+      "release_id": 1,
+      "repository": {
+        "key": {}
+      },
+      "scripts": {
+        "key": {}
+      },
+      "version": "version"
+    },
+    "nuget_metadata": [
+      {
+        "id": "1",
+        "name": "name",
+        "value": {
+          "key": true
+        }
+      }
+    ],
+    "package_files": [
+      {
+        "content_type": "content_type",
+        "created_at": "created_at",
+        "download_url": "https://api.github.com/download_url",
+        "id": 1,
+        "md5": "md5",
+        "name": "name",
+        "sha1": "sha1",
+        "sha256": "sha256",
+        "size": 1,
+        "state": "state",
+        "updated_at": "updated_at"
+      }
+    ],
+    "package_url": "package_url",
+    "prerelease": true,
+    "release": {
+      "author": {
+        "avatar_url": "https://api.github.com/avatar_url",
+        "deleted": true,
+        "email": "email",
+        "events_url": "https://api.github.com/events_url{/id}",
+        "followers_url": "https://api.github.com/followers_url",
+        "following_url": "https://api.github.com/following_url{/id}",
+        "gists_url": "https://api.github.com/gists_url{/id}",
+        "gravatar_id": "gravatar_id",
+        "html_url": "https://api.github.com/html_url",
+        "id": 1,
+        "login": "login",
+        "name": "name",
+        "node_id": "node_id",
+        "organizations_url": "https://api.github.com/organizations_url",
+        "received_events_url": "https://api.github.com/received_events_url",
+        "repos_url": "https://api.github.com/repos_url",
+        "site_admin": true,
+        "starred_url": "https://api.github.com/starred_url{/id}",
+        "subscriptions_url": "https://api.github.com/subscriptions_url",
+        "type": "Bot",
+        "url": "https://api.github.com/url",
+        "user_view_type": "user_view_type"
+      },
+      "created_at": "created_at",
+      "draft": true,
+      "html_url": "https://api.github.com/html_url",
+      "id": 1,
+      "name": "name",
+      "prerelease": true,
+      "published_at": "published_at",
+      "tag_name": "tag_name",
+      "target_commitish": "target_commitish",
+      "url": "https://api.github.com/url"
+    },
+    "rubygems_metadata": [
+      {
+        "commit_oid": "commit_oid",
+        "dependencies": [
+          {
+            "key": "dependencies"
+          }
+        ],
+        "description": "description",
+        "homepage": "homepage",
+        "metadata": {
+          "key": "metadata"
+        },
+        "name": "name",
+        "platform": "platform",
+        "readme": "readme",
+        "repo": "repo",
+        "version_info": {
+          "version": "version"
+        }
+      }
+    ],
+    "source_url": "source_url",
+    "summary": "summary",
+    "tag_name": "tag_name",
+    "target_commitish": "target_commitish",
+    "target_oid": "target_oid",
+    "updated_at": "updated_at",
+    "version": "version"
+  },
+  "registry": {
+    "about_url": "https://api.github.com/about_url",
+    "name": "name",
+    "type": "type",
+    "url": "https://api.github.com/url",
+    "vendor": "vendor"
+  },
+  "updated_at": "updated_at"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "string",
+  "enum": [
+    "string",
+    "single_select",
+    "multi_select",
+    "true_false",
+    "url"
+  ],
+  "description": "The type of the value for the property",
+  "examples": [
+    "single_select"
+  ]
+}

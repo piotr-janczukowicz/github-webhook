@@ -1,0 +1,14 @@
+{
+  "type": [
+    "string",
+    "null"
+  ],
+  "description": "The severity of the advisory.",
+  "enum": [
+    "critical",
+    "high",
+    "medium",
+    "low",
+    null
+  ]
+}

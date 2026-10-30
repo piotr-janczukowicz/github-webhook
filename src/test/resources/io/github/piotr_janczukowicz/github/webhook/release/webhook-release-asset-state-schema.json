@@ -1,0 +1,7 @@
+{
+  "description": "State of the release asset.",
+  "type": "string",
+  "enum": [
+    "uploaded"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "classification": "general",
+  "cve_id": "cve_id",
+  "cvss_severities": {
+    "cvss_v3": {
+      "score": 1.5,
+      "vector_string": "vector_string"
+    },
+    "cvss_v4": {
+      "score": 1.5,
+      "vector_string": "vector_string"
+    }
+  },
+  "cwes": [
+    {
+      "cwe_id": "cwe_id",
+      "name": "name"
+    }
+  ],
+  "description": "description",
+  "epss": {
+    "percentage": 1.5,
+    "percentile": 1.5
+  },
+  "ghsa_id": "ghsa_id",
+  "identifiers": [
+    {
+      "type": "CVE",
+      "value": "value"
+    }
+  ],
+  "published_at": "2026-01-01T00:00:00Z",
+  "references": [
+    {
+      "url": "https://api.github.com/url"
+    }
+  ],
+  "severity": "low",
+  "summary": "summary",
+  "updated_at": "2026-01-01T00:00:00Z",
+  "vulnerabilities": [
+    {
+      "first_patched_version": {
+        "identifier": "identifier"
+      },
+      "package": {
+        "ecosystem": "ecosystem",
+        "name": "name"
+      },
+      "severity": "low",
+      "vulnerable_version_range": "vulnerable_version_range"
+    }
+  ],
+  "withdrawn_at": "2026-01-01T00:00:00Z"
+}

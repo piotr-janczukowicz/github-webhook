@@ -1,0 +1,23 @@
+{
+  "avatar_url": "https://api.github.com/avatar_url",
+  "deleted": true,
+  "email": "email",
+  "events_url": "https://api.github.com/events_url{/id}",
+  "followers_url": "https://api.github.com/followers_url",
+  "following_url": "https://api.github.com/following_url{/id}",
+  "gists_url": "https://api.github.com/gists_url{/id}",
+  "gravatar_id": "gravatar_id",
+  "html_url": "https://api.github.com/html_url",
+  "id": 1,
+  "login": "login",
+  "name": "name",
+  "node_id": "node_id",
+  "organizations_url": "https://api.github.com/organizations_url",
+  "received_events_url": "https://api.github.com/received_events_url",
+  "repos_url": "https://api.github.com/repos_url",
+  "site_admin": true,
+  "starred_url": "https://api.github.com/starred_url{/id}",
+  "subscriptions_url": "https://api.github.com/subscriptions_url",
+  "type": "Bot",
+  "url": "https://api.github.com/url"
+}

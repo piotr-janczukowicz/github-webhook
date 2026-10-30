@@ -1,0 +1,19 @@
+{
+  "data_type": "text",
+  "issue_field_id": 1,
+  "issue_field_name": "Priority",
+  "multi_select_options": [
+    {
+      "color": "red",
+      "id": 1,
+      "name": "High"
+    }
+  ],
+  "node_id": "IFT_GDKND",
+  "single_select_option": {
+    "color": "red",
+    "id": 1,
+    "name": "High"
+  },
+  "value": "Sample text"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "string",
+  "enum": [
+    "license_compliance_scanning"
+  ]
+}

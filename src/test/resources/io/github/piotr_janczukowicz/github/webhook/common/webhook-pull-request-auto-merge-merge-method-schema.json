@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "description": "The merge method to use.",
+  "enum": [
+    "merge",
+    "squash",
+    "rebase"
+  ]
+}

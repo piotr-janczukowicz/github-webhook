@@ -1,0 +1,13 @@
+{
+  "description": "The phase of the lifecycle that the check is currently in.",
+  "type": "string",
+  "enum": [
+    "queued",
+    "in_progress",
+    "completed",
+    "pending"
+  ],
+  "examples": [
+    "queued"
+  ]
+}
