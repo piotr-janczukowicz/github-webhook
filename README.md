@@ -36,6 +36,17 @@ class path. It is published on
 
 The library is in prerelease; see the [Disclaimer](#disclaimer) before relying on it.
 
+## Supported GitHub products
+
+| Product | Status |
+|---|---|
+| GitHub.com | Supported: every event of the description; a record or enum that not every product sends is marked `@Flavors` |
+| GitHub Enterprise Cloud | Supported: an event that only it sends is marked `@Flavors(GitHubWebhookFlavor.GHEC)` |
+| GitHub Enterprise Server | Supported: version 3.22; an event that only it sends is marked `@Flavors(GitHubWebhookFlavor.GHES)` |
+
+The decoder has no product check: it decodes whatever it receives. [webhook-events.md](docs/guide/webhook-events.md) shows
+which product sends which event.
+
 ## Usage
 
 Build the receiver once with the webhook secret (it is thread-safe) and hand it the two headers and the raw body of every
