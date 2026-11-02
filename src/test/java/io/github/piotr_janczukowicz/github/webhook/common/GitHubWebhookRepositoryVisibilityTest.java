@@ -29,7 +29,7 @@ class GitHubWebhookRepositoryVisibilityTest {
         final GitHubWebhookRepositoryVisibility decoded =
                 GitHubWebhookRepositoryVisibility.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryVisibility.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryVisibility.UNRECOGNIZED);
     }
 
     @Test

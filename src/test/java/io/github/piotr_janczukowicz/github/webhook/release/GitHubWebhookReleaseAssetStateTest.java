@@ -28,7 +28,7 @@ class GitHubWebhookReleaseAssetStateTest {
         final GitHubWebhookReleaseAssetState decoded =
                 GitHubWebhookReleaseAssetState.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookReleaseAssetState.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookReleaseAssetState.UNRECOGNIZED);
     }
 
     @Test

@@ -31,7 +31,7 @@ class GitHubWebhookDependabotAlertFixedAlertSecurityAdvisorySeverityTest {
                 GitHubWebhookDependabotAlertFixedAlertSecurityAdvisorySeverity.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookDependabotAlertFixedAlertSecurityAdvisorySeverity.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookDependabotAlertFixedAlertSecurityAdvisorySeverity.UNRECOGNIZED);
     }
 
     @Test

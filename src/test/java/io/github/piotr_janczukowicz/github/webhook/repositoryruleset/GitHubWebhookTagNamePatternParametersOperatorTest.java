@@ -30,7 +30,7 @@ class GitHubWebhookTagNamePatternParametersOperatorTest {
         final GitHubWebhookTagNamePatternParametersOperator decoded =
                 GitHubWebhookTagNamePatternParametersOperator.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookTagNamePatternParametersOperator.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookTagNamePatternParametersOperator.UNRECOGNIZED);
     }
 
     @Test

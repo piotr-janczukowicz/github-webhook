@@ -29,7 +29,7 @@ class GitHubWebhookProjectsV2ItemContentTypeTest {
         final GitHubWebhookProjectsV2ItemContentType decoded =
                 GitHubWebhookProjectsV2ItemContentType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookProjectsV2ItemContentType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookProjectsV2ItemContentType.UNRECOGNIZED);
     }
 
     @Test

@@ -1,8 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "FREE",
-    "FLAT_RATE",
-    "PER_UNIT"
-  ]
-}

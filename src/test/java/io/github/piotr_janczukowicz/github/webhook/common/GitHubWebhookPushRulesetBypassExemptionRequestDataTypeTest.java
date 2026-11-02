@@ -30,7 +30,7 @@ class GitHubWebhookPushRulesetBypassExemptionRequestDataTypeTest {
         final GitHubWebhookPushRulesetBypassExemptionRequestDataType decoded =
                 GitHubWebhookPushRulesetBypassExemptionRequestDataType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookPushRulesetBypassExemptionRequestDataType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookPushRulesetBypassExemptionRequestDataType.UNRECOGNIZED);
     }
 
     @Test

@@ -31,7 +31,7 @@ class GitHubWebhookSecretScanningPushProtectionExemptionRequestDataTypeTest {
                 GitHubWebhookSecretScanningPushProtectionExemptionRequestDataType.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningPushProtectionExemptionRequestDataType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningPushProtectionExemptionRequestDataType.UNRECOGNIZED);
     }
 
     @Test

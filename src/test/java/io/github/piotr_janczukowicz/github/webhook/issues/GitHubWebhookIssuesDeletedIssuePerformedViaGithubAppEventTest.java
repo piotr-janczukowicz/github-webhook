@@ -78,7 +78,7 @@ class GitHubWebhookIssuesDeletedIssuePerformedViaGithubAppEventTest {
                 GitHubWebhookIssuesDeletedIssuePerformedViaGithubAppEvent.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookIssuesDeletedIssuePerformedViaGithubAppEvent.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookIssuesDeletedIssuePerformedViaGithubAppEvent.UNRECOGNIZED);
     }
 
     @Test

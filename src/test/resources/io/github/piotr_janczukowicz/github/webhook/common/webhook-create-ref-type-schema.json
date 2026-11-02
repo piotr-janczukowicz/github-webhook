@@ -1,8 +1,0 @@
-{
-  "description": "The type of Git ref object created in the repository.",
-  "type": "string",
-  "enum": [
-    "tag",
-    "branch"
-  ]
-}

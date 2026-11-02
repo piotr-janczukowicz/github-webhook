@@ -28,7 +28,7 @@ class GitHubWebhookMaxFileSizeTypeTest {
         final GitHubWebhookMaxFileSizeType decoded =
                 GitHubWebhookMaxFileSizeType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookMaxFileSizeType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookMaxFileSizeType.UNRECOGNIZED);
     }
 
     @Test

@@ -8,7 +8,7 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookDiscussio
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookDiscussionState;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookDiscussionStateReason;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueAuthorAssociation;
-import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssuesEditedLabel;
+import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPullRequestLabeledLabel;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookReactions;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
 import java.time.Instant;
@@ -58,7 +58,7 @@ public record GitHubWebhookDiscussion(
         Instant createdAt,
         String htmlUrl,
         long id,
-        @Nullable List<GitHubWebhookIssuesEditedLabel> labels,
+        @Nullable List<GitHubWebhookPullRequestLabeledLabel> labels,
         boolean locked,
         String nodeId,
         long number,

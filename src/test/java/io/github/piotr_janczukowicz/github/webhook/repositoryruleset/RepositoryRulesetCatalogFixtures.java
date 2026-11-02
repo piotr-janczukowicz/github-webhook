@@ -156,6 +156,7 @@ final class RepositoryRulesetCatalogFixtures {
 
     static GitHubWebhookFilePathRestrictionParameters webhookFilePathRestrictionParameters() {
         return GitHubWebhookFilePathRestrictionParametersBuilder.builder()
+                .ignoredFilePaths(List.of("ignored_file_paths"))
                 .restrictedFilePaths(List.of("restricted_file_paths"))
                 .build();
     }
@@ -188,6 +189,7 @@ final class RepositoryRulesetCatalogFixtures {
 
     static GitHubWebhookMaxFileSizeParameters webhookMaxFileSizeParameters() {
         return GitHubWebhookMaxFileSizeParametersBuilder.builder()
+                .ignoredFilePaths(List.of("ignored_file_paths"))
                 .maxFileSize(1L)
                 .build();
     }
@@ -230,6 +232,7 @@ final class RepositoryRulesetCatalogFixtures {
                 .dismissStaleReviewsOnPush(true)
                 .dismissalRestriction(webhookDismissalRestriction())
                 .requireCodeOwnerReview(true)
+                .requireExtraApprovalForUnattributedChanges(true)
                 .requireLastPushApproval(true)
                 .requiredApprovingReviewCount(0L)
                 .requiredReviewThreadResolution(true)

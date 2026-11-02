@@ -30,7 +30,7 @@ class GitHubWebhookPullRequestReviewCommentSubjectTypeTest {
         final GitHubWebhookPullRequestReviewCommentSubjectType decoded =
                 GitHubWebhookPullRequestReviewCommentSubjectType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookPullRequestReviewCommentSubjectType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookPullRequestReviewCommentSubjectType.UNRECOGNIZED);
     }
 
     @Test

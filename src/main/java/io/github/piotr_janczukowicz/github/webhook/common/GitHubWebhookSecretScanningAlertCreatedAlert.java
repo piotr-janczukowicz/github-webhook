@@ -78,4 +78,4 @@ public record GitHubWebhookSecretScanningAlertCreatedAlert(
         @Nullable String secretTypeDisplayName,
         @Nullable Instant updatedAt,
         @Nullable String url,
-        @Nullable GitHubWebhookSecretScanningAlertCreatedAlertValidity validity) {}
+        @Nullable GitHubWebhookPublicMonitoringAlertWebhookValidity validity) {}

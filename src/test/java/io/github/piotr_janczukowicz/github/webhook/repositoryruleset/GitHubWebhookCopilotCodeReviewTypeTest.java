@@ -29,7 +29,7 @@ class GitHubWebhookCopilotCodeReviewTypeTest {
         final GitHubWebhookCopilotCodeReviewType decoded =
                 GitHubWebhookCopilotCodeReviewType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCopilotCodeReviewType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCopilotCodeReviewType.UNRECOGNIZED);
     }
 
     @Test

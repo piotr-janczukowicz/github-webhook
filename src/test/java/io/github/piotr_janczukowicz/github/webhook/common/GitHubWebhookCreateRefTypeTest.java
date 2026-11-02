@@ -28,7 +28,7 @@ class GitHubWebhookCreateRefTypeTest {
         final GitHubWebhookCreateRefType decoded =
                 GitHubWebhookCreateRefType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCreateRefType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCreateRefType.UNRECOGNIZED);
     }
 
     @Test

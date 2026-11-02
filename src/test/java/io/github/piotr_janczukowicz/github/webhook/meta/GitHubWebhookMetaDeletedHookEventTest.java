@@ -82,7 +82,7 @@ class GitHubWebhookMetaDeletedHookEventTest {
         final GitHubWebhookMetaDeletedHookEvent decoded =
                 GitHubWebhookMetaDeletedHookEvent.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookMetaDeletedHookEvent.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookMetaDeletedHookEvent.UNRECOGNIZED);
     }
 
     @Test

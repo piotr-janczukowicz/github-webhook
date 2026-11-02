@@ -28,7 +28,7 @@ class GitHubWebhookCodeScanningTypeTest {
         final GitHubWebhookCodeScanningType decoded =
                 GitHubWebhookCodeScanningType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCodeScanningType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCodeScanningType.UNRECOGNIZED);
     }
 
     @Test

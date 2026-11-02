@@ -27,7 +27,7 @@ class GitHubWebhookUserTypeTest {
     void fromWire_shouldReturnUnknown_whenValueNotKnown() {
         final GitHubWebhookUserType decoded = GitHubWebhookUserType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookUserType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookUserType.UNRECOGNIZED);
     }
 
     @Test

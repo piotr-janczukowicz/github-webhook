@@ -28,7 +28,7 @@ class GitHubWebhookCodeCoverageTypeTest {
         final GitHubWebhookCodeCoverageType decoded =
                 GitHubWebhookCodeCoverageType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCodeCoverageType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCodeCoverageType.UNRECOGNIZED);
     }
 
     @Test

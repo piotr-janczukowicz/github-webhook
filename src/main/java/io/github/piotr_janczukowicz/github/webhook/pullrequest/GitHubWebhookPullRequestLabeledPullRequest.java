@@ -8,8 +8,8 @@ import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueActiveLockReason;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueAuthorAssociation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssuesEditedIssueAssignee;
-import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssuesEditedLabel;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookMilestoneState;
+import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPullRequestLabeledLabel;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPullRequestLinks;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPullRequestStack;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
@@ -96,7 +96,7 @@ public record GitHubWebhookPullRequestLabeledPullRequest(
         String htmlUrl,
         long id,
         String issueUrl,
-        List<GitHubWebhookIssuesEditedLabel> labels,
+        List<GitHubWebhookPullRequestLabeledLabel> labels,
         boolean locked,
         @Nullable Boolean maintainerCanModify,
         @Nullable Boolean mergeable,

@@ -30,7 +30,7 @@ class GitHubWebhookFileExtensionRestrictionTypeTest {
         final GitHubWebhookFileExtensionRestrictionType decoded =
                 GitHubWebhookFileExtensionRestrictionType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookFileExtensionRestrictionType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookFileExtensionRestrictionType.UNRECOGNIZED);
     }
 
     @Test

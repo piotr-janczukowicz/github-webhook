@@ -20,7 +20,7 @@
   <properties>
     <common-util.version>9</common-util.version>
     <common-json.version>8</common-json.version>
-    <common-test-support.version>5</common-test-support.version>
+    <common-test-support.version>6</common-test-support.version>
   </properties>
 
   <dependencies>

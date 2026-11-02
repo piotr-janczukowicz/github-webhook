@@ -28,7 +28,7 @@ class GitHubWebhookWorkflowsTypeTest {
         final GitHubWebhookWorkflowsType decoded =
                 GitHubWebhookWorkflowsType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookWorkflowsType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookWorkflowsType.UNRECOGNIZED);
     }
 
     @Test

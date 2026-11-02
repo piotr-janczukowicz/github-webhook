@@ -28,7 +28,7 @@ class GitHubWebhookPullRequestTypeTest {
         final GitHubWebhookPullRequestType decoded =
                 GitHubWebhookPullRequestType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookPullRequestType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookPullRequestType.UNRECOGNIZED);
     }
 
     @Test

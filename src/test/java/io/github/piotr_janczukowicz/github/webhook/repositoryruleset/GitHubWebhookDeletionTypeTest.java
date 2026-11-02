@@ -28,7 +28,7 @@ class GitHubWebhookDeletionTypeTest {
         final GitHubWebhookDeletionType decoded =
                 GitHubWebhookDeletionType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookDeletionType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookDeletionType.UNRECOGNIZED);
     }
 
     @Test

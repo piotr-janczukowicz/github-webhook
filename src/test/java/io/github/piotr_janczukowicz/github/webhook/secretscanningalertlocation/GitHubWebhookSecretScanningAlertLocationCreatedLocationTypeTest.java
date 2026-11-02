@@ -45,7 +45,7 @@ class GitHubWebhookSecretScanningAlertLocationCreatedLocationTypeTest {
                 GitHubWebhookSecretScanningAlertLocationCreatedLocationType.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningAlertLocationCreatedLocationType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningAlertLocationCreatedLocationType.UNRECOGNIZED);
     }
 
     @Test

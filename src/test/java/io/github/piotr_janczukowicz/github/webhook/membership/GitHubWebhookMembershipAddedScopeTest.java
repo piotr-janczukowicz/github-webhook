@@ -29,7 +29,7 @@ class GitHubWebhookMembershipAddedScopeTest {
         final GitHubWebhookMembershipAddedScope decoded =
                 GitHubWebhookMembershipAddedScope.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookMembershipAddedScope.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookMembershipAddedScope.UNRECOGNIZED);
     }
 
     @Test

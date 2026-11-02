@@ -1,6 +1,7 @@
 package io.github.piotr_janczukowicz.github.webhook.common;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.Flavors;
 import io.github.piotr_janczukowicz.github.webhook.GitHubWebhookFlavor;
@@ -16,6 +17,7 @@ import org.jspecify.annotations.Nullable;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @RecordBuilder
+@JsonTypeInfo(use = JsonTypeInfo.Id.NONE)
 @CatalogSchema(
         "webhooks/bypass-request-secret-scanning-cancelled/requestBody/properties/exemption_request/properties/exemption_request_data/oneOf/2")
 @Flavors({GitHubWebhookFlavor.GHEC, GitHubWebhookFlavor.GHES})

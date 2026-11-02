@@ -36,7 +36,7 @@ class GitHubWebhookCodeScanningAlertAppearedInBranchAlertDismissedReasonTest {
                 GitHubWebhookCodeScanningAlertAppearedInBranchAlertDismissedReason.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCodeScanningAlertAppearedInBranchAlertDismissedReason.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCodeScanningAlertAppearedInBranchAlertDismissedReason.UNRECOGNIZED);
     }
 
     @Test

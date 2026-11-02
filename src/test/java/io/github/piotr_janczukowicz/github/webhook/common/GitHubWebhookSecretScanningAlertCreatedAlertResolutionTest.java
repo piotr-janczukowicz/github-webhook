@@ -37,7 +37,7 @@ class GitHubWebhookSecretScanningAlertCreatedAlertResolutionTest {
         final GitHubWebhookSecretScanningAlertCreatedAlertResolution decoded =
                 GitHubWebhookSecretScanningAlertCreatedAlertResolution.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningAlertCreatedAlertResolution.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningAlertCreatedAlertResolution.UNRECOGNIZED);
     }
 
     @Test

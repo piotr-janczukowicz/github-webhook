@@ -36,7 +36,7 @@ class GitHubWebhookIssuesFieldAddedIssueFieldFieldTypeTest {
         final GitHubWebhookIssuesFieldAddedIssueFieldFieldType decoded =
                 GitHubWebhookIssuesFieldAddedIssueFieldFieldType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookIssuesFieldAddedIssueFieldFieldType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookIssuesFieldAddedIssueFieldFieldType.UNRECOGNIZED);
     }
 
     @Test

@@ -14,7 +14,7 @@ public enum GitHubWebhookDependabotAlertFixedAlertSecurityAdvisoryIdentifierType
     CVE("CVE"),
     GHSA("GHSA"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookDependabotAlertFixedAlertSecurityAdvisoryIdentifierType>
             WIRE_INDEX = EnumUtils.index(
@@ -41,13 +41,13 @@ public enum GitHubWebhookDependabotAlertFixedAlertSecurityAdvisoryIdentifierType
      * The dependabot alert fixed alert security advisory identifier type from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookDependabotAlertFixedAlertSecurityAdvisoryIdentifierType fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

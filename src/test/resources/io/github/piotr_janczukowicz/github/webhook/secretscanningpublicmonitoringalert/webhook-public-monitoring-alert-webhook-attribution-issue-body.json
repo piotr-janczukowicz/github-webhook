@@ -1,0 +1,13 @@
+{
+  "blob_sha": "blob_sha",
+  "commit_sha": "commit_sha",
+  "content_id": 1,
+  "content_number": 1,
+  "end_column": 1,
+  "end_line": 1,
+  "html_url": "https://github.com/octocat/Hello-World/issues/1",
+  "issue_body_url": "https://api.github.com/repos/octocat/Hello-World/issues/1347",
+  "path": "path",
+  "start_column": 1,
+  "start_line": 1
+}

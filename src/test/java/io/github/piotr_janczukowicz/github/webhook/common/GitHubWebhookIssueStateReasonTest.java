@@ -28,7 +28,7 @@ class GitHubWebhookIssueStateReasonTest {
         final GitHubWebhookIssueStateReason decoded =
                 GitHubWebhookIssueStateReason.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookIssueStateReason.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookIssueStateReason.UNRECOGNIZED);
     }
 
     @Test

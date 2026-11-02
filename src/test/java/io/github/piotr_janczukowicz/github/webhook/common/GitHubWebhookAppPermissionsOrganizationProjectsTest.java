@@ -30,7 +30,7 @@ class GitHubWebhookAppPermissionsOrganizationProjectsTest {
         final GitHubWebhookAppPermissionsOrganizationProjects decoded =
                 GitHubWebhookAppPermissionsOrganizationProjects.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookAppPermissionsOrganizationProjects.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookAppPermissionsOrganizationProjects.UNRECOGNIZED);
     }
 
     @Test

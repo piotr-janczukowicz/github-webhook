@@ -29,7 +29,7 @@ class GitHubWebhookAppPermissionsProfileTest {
         final GitHubWebhookAppPermissionsProfile decoded =
                 GitHubWebhookAppPermissionsProfile.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookAppPermissionsProfile.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookAppPermissionsProfile.UNRECOGNIZED);
     }
 
     @Test

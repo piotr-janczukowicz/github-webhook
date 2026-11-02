@@ -29,7 +29,7 @@ class GitHubWebhookRequiredLinearHistoryTypeTest {
         final GitHubWebhookRequiredLinearHistoryType decoded =
                 GitHubWebhookRequiredLinearHistoryType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRequiredLinearHistoryType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRequiredLinearHistoryType.UNRECOGNIZED);
     }
 
     @Test

@@ -30,7 +30,7 @@ class GitHubWebhookRepositoryRulesetCurrentUserCanBypassTest {
         final GitHubWebhookRepositoryRulesetCurrentUserCanBypass decoded =
                 GitHubWebhookRepositoryRulesetCurrentUserCanBypass.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryRulesetCurrentUserCanBypass.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryRulesetCurrentUserCanBypass.UNRECOGNIZED);
     }
 
     @Test

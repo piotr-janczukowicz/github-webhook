@@ -1,8 +1,0 @@
-{
-  "type": "string",
-  "description": "The state of the Dependabot alert.",
-  "readOnly": true,
-  "enum": [
-    "withdrawn"
-  ]
-}

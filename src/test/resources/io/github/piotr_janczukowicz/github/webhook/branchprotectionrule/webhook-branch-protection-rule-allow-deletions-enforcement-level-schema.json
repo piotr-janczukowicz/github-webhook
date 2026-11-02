@@ -1,8 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "off",
-    "non_admins",
-    "everyone"
-  ]
-}

@@ -32,7 +32,7 @@ class GitHubWebhookRepositoryAdvisoryReportedRepositoryAdvisoryStateTest {
                 GitHubWebhookRepositoryAdvisoryReportedRepositoryAdvisoryState.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryAdvisoryReportedRepositoryAdvisoryState.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryAdvisoryReportedRepositoryAdvisoryState.UNRECOGNIZED);
     }
 
     @Test

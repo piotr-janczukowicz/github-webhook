@@ -78,6 +78,10 @@
     "fixed_at": "2026-01-01T00:00:00Z",
     "html_url": "https://api.github.com/html_url",
     "number": 1,
+    "reachability": {
+      "reason": "unknown",
+      "verdict": "reachable"
+    },
     "security_advisory": {
       "classification": "general",
       "cve_id": "cve_id",

@@ -29,7 +29,7 @@ class GitHubWebhookRequiredDeploymentsTypeTest {
         final GitHubWebhookRequiredDeploymentsType decoded =
                 GitHubWebhookRequiredDeploymentsType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRequiredDeploymentsType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRequiredDeploymentsType.UNRECOGNIZED);
     }
 
     @Test

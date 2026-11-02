@@ -3,6 +3,7 @@ package io.github.piotr_janczukowicz.github.webhook.pullrequest;
 import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookEnterprise;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookForkRepository;
@@ -33,6 +34,7 @@ import org.jspecify.annotations.Nullable;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @RecordBuilder
+@JsonTypeInfo(use = JsonTypeInfo.Id.NONE)
 @CatalogSchema("webhooks/pull-request-review-requested/requestBody/oneOf/0")
 public record GitHubWebhookPullRequestReviewRequestedRequestedReviewerEvent(
         @Nullable GitHubWebhookEnterprise enterprise,

@@ -33,7 +33,7 @@ class GitHubWebhookRepositoryAdvisoryReportedRepositoryAdvisoryCreditsDetailedSt
                         "a value this library does not know");
 
         assertThat(decoded)
-                .isEqualTo(GitHubWebhookRepositoryAdvisoryReportedRepositoryAdvisoryCreditsDetailedState.UNKNOWN);
+                .isEqualTo(GitHubWebhookRepositoryAdvisoryReportedRepositoryAdvisoryCreditsDetailedState.UNRECOGNIZED);
     }
 
     @Test

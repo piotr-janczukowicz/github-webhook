@@ -1,6 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "committer_email_pattern"
-  ]
-}

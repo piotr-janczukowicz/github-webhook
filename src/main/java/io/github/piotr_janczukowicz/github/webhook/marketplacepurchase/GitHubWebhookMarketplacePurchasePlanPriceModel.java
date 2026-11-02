@@ -18,7 +18,7 @@ public enum GitHubWebhookMarketplacePurchasePlanPriceModel {
     FLAT_RATE("FLAT_RATE"),
     PER_UNIT("PER_UNIT"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookMarketplacePurchasePlanPriceModel> WIRE_INDEX =
             EnumUtils.index(
@@ -45,13 +45,13 @@ public enum GitHubWebhookMarketplacePurchasePlanPriceModel {
      * The marketplace purchase plan price model from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookMarketplacePurchasePlanPriceModel fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

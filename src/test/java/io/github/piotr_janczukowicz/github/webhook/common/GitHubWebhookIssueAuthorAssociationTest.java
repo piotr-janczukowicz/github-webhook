@@ -38,7 +38,7 @@ class GitHubWebhookIssueAuthorAssociationTest {
         final GitHubWebhookIssueAuthorAssociation decoded =
                 GitHubWebhookIssueAuthorAssociation.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookIssueAuthorAssociation.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookIssueAuthorAssociation.UNRECOGNIZED);
     }
 
     @Test

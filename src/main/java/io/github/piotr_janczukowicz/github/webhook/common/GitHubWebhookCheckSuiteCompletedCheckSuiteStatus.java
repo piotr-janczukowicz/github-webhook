@@ -19,7 +19,7 @@ public enum GitHubWebhookCheckSuiteCompletedCheckSuiteStatus {
     QUEUED("queued"),
     PENDING("pending"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookCheckSuiteCompletedCheckSuiteStatus> WIRE_INDEX =
             EnumUtils.index(
@@ -46,13 +46,13 @@ public enum GitHubWebhookCheckSuiteCompletedCheckSuiteStatus {
      * The check suite completed check suite status from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookCheckSuiteCompletedCheckSuiteStatus fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

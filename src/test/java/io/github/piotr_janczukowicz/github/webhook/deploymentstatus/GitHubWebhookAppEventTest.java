@@ -78,7 +78,7 @@ class GitHubWebhookAppEventTest {
     void fromWire_shouldReturnUnknown_whenValueNotKnown() {
         final GitHubWebhookAppEvent decoded = GitHubWebhookAppEvent.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookAppEvent.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookAppEvent.UNRECOGNIZED);
     }
 
     @Test

@@ -39,7 +39,7 @@ public record GitHubWebhookExemptionRequest(
         @Nullable Instant expiresAt,
         @Nullable String htmlUrl,
         @Nullable Long id,
-        @Nullable GitHubWebhookSecretScanningPushProtectionExemptionRequestMetadata metadata,
+        @Nullable GitHubWebhookExemptionRequestMetadata metadata,
         @Nullable Long number,
         @Nullable Long repositoryId,
         @Nullable GitHubWebhookExemptionRequestRequestType requestType,

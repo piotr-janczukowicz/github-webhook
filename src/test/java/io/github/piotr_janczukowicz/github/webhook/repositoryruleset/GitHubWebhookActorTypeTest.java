@@ -32,7 +32,7 @@ class GitHubWebhookActorTypeTest {
     void fromWire_shouldReturnUnknown_whenValueNotKnown() {
         final GitHubWebhookActorType decoded = GitHubWebhookActorType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookActorType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookActorType.UNRECOGNIZED);
     }
 
     @Test

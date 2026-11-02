@@ -30,7 +30,7 @@ class GitHubWebhookInstallationRepositorySelectionTest {
         final GitHubWebhookInstallationRepositorySelection decoded =
                 GitHubWebhookInstallationRepositorySelection.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookInstallationRepositorySelection.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookInstallationRepositorySelection.UNRECOGNIZED);
     }
 
     @Test

@@ -37,7 +37,7 @@ class GitHubWebhookWorkflowJobConclusionTest {
         final GitHubWebhookWorkflowJobConclusion decoded =
                 GitHubWebhookWorkflowJobConclusion.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookWorkflowJobConclusion.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookWorkflowJobConclusion.UNRECOGNIZED);
     }
 
     @Test

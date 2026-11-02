@@ -30,7 +30,7 @@ class GitHubWebhookRepositoryRulesetSourceTypeTest {
         final GitHubWebhookRepositoryRulesetSourceType decoded =
                 GitHubWebhookRepositoryRulesetSourceType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryRulesetSourceType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryRulesetSourceType.UNRECOGNIZED);
     }
 
     @Test

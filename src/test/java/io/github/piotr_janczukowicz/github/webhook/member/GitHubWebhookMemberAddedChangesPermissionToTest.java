@@ -30,7 +30,7 @@ class GitHubWebhookMemberAddedChangesPermissionToTest {
         final GitHubWebhookMemberAddedChangesPermissionTo decoded =
                 GitHubWebhookMemberAddedChangesPermissionTo.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookMemberAddedChangesPermissionTo.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookMemberAddedChangesPermissionTo.UNRECOGNIZED);
     }
 
     @Test

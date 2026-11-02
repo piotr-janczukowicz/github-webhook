@@ -30,7 +30,7 @@ class GitHubWebhookMergeQueueParametersGroupingStrategyTest {
         final GitHubWebhookMergeQueueParametersGroupingStrategy decoded =
                 GitHubWebhookMergeQueueParametersGroupingStrategy.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookMergeQueueParametersGroupingStrategy.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookMergeQueueParametersGroupingStrategy.UNRECOGNIZED);
     }
 
     @Test

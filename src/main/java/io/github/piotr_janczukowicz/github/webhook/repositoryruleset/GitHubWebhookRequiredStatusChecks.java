@@ -3,6 +3,7 @@ package io.github.piotr_janczukowicz.github.webhook.repositoryruleset;
 import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
 import org.jspecify.annotations.Nullable;
@@ -16,6 +17,7 @@ import org.jspecify.annotations.Nullable;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @RecordBuilder
+@JsonTypeInfo(use = JsonTypeInfo.Id.NONE)
 @CatalogSchema(
         "webhooks/repository-ruleset-created/requestBody/properties/repository_ruleset/properties/rules/items/oneOf/8")
 public record GitHubWebhookRequiredStatusChecks(

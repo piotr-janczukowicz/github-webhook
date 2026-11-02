@@ -37,7 +37,7 @@ class GitHubWebhookIssueTypeColorTest {
         final GitHubWebhookIssueTypeColor decoded =
                 GitHubWebhookIssueTypeColor.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookIssueTypeColor.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookIssueTypeColor.UNRECOGNIZED);
     }
 
     @Test

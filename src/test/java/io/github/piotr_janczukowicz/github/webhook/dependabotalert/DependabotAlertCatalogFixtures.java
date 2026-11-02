@@ -107,6 +107,7 @@ final class DependabotAlertCatalogFixtures {
                 .fixedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .htmlUrl("https://api.github.com/html_url")
                 .number(1L)
+                .reachability(webhookDependabotAlertFixedAlertReachability())
                 .securityAdvisory(webhookDependabotAlertFixedAlertSecurityAdvisory())
                 .securityVulnerability(webhookDependabotAlertFixedAlertSecurityVulnerability())
                 .state(GitHubWebhookDependabotAlertFixedAlertState.AUTO_DISMISSED)
@@ -122,6 +123,13 @@ final class DependabotAlertCatalogFixtures {
                 .relationship(GitHubWebhookDependabotAlertFixedAlertDependencyRelationship.UNKNOWN)
                 .scope(GitHubWebhookDependabotAlertFixedAlertDependencyScope.DEVELOPMENT)
                 .versionRequirement("version_requirement")
+                .build();
+    }
+
+    static GitHubWebhookDependabotAlertFixedAlertReachability webhookDependabotAlertFixedAlertReachability() {
+        return GitHubWebhookDependabotAlertFixedAlertReachabilityBuilder.builder()
+                .reason(GitHubWebhookDependabotAlertFixedAlertReachabilityReason.UNKNOWN)
+                .verdict(GitHubWebhookDependabotAlertFixedAlertReachabilityVerdict.REACHABLE)
                 .build();
     }
 

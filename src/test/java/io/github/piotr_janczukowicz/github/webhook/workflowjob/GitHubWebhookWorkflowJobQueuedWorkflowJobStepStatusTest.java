@@ -30,7 +30,7 @@ class GitHubWebhookWorkflowJobQueuedWorkflowJobStepStatusTest {
         final GitHubWebhookWorkflowJobQueuedWorkflowJobStepStatus decoded =
                 GitHubWebhookWorkflowJobQueuedWorkflowJobStepStatus.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookWorkflowJobQueuedWorkflowJobStepStatus.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookWorkflowJobQueuedWorkflowJobStepStatus.UNRECOGNIZED);
     }
 
     @Test

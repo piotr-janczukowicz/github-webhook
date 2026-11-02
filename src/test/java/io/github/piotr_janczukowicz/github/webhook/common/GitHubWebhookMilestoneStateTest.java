@@ -28,7 +28,7 @@ class GitHubWebhookMilestoneStateTest {
         final GitHubWebhookMilestoneState decoded =
                 GitHubWebhookMilestoneState.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookMilestoneState.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookMilestoneState.UNRECOGNIZED);
     }
 
     @Test

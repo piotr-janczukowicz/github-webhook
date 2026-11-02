@@ -30,7 +30,7 @@ class GitHubWebhookRepositoryPullRequestCreationPolicyTest {
         final GitHubWebhookRepositoryPullRequestCreationPolicy decoded =
                 GitHubWebhookRepositoryPullRequestCreationPolicy.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryPullRequestCreationPolicy.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryPullRequestCreationPolicy.UNRECOGNIZED);
     }
 
     @Test

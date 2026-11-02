@@ -29,7 +29,7 @@ class GitHubWebhookIssueActiveLockReasonTest {
         final GitHubWebhookIssueActiveLockReason decoded =
                 GitHubWebhookIssueActiveLockReason.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookIssueActiveLockReason.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookIssueActiveLockReason.UNRECOGNIZED);
     }
 
     @Test

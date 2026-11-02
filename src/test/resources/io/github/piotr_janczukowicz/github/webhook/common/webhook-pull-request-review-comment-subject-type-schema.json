@@ -1,8 +1,0 @@
-{
-  "description": "The level at which the comment is targeted, can be a diff line or a file.",
-  "type": "string",
-  "enum": [
-    "line",
-    "file"
-  ]
-}

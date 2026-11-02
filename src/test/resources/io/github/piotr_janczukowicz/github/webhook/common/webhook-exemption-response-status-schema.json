@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "description": "The status of the exemption response.",
-  "enum": [
-    "approved",
-    "rejected",
-    "dismissed"
-  ]
-}

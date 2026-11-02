@@ -30,7 +30,7 @@ class GitHubWebhookDependabotAlertFixedAlertDependencyScopeTest {
         final GitHubWebhookDependabotAlertFixedAlertDependencyScope decoded =
                 GitHubWebhookDependabotAlertFixedAlertDependencyScope.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookDependabotAlertFixedAlertDependencyScope.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookDependabotAlertFixedAlertDependencyScope.UNRECOGNIZED);
     }
 
     @Test

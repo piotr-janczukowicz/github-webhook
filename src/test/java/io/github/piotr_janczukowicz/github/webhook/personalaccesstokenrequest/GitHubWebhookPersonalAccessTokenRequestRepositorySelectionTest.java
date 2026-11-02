@@ -31,7 +31,7 @@ class GitHubWebhookPersonalAccessTokenRequestRepositorySelectionTest {
                 GitHubWebhookPersonalAccessTokenRequestRepositorySelection.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookPersonalAccessTokenRequestRepositorySelection.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookPersonalAccessTokenRequestRepositorySelection.UNRECOGNIZED);
     }
 
     @Test

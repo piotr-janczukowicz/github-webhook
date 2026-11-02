@@ -30,7 +30,7 @@ class GitHubWebhookMergeQueueParametersMergeMethodTest {
         final GitHubWebhookMergeQueueParametersMergeMethod decoded =
                 GitHubWebhookMergeQueueParametersMergeMethod.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookMergeQueueParametersMergeMethod.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookMergeQueueParametersMergeMethod.UNRECOGNIZED);
     }
 
     @Test

@@ -458,6 +458,12 @@ module io.github.piotr_janczukowicz.githubwebhook {
             tools.jackson.databind,
             common.util;
 
+    exports io.github.piotr_janczukowicz.github.webhook.secretscanningpublicmonitoringalert;
+
+    opens io.github.piotr_janczukowicz.github.webhook.secretscanningpublicmonitoringalert to
+            tools.jackson.databind,
+            common.util;
+
     exports io.github.piotr_janczukowicz.github.webhook.secretscanningscan;
 
     opens io.github.piotr_janczukowicz.github.webhook.secretscanningscan to

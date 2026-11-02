@@ -42,7 +42,7 @@ class GitHubWebhookRepositoryAdvisoryReportedRepositoryAdvisoryCreditTypeTest {
                 GitHubWebhookRepositoryAdvisoryReportedRepositoryAdvisoryCreditType.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryAdvisoryReportedRepositoryAdvisoryCreditType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryAdvisoryReportedRepositoryAdvisoryCreditType.UNRECOGNIZED);
     }
 
     @Test

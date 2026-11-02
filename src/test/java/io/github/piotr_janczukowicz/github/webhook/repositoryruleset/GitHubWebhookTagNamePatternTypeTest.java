@@ -28,7 +28,7 @@ class GitHubWebhookTagNamePatternTypeTest {
         final GitHubWebhookTagNamePatternType decoded =
                 GitHubWebhookTagNamePatternType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookTagNamePatternType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookTagNamePatternType.UNRECOGNIZED);
     }
 
     @Test

@@ -12,8 +12,8 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueFiel
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssuePullRequest;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueType;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssuesEditedIssueAssignee;
-import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssuesEditedLabel;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookMilestoneState;
+import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPullRequestLabeledLabel;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookReactions;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSubIssuesSummary;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
@@ -82,7 +82,7 @@ public record GitHubWebhookIssuesLabeledIssue(
         long id,
         @Nullable GitHubWebhookIssueDependenciesSummary issueDependenciesSummary,
         @Nullable List<GitHubWebhookIssueFieldValue> issueFieldValues,
-        @Nullable List<GitHubWebhookIssuesEditedLabel> labels,
+        @Nullable List<GitHubWebhookPullRequestLabeledLabel> labels,
         String labelsUrl,
         @Nullable Boolean locked,
         @Nullable GitHubWebhookMilestone milestone,

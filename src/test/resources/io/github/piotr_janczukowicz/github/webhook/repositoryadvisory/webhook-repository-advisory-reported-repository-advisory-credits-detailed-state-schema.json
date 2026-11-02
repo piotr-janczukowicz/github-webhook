@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "description": "The state of the user's acceptance of the credit.",
-  "enum": [
-    "accepted",
-    "declined",
-    "pending"
-  ]
-}

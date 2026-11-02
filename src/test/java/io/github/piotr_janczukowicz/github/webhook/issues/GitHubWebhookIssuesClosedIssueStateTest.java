@@ -29,7 +29,7 @@ class GitHubWebhookIssuesClosedIssueStateTest {
         final GitHubWebhookIssuesClosedIssueState decoded =
                 GitHubWebhookIssuesClosedIssueState.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookIssuesClosedIssueState.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookIssuesClosedIssueState.UNRECOGNIZED);
     }
 
     @Test

@@ -13,7 +13,7 @@ import io.github.piotr_janczukowicz.util.EnumUtils;
 public enum GitHubWebhookMaxFileSizeType {
     MAX_FILE_SIZE("max_file_size"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookMaxFileSizeType> WIRE_INDEX =
             EnumUtils.index(GitHubWebhookMaxFileSizeType.class, GitHubWebhookMaxFileSizeType::wireValue);
@@ -38,13 +38,13 @@ public enum GitHubWebhookMaxFileSizeType {
      * The max file size type from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookMaxFileSizeType fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

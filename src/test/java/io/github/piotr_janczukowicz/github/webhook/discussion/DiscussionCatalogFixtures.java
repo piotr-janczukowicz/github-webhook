@@ -4,8 +4,8 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookEnterprise;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookForkRepository;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesEditedChanges;
-import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesEditedLabel;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookOrganizationSimple;
+import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookPullRequestLabeledLabel;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookReactions;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleInstallation;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
@@ -36,7 +36,7 @@ final class DiscussionCatalogFixtures {
                 .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .htmlUrl("html_url")
                 .id(1L)
-                .labels(List.of(webhookIssuesEditedLabel()))
+                .labels(List.of(webhookPullRequestLabeledLabel()))
                 .locked(true)
                 .nodeId("node_id")
                 .number(1L)
@@ -154,7 +154,7 @@ final class DiscussionCatalogFixtures {
                 .discussion(webhookDiscussion())
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
-                .label(webhookIssuesEditedLabel())
+                .label(webhookPullRequestLabeledLabel())
                 .organization(webhookOrganizationSimple())
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())
@@ -228,7 +228,7 @@ final class DiscussionCatalogFixtures {
                 .discussion(webhookDiscussion())
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
-                .label(webhookIssuesEditedLabel())
+                .label(webhookPullRequestLabeledLabel())
                 .organization(webhookOrganizationSimple())
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())

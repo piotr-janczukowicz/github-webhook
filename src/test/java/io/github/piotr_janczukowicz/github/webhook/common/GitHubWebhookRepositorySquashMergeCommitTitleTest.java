@@ -30,7 +30,7 @@ class GitHubWebhookRepositorySquashMergeCommitTitleTest {
         final GitHubWebhookRepositorySquashMergeCommitTitle decoded =
                 GitHubWebhookRepositorySquashMergeCommitTitle.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRepositorySquashMergeCommitTitle.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRepositorySquashMergeCommitTitle.UNRECOGNIZED);
     }
 
     @Test

@@ -28,7 +28,7 @@ class GitHubWebhookPingHookNameTest {
         final GitHubWebhookPingHookName decoded =
                 GitHubWebhookPingHookName.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookPingHookName.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookPingHookName.UNRECOGNIZED);
     }
 
     @Test

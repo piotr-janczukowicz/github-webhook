@@ -19,7 +19,7 @@ public enum GitHubWebhookExemptionRequestStatus {
     CANCELLED("cancelled"),
     COMPLETED("completed"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookExemptionRequestStatus> WIRE_INDEX =
             EnumUtils.index(GitHubWebhookExemptionRequestStatus.class, GitHubWebhookExemptionRequestStatus::wireValue);
@@ -44,13 +44,13 @@ public enum GitHubWebhookExemptionRequestStatus {
      * The exemption request status from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookExemptionRequestStatus fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

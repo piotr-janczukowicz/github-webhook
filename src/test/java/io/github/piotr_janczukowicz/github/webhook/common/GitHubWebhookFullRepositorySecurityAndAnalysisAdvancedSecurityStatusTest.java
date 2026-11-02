@@ -31,7 +31,8 @@ class GitHubWebhookFullRepositorySecurityAndAnalysisAdvancedSecurityStatusTest {
                 GitHubWebhookFullRepositorySecurityAndAnalysisAdvancedSecurityStatus.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookFullRepositorySecurityAndAnalysisAdvancedSecurityStatus.UNKNOWN);
+        assertThat(decoded)
+                .isEqualTo(GitHubWebhookFullRepositorySecurityAndAnalysisAdvancedSecurityStatus.UNRECOGNIZED);
     }
 
     @Test

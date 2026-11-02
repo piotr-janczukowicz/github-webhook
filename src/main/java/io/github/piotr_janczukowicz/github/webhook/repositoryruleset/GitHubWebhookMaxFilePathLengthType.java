@@ -13,7 +13,7 @@ import io.github.piotr_janczukowicz.util.EnumUtils;
 public enum GitHubWebhookMaxFilePathLengthType {
     MAX_FILE_PATH_LENGTH("max_file_path_length"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookMaxFilePathLengthType> WIRE_INDEX =
             EnumUtils.index(GitHubWebhookMaxFilePathLengthType.class, GitHubWebhookMaxFilePathLengthType::wireValue);
@@ -38,13 +38,13 @@ public enum GitHubWebhookMaxFilePathLengthType {
      * The max file path length type from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookMaxFilePathLengthType fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

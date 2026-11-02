@@ -40,7 +40,7 @@ class GitHubWebhookCheckSuiteCompletedCheckSuiteConclusionTest {
         final GitHubWebhookCheckSuiteCompletedCheckSuiteConclusion decoded =
                 GitHubWebhookCheckSuiteCompletedCheckSuiteConclusion.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCheckSuiteCompletedCheckSuiteConclusion.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCheckSuiteCompletedCheckSuiteConclusion.UNRECOGNIZED);
     }
 
     @Test

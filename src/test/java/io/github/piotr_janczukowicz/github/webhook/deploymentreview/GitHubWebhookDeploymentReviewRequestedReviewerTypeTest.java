@@ -30,7 +30,7 @@ class GitHubWebhookDeploymentReviewRequestedReviewerTypeTest {
         final GitHubWebhookDeploymentReviewRequestedReviewerType decoded =
                 GitHubWebhookDeploymentReviewRequestedReviewerType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookDeploymentReviewRequestedReviewerType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookDeploymentReviewRequestedReviewerType.UNRECOGNIZED);
     }
 
     @Test
