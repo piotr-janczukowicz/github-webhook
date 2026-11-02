@@ -36,7 +36,7 @@ class GitHubWebhookOrganizationCustomPropertyValueTypeTest {
         final GitHubWebhookOrganizationCustomPropertyValueType decoded =
                 GitHubWebhookOrganizationCustomPropertyValueType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookOrganizationCustomPropertyValueType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookOrganizationCustomPropertyValueType.UNRECOGNIZED);
     }
 
     @Test

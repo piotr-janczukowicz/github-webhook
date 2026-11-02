@@ -36,7 +36,7 @@ class GitHubWebhookDependabotAlertFixedAlertDismissedReasonTest {
         final GitHubWebhookDependabotAlertFixedAlertDismissedReason decoded =
                 GitHubWebhookDependabotAlertFixedAlertDismissedReason.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookDependabotAlertFixedAlertDismissedReason.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookDependabotAlertFixedAlertDismissedReason.UNRECOGNIZED);
     }
 
     @Test

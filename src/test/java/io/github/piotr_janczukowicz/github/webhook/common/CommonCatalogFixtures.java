@@ -312,7 +312,7 @@ public final class CommonCatalogFixtures {
                 .expiresAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .htmlUrl("https://github.com/monalisa/smile/exemptions/1")
                 .id(1L)
-                .metadata(webhookSecretScanningPushProtectionExemptionRequestMetadata())
+                .metadata(webhookExemptionRequestMetadata())
                 .number(1L)
                 .repositoryId(1L)
                 .requestType(GitHubWebhookExemptionRequestRequestType.PUSH_RULESET_BYPASS)
@@ -322,6 +322,14 @@ public final class CommonCatalogFixtures {
                 .resourceIdentifier("827efc6d56897b048c772eb4087f854f46256132")
                 .responses(List.of(webhookExemptionResponse()))
                 .status(GitHubWebhookExemptionRequestStatus.PENDING)
+                .build();
+    }
+
+    public static GitHubWebhookExemptionRequestMetadata webhookExemptionRequestMetadata() {
+        return GitHubWebhookExemptionRequestMetadataBuilder.builder()
+                .alertTitle("alert_title")
+                .label("label")
+                .reason(GitHubWebhookExemptionRequestMetadataReason.FIXED_LATER)
                 .build();
     }
 
@@ -761,20 +769,6 @@ public final class CommonCatalogFixtures {
                 .build();
     }
 
-    public static GitHubWebhookIssuesEditedLabel webhookIssuesEditedLabel() {
-        return GitHubWebhookIssuesEditedLabelBuilder.builder()
-                .archivedAt(Instant.parse("2026-01-01T00:00:00Z"))
-                .archivedBy(webhookSimpleUser())
-                .color("color")
-                .defaultValue(true)
-                .description("description")
-                .id(1L)
-                .name("name")
-                .nodeId("node_id")
-                .url("https://api.github.com/url")
-                .build();
-    }
-
     public static GitHubWebhookIssuesLockedIssuePerformedViaGithubAppPermissions
             webhookIssuesLockedIssuePerformedViaGithubAppPermissions() {
         return GitHubWebhookIssuesLockedIssuePerformedViaGithubAppPermissionsBuilder.builder()
@@ -1019,6 +1013,20 @@ public final class CommonCatalogFixtures {
                 .name("name")
                 .nodeId("node_id")
                 .url("url")
+                .build();
+    }
+
+    public static GitHubWebhookPullRequestLabeledLabel webhookPullRequestLabeledLabel() {
+        return GitHubWebhookPullRequestLabeledLabelBuilder.builder()
+                .archivedAt(Instant.parse("2026-01-01T00:00:00Z"))
+                .archivedBy(webhookSimpleUser())
+                .color("color")
+                .defaultValue(true)
+                .description("description")
+                .id(1L)
+                .name("name")
+                .nodeId("node_id")
+                .url("https://api.github.com/url")
                 .build();
     }
 
@@ -1422,7 +1430,7 @@ public final class CommonCatalogFixtures {
                 .secretTypeDisplayName("secret_type_display_name")
                 .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .url("https://api.github.com/url")
-                .validity(GitHubWebhookSecretScanningAlertCreatedAlertValidity.ACTIVE)
+                .validity(GitHubWebhookPublicMonitoringAlertWebhookValidity.ACTIVE)
                 .build();
     }
 
@@ -1473,15 +1481,6 @@ public final class CommonCatalogFixtures {
                 .branch("branch")
                 .commit("commit")
                 .path("path")
-                .build();
-    }
-
-    public static GitHubWebhookSecretScanningPushProtectionExemptionRequestMetadata
-            webhookSecretScanningPushProtectionExemptionRequestMetadata() {
-        return GitHubWebhookSecretScanningPushProtectionExemptionRequestMetadataBuilder.builder()
-                .alertTitle("alert_title")
-                .label("label")
-                .reason(GitHubWebhookSecretScanningPushProtectionExemptionRequestMetadataReason.FIXED_LATER)
                 .build();
     }
 

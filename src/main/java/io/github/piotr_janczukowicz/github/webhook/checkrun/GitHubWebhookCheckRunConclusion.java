@@ -22,7 +22,7 @@ public enum GitHubWebhookCheckRunConclusion {
     TIMED_OUT("timed_out"),
     ACTION_REQUIRED("action_required"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookCheckRunConclusion> WIRE_INDEX =
             EnumUtils.index(GitHubWebhookCheckRunConclusion.class, GitHubWebhookCheckRunConclusion::wireValue);
@@ -47,13 +47,13 @@ public enum GitHubWebhookCheckRunConclusion {
      * The check run conclusion from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookCheckRunConclusion fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

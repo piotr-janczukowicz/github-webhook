@@ -78,7 +78,8 @@ class GitHubWebhookRealWorldPayloadTest {
                 .isInstanceOfSatisfying(
                         GitHubWebhookIssuesOpenedEvent.class,
                         decoded -> assertSoftly(softly -> {
-                            softly.assertThat(decoded.issue().state()).isEqualTo(GitHubWebhookMilestoneState.UNKNOWN);
+                            softly.assertThat(decoded.issue().state())
+                                    .isEqualTo(GitHubWebhookMilestoneState.UNRECOGNIZED);
                             softly.assertThat(delivery.payload()).containsKey("issue");
                         }));
     }

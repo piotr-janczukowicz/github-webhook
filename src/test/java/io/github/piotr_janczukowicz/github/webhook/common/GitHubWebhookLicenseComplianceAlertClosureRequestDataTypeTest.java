@@ -31,7 +31,7 @@ class GitHubWebhookLicenseComplianceAlertClosureRequestDataTypeTest {
                 GitHubWebhookLicenseComplianceAlertClosureRequestDataType.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookLicenseComplianceAlertClosureRequestDataType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookLicenseComplianceAlertClosureRequestDataType.UNRECOGNIZED);
     }
 
     @Test

@@ -63,7 +63,7 @@ public enum GitHubWebhookMetaDeletedHookEvent {
     REPOSITORY_DISPATCH("repository_dispatch"),
     PROJECTS_V2_ITEM("projects_v2_item"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookMetaDeletedHookEvent> WIRE_INDEX =
             EnumUtils.index(GitHubWebhookMetaDeletedHookEvent.class, GitHubWebhookMetaDeletedHookEvent::wireValue);
@@ -88,13 +88,13 @@ public enum GitHubWebhookMetaDeletedHookEvent {
      * The meta deleted hook event from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookMetaDeletedHookEvent fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

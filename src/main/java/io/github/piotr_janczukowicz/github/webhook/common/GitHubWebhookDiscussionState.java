@@ -19,7 +19,7 @@ public enum GitHubWebhookDiscussionState {
     CONVERTING("converting"),
     TRANSFERRING("transferring"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookDiscussionState> WIRE_INDEX =
             EnumUtils.index(GitHubWebhookDiscussionState.class, GitHubWebhookDiscussionState::wireValue);
@@ -44,13 +44,13 @@ public enum GitHubWebhookDiscussionState {
      * The discussion state from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookDiscussionState fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

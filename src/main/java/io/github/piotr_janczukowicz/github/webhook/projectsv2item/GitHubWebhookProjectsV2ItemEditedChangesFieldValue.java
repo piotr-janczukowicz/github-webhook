@@ -3,6 +3,7 @@ package io.github.piotr_janczukowicz.github.webhook.projectsv2item;
 import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
 
@@ -13,6 +14,7 @@ import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @RecordBuilder
+@JsonTypeInfo(use = JsonTypeInfo.Id.NONE)
 @CatalogSchema("webhooks/projects-v2-item-edited/requestBody/properties/changes/oneOf/0")
 public record GitHubWebhookProjectsV2ItemEditedChangesFieldValue(
         GitHubWebhookProjectsV2ItemEditedChangesFieldValueValue fieldValue)

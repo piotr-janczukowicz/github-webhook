@@ -30,7 +30,7 @@ class GitHubWebhookLicenseComplianceScanningTypeTest {
         final GitHubWebhookLicenseComplianceScanningType decoded =
                 GitHubWebhookLicenseComplianceScanningType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookLicenseComplianceScanningType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookLicenseComplianceScanningType.UNRECOGNIZED);
     }
 
     @Test

@@ -30,7 +30,7 @@ class GitHubWebhookDependabotAlertWithdrawnAlertStateTest {
         final GitHubWebhookDependabotAlertWithdrawnAlertState decoded =
                 GitHubWebhookDependabotAlertWithdrawnAlertState.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookDependabotAlertWithdrawnAlertState.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookDependabotAlertWithdrawnAlertState.UNRECOGNIZED);
     }
 
     @Test

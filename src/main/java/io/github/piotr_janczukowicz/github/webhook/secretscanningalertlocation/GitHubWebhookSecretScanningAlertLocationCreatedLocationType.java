@@ -27,7 +27,7 @@ public enum GitHubWebhookSecretScanningAlertLocationCreatedLocationType {
     PULL_REQUEST_REVIEW("pull_request_review"),
     PULL_REQUEST_REVIEW_COMMENT("pull_request_review_comment"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookSecretScanningAlertLocationCreatedLocationType> WIRE_INDEX =
             EnumUtils.index(
@@ -54,13 +54,13 @@ public enum GitHubWebhookSecretScanningAlertLocationCreatedLocationType {
      * The secret scanning alert location created location type from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookSecretScanningAlertLocationCreatedLocationType fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

@@ -33,7 +33,8 @@ class GitHubWebhookSecurityAndAnalysisSecretScanningDelegatedBypassOptionsReview
                         "a value this library does not know");
 
         assertThat(decoded)
-                .isEqualTo(GitHubWebhookSecurityAndAnalysisSecretScanningDelegatedBypassOptionsReviewerMode.UNKNOWN);
+                .isEqualTo(
+                        GitHubWebhookSecurityAndAnalysisSecretScanningDelegatedBypassOptionsReviewerMode.UNRECOGNIZED);
     }
 
     @Test

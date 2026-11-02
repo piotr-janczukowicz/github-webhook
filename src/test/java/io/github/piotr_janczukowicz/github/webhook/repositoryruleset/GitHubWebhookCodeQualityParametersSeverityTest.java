@@ -30,7 +30,7 @@ class GitHubWebhookCodeQualityParametersSeverityTest {
         final GitHubWebhookCodeQualityParametersSeverity decoded =
                 GitHubWebhookCodeQualityParametersSeverity.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCodeQualityParametersSeverity.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCodeQualityParametersSeverity.UNRECOGNIZED);
     }
 
     @Test

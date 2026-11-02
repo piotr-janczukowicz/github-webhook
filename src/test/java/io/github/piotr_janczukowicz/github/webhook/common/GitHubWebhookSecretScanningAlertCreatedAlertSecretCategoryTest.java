@@ -31,7 +31,7 @@ class GitHubWebhookSecretScanningAlertCreatedAlertSecretCategoryTest {
                 GitHubWebhookSecretScanningAlertCreatedAlertSecretCategory.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningAlertCreatedAlertSecretCategory.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningAlertCreatedAlertSecretCategory.UNRECOGNIZED);
     }
 
     @Test

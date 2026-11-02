@@ -28,7 +28,7 @@ class GitHubWebhookCheckRunStatusTest {
         final GitHubWebhookCheckRunStatus decoded =
                 GitHubWebhookCheckRunStatus.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCheckRunStatus.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCheckRunStatus.UNRECOGNIZED);
     }
 
     @Test

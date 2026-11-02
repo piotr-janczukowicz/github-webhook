@@ -30,7 +30,7 @@ class GitHubWebhookCommitAuthorEmailPatternTypeTest {
         final GitHubWebhookCommitAuthorEmailPatternType decoded =
                 GitHubWebhookCommitAuthorEmailPatternType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCommitAuthorEmailPatternType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCommitAuthorEmailPatternType.UNRECOGNIZED);
     }
 
     @Test

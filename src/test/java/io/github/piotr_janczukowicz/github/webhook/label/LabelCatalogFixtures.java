@@ -3,8 +3,8 @@ package io.github.piotr_janczukowicz.github.webhook.label;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookEnterprise;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookForkRepository;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesEditedChangesBody;
-import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesEditedLabel;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookOrganizationSimple;
+import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookPullRequestLabeledLabel;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleInstallation;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
 
@@ -45,7 +45,7 @@ final class LabelCatalogFixtures {
         return GitHubWebhookLabelCreatedEventBuilder.builder()
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
-                .label(webhookIssuesEditedLabel())
+                .label(webhookPullRequestLabeledLabel())
                 .organization(webhookOrganizationSimple())
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())
@@ -56,7 +56,7 @@ final class LabelCatalogFixtures {
         return GitHubWebhookLabelDeletedEventBuilder.builder()
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
-                .label(webhookIssuesEditedLabel())
+                .label(webhookPullRequestLabeledLabel())
                 .organization(webhookOrganizationSimple())
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())
@@ -76,7 +76,7 @@ final class LabelCatalogFixtures {
                 .changes(webhookLabelEditedChanges())
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
-                .label(webhookIssuesEditedLabel())
+                .label(webhookPullRequestLabeledLabel())
                 .organization(webhookOrganizationSimple())
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())
@@ -87,7 +87,7 @@ final class LabelCatalogFixtures {
         return GitHubWebhookLabelUnarchivedEventBuilder.builder()
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
-                .label(webhookIssuesEditedLabel())
+                .label(webhookPullRequestLabeledLabel())
                 .organization(webhookOrganizationSimple())
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())

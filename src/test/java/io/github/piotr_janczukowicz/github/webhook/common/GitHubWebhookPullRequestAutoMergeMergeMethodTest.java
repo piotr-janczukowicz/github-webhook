@@ -30,7 +30,7 @@ class GitHubWebhookPullRequestAutoMergeMergeMethodTest {
         final GitHubWebhookPullRequestAutoMergeMergeMethod decoded =
                 GitHubWebhookPullRequestAutoMergeMergeMethod.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookPullRequestAutoMergeMergeMethod.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookPullRequestAutoMergeMergeMethod.UNRECOGNIZED);
     }
 
     @Test

@@ -28,7 +28,7 @@ class GitHubWebhookTeamPrivacyTest {
         final GitHubWebhookTeamPrivacy decoded =
                 GitHubWebhookTeamPrivacy.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookTeamPrivacy.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookTeamPrivacy.UNRECOGNIZED);
     }
 
     @Test

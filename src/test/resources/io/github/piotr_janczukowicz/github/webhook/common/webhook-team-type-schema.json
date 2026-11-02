@@ -1,8 +1,0 @@
-{
-  "description": "The ownership type of the team",
-  "type": "string",
-  "enum": [
-    "enterprise",
-    "organization"
-  ]
-}

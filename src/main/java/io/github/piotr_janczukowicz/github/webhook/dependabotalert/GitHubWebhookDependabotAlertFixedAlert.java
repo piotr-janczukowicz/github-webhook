@@ -26,6 +26,8 @@ import org.jspecify.annotations.Nullable;
  *     {@code YYYY-MM-DDTHH:MM:SSZ}.
  * @param htmlUrl The GitHub URL of the alert resource.
  * @param number The security alert number.
+ * @param reachability The reachability result for the vulnerability that triggered the alert, indicating whether a
+ *     vulnerable function is reachable from the repository's own code.
  * @param securityAdvisory Details for the GitHub Security Advisory.
  * @param securityVulnerability Details pertaining to one vulnerable version range for the advisory.
  * @param state The state of the Dependabot alert.
@@ -48,6 +50,7 @@ public record GitHubWebhookDependabotAlertFixedAlert(
         @Nullable Instant fixedAt,
         String htmlUrl,
         long number,
+        @Nullable GitHubWebhookDependabotAlertFixedAlertReachability reachability,
         GitHubWebhookDependabotAlertFixedAlertSecurityAdvisory securityAdvisory,
         GitHubWebhookDependabotAlertFixedAlertSecurityVulnerability securityVulnerability,
         GitHubWebhookDependabotAlertFixedAlertState state,

@@ -30,7 +30,7 @@ class GitHubWebhookPullRequestReviewDismissedReviewStateTest {
         final GitHubWebhookPullRequestReviewDismissedReviewState decoded =
                 GitHubWebhookPullRequestReviewDismissedReviewState.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookPullRequestReviewDismissedReviewState.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookPullRequestReviewDismissedReviewState.UNRECOGNIZED);
     }
 
     @Test

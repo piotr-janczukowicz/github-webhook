@@ -29,7 +29,7 @@ class GitHubWebhookExemptionRequestStatusTest {
         final GitHubWebhookExemptionRequestStatus decoded =
                 GitHubWebhookExemptionRequestStatus.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookExemptionRequestStatus.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookExemptionRequestStatus.UNRECOGNIZED);
     }
 
     @Test

@@ -16,7 +16,7 @@ public enum GitHubWebhookCodeScanningAlertAppearedInBranchAlertDismissedReason {
     USED_IN_TESTS("used in tests"),
     MITIGATED("mitigated"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookCodeScanningAlertAppearedInBranchAlertDismissedReason>
             WIRE_INDEX = EnumUtils.index(
@@ -43,13 +43,13 @@ public enum GitHubWebhookCodeScanningAlertAppearedInBranchAlertDismissedReason {
      * The code scanning alert appeared in branch alert dismissed reason from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookCodeScanningAlertAppearedInBranchAlertDismissedReason fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

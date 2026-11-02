@@ -12,7 +12,7 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueFiel
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssuePullRequest;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueReactions;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueType;
-import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookLabel;
+import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPullRequestLabeledLabel;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSubIssuesSummary;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
 import java.util.List;
@@ -79,7 +79,7 @@ public record GitHubWebhookIssuesClosedIssue(
         long id,
         @Nullable GitHubWebhookIssueDependenciesSummary issueDependenciesSummary,
         @Nullable List<GitHubWebhookIssueFieldValue> issueFieldValues,
-        @Nullable List<GitHubWebhookLabel> labels,
+        @Nullable List<GitHubWebhookPullRequestLabeledLabel> labels,
         String labelsUrl,
         @Nullable Boolean locked,
         @Nullable GitHubWebhookMilestone milestone,

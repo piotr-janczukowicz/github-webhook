@@ -1,8 +1,0 @@
-{
-  "description": "The action that was performed on the page. Can be `created` or `edited`.",
-  "type": "string",
-  "enum": [
-    "created",
-    "edited"
-  ]
-}

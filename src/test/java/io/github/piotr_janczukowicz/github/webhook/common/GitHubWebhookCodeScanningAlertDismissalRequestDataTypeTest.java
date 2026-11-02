@@ -30,7 +30,7 @@ class GitHubWebhookCodeScanningAlertDismissalRequestDataTypeTest {
         final GitHubWebhookCodeScanningAlertDismissalRequestDataType decoded =
                 GitHubWebhookCodeScanningAlertDismissalRequestDataType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCodeScanningAlertDismissalRequestDataType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCodeScanningAlertDismissalRequestDataType.UNRECOGNIZED);
     }
 
     @Test

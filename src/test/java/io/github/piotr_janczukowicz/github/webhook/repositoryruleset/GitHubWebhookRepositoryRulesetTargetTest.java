@@ -29,7 +29,7 @@ class GitHubWebhookRepositoryRulesetTargetTest {
         final GitHubWebhookRepositoryRulesetTarget decoded =
                 GitHubWebhookRepositoryRulesetTarget.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryRulesetTarget.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryRulesetTarget.UNRECOGNIZED);
     }
 
     @Test

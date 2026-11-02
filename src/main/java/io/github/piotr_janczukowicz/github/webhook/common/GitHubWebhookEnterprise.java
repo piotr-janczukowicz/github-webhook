@@ -3,6 +3,7 @@ package io.github.piotr_janczukowicz.github.webhook.common;
 import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
 import java.time.Instant;
@@ -26,6 +27,7 @@ import org.jspecify.annotations.Nullable;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @RecordBuilder
+@JsonTypeInfo(use = JsonTypeInfo.Id.NONE)
 @CatalogSchema("webhooks/branch-protection-configuration-disabled/requestBody/properties/enterprise")
 public record GitHubWebhookEnterprise(
         String avatarUrl,

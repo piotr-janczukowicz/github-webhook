@@ -1,3 +1,6 @@
 {
+  "ignored_file_paths": [
+    "ignored_file_paths"
+  ],
   "max_file_size": 1
 }

@@ -40,7 +40,7 @@ class GitHubWebhookCheckRunConclusionTest {
         final GitHubWebhookCheckRunConclusion decoded =
                 GitHubWebhookCheckRunConclusion.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCheckRunConclusion.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCheckRunConclusion.UNRECOGNIZED);
     }
 
     @Test

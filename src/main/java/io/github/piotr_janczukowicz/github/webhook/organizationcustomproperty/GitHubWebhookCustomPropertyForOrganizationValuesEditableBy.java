@@ -17,7 +17,7 @@ public enum GitHubWebhookCustomPropertyForOrganizationValuesEditableBy {
     ENTERPRISE_ACTORS("enterprise_actors"),
     ENTERPRISE_AND_ORG_ACTORS("enterprise_and_org_actors"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookCustomPropertyForOrganizationValuesEditableBy> WIRE_INDEX =
             EnumUtils.index(
@@ -44,13 +44,13 @@ public enum GitHubWebhookCustomPropertyForOrganizationValuesEditableBy {
      * The custom property for organization values editable by from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookCustomPropertyForOrganizationValuesEditableBy fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

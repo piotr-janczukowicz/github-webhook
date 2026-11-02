@@ -28,7 +28,7 @@ class GitHubWebhookMergeQueueTypeTest {
         final GitHubWebhookMergeQueueType decoded =
                 GitHubWebhookMergeQueueType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookMergeQueueType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookMergeQueueType.UNRECOGNIZED);
     }
 
     @Test

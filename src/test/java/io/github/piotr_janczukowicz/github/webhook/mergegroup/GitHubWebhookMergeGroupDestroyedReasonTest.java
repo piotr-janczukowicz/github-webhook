@@ -29,7 +29,7 @@ class GitHubWebhookMergeGroupDestroyedReasonTest {
         final GitHubWebhookMergeGroupDestroyedReason decoded =
                 GitHubWebhookMergeGroupDestroyedReason.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookMergeGroupDestroyedReason.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookMergeGroupDestroyedReason.UNRECOGNIZED);
     }
 
     @Test

@@ -46,7 +46,7 @@ class GitHubWebhookStatusCommitValueVerificationReasonTest {
         final GitHubWebhookStatusCommitValueVerificationReason decoded =
                 GitHubWebhookStatusCommitValueVerificationReason.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookStatusCommitValueVerificationReason.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookStatusCommitValueVerificationReason.UNRECOGNIZED);
     }
 
     @Test

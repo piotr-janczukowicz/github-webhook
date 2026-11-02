@@ -30,7 +30,7 @@ class GitHubWebhookCodeScanningToolAlertsThresholdTest {
         final GitHubWebhookCodeScanningToolAlertsThreshold decoded =
                 GitHubWebhookCodeScanningToolAlertsThreshold.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCodeScanningToolAlertsThreshold.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCodeScanningToolAlertsThreshold.UNRECOGNIZED);
     }
 
     @Test

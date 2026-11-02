@@ -28,7 +28,7 @@ class GitHubWebhookNonFastForwardTypeTest {
         final GitHubWebhookNonFastForwardType decoded =
                 GitHubWebhookNonFastForwardType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookNonFastForwardType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookNonFastForwardType.UNRECOGNIZED);
     }
 
     @Test

@@ -31,7 +31,7 @@ class GitHubWebhookSecretScanningScanCompletedCustomPatternScopeTest {
                 GitHubWebhookSecretScanningScanCompletedCustomPatternScope.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningScanCompletedCustomPatternScope.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningScanCompletedCustomPatternScope.UNRECOGNIZED);
     }
 
     @Test

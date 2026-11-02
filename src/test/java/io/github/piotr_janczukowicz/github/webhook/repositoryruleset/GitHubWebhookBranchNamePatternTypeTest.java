@@ -29,7 +29,7 @@ class GitHubWebhookBranchNamePatternTypeTest {
         final GitHubWebhookBranchNamePatternType decoded =
                 GitHubWebhookBranchNamePatternType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookBranchNamePatternType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookBranchNamePatternType.UNRECOGNIZED);
     }
 
     @Test

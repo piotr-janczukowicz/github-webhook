@@ -29,7 +29,7 @@ class GitHubWebhookMaxFilePathLengthTypeTest {
         final GitHubWebhookMaxFilePathLengthType decoded =
                 GitHubWebhookMaxFilePathLengthType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookMaxFilePathLengthType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookMaxFilePathLengthType.UNRECOGNIZED);
     }
 
     @Test

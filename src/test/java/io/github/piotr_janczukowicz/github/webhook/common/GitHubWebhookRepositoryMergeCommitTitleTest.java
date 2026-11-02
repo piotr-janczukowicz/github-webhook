@@ -29,7 +29,7 @@ class GitHubWebhookRepositoryMergeCommitTitleTest {
         final GitHubWebhookRepositoryMergeCommitTitle decoded =
                 GitHubWebhookRepositoryMergeCommitTitle.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryMergeCommitTitle.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryMergeCommitTitle.UNRECOGNIZED);
     }
 
     @Test

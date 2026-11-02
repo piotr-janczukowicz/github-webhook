@@ -19,7 +19,7 @@ public enum GitHubWebhookIssuesFieldAddedIssueFieldFieldType {
     MULTI_SELECT("multi_select"),
     NUMBER("number"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookIssuesFieldAddedIssueFieldFieldType> WIRE_INDEX =
             EnumUtils.index(
@@ -46,13 +46,13 @@ public enum GitHubWebhookIssuesFieldAddedIssueFieldFieldType {
      * The issues field added issue field field type from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookIssuesFieldAddedIssueFieldFieldType fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

@@ -79,7 +79,7 @@ class GitHubWebhookIssuesEditedIssuePerformedViaGithubAppEventTest {
         final GitHubWebhookIssuesEditedIssuePerformedViaGithubAppEvent decoded =
                 GitHubWebhookIssuesEditedIssuePerformedViaGithubAppEvent.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookIssuesEditedIssuePerformedViaGithubAppEvent.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookIssuesEditedIssuePerformedViaGithubAppEvent.UNRECOGNIZED);
     }
 
     @Test

@@ -30,7 +30,7 @@ class GitHubWebhookMarketplacePurchasePlanPriceModelTest {
         final GitHubWebhookMarketplacePurchasePlanPriceModel decoded =
                 GitHubWebhookMarketplacePurchasePlanPriceModel.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookMarketplacePurchasePlanPriceModel.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookMarketplacePurchasePlanPriceModel.UNRECOGNIZED);
     }
 
     @Test

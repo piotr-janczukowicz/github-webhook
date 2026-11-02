@@ -30,7 +30,7 @@ class GitHubWebhookMetaDeletedHookConfigContentTypeTest {
         final GitHubWebhookMetaDeletedHookConfigContentType decoded =
                 GitHubWebhookMetaDeletedHookConfigContentType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookMetaDeletedHookConfigContentType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookMetaDeletedHookConfigContentType.UNRECOGNIZED);
     }
 
     @Test

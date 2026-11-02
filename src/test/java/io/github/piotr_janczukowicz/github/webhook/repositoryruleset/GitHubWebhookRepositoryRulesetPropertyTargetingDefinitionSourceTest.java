@@ -31,7 +31,7 @@ class GitHubWebhookRepositoryRulesetPropertyTargetingDefinitionSourceTest {
                 GitHubWebhookRepositoryRulesetPropertyTargetingDefinitionSource.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryRulesetPropertyTargetingDefinitionSource.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryRulesetPropertyTargetingDefinitionSource.UNRECOGNIZED);
     }
 
     @Test

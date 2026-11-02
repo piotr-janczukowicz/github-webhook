@@ -11,12 +11,12 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssueType;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesEditedChanges;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesEditedIssueAssignee;
-import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesEditedLabel;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesLockedIssuePerformedViaGithubAppPermissions;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesReopenedIssuePerformedViaGithubAppPermissions;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookLabel;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookLicense;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookOrganizationSimple;
+import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookPullRequestLabeledLabel;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookReactions;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookRepositoryPermissions;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleInstallation;
@@ -76,7 +76,7 @@ final class IssuesCatalogFixtures {
                 .id(1L)
                 .issueDependenciesSummary(webhookIssueDependenciesSummary())
                 .issueFieldValues(List.of(webhookIssueFieldValue()))
-                .labels(List.of(webhookLabel()))
+                .labels(List.of(webhookPullRequestLabeledLabel()))
                 .labelsUrl("https://api.github.com/labels_url{/id}")
                 .locked(true)
                 .milestone(webhookMilestone())
@@ -166,7 +166,7 @@ final class IssuesCatalogFixtures {
                 .id(1L)
                 .issueDependenciesSummary(webhookIssueDependenciesSummary())
                 .issueFieldValues(List.of(webhookIssueFieldValue()))
-                .labels(List.of(webhookLabel()))
+                .labels(List.of(webhookPullRequestLabeledLabel()))
                 .labelsUrl("labels_url")
                 .locked(true)
                 .milestone(webhookMilestone())
@@ -350,7 +350,7 @@ final class IssuesCatalogFixtures {
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
                 .issue(webhookIssuesEditedIssue())
-                .label(webhookIssuesEditedLabel())
+                .label(webhookPullRequestLabeledLabel())
                 .organization(webhookOrganizationSimple())
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())
@@ -374,7 +374,7 @@ final class IssuesCatalogFixtures {
                 .id(1L)
                 .issueDependenciesSummary(webhookIssueDependenciesSummary())
                 .issueFieldValues(List.of(webhookIssueFieldValue()))
-                .labels(List.of(webhookLabel()))
+                .labels(List.of(webhookPullRequestLabeledLabel()))
                 .labelsUrl("https://api.github.com/labels_url{/id}")
                 .locked(true)
                 .milestone(webhookMilestone())
@@ -486,7 +486,7 @@ final class IssuesCatalogFixtures {
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
                 .issue(webhookIssuesLabeledIssue())
-                .label(webhookIssuesEditedLabel())
+                .label(webhookPullRequestLabeledLabel())
                 .organization(webhookOrganizationSimple())
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())
@@ -510,7 +510,7 @@ final class IssuesCatalogFixtures {
                 .id(1L)
                 .issueDependenciesSummary(webhookIssueDependenciesSummary())
                 .issueFieldValues(List.of(webhookIssueFieldValue()))
-                .labels(List.of(webhookIssuesEditedLabel()))
+                .labels(List.of(webhookPullRequestLabeledLabel()))
                 .labelsUrl("https://api.github.com/labels_url{/id}")
                 .locked(true)
                 .milestone(webhookMilestone())
@@ -934,7 +934,7 @@ final class IssuesCatalogFixtures {
                 .id(1L)
                 .issueDependenciesSummary(webhookIssueDependenciesSummary())
                 .issueFieldValues(List.of(webhookIssueFieldValue()))
-                .labels(List.of(webhookLabel()))
+                .labels(List.of(webhookPullRequestLabeledLabel()))
                 .labelsUrl("https://api.github.com/labels_url{/id}")
                 .locked(true)
                 .milestone(webhookIssuesLockedIssueMilestone())
@@ -1002,7 +1002,7 @@ final class IssuesCatalogFixtures {
                 .id(1L)
                 .issueDependenciesSummary(webhookIssueDependenciesSummary())
                 .issueFieldValues(List.of(webhookIssueFieldValue()))
-                .labels(List.of(webhookLabel()))
+                .labels(List.of(webhookPullRequestLabeledLabel()))
                 .labelsUrl("https://api.github.com/labels_url{/id}")
                 .locked(true)
                 .milestone(webhookMilestone())
@@ -1070,8 +1070,48 @@ final class IssuesCatalogFixtures {
 
     static GitHubWebhookIssuesTransferredChanges webhookIssuesTransferredChanges() {
         return GitHubWebhookIssuesTransferredChangesBuilder.builder()
-                .newIssue(webhookIssuesPinnedIssue())
+                .newIssue(webhookIssuesTransferredChangesNewIssue())
                 .newRepository(webhookIssuesTransferredChangesNewRepository())
+                .build();
+    }
+
+    static GitHubWebhookIssuesTransferredChangesNewIssue webhookIssuesTransferredChangesNewIssue() {
+        return GitHubWebhookIssuesTransferredChangesNewIssueBuilder.builder()
+                .activeLockReason(GitHubWebhookIssueActiveLockReason.RESOLVED)
+                .assignee(webhookUser())
+                .assignees(List.of(webhookUser()))
+                .authorAssociation(GitHubWebhookIssueAuthorAssociation.COLLABORATOR)
+                .body("body")
+                .closedAt(Instant.parse("2026-01-01T00:00:00Z"))
+                .comments(1L)
+                .commentsUrl("https://api.github.com/comments_url")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
+                .draft(true)
+                .eventsUrl("https://api.github.com/events_url")
+                .htmlUrl("https://api.github.com/html_url")
+                .id(1L)
+                .issueDependenciesSummary(webhookIssueDependenciesSummary())
+                .issueFieldValues(List.of(webhookIssueFieldValue()))
+                .labels(List.of(webhookLabel()))
+                .labelsUrl("https://api.github.com/labels_url{/id}")
+                .locked(true)
+                .milestone(webhookIssuesLockedIssueMilestone())
+                .nodeId("node_id")
+                .number(1L)
+                .performedViaGithubApp(webhookIssuesPinnedIssuePerformedViaGithubApp())
+                .pinnedComment(webhookIssueComment())
+                .pullRequest(webhookIssuePullRequest())
+                .reactions(webhookReactions())
+                .repositoryUrl("https://api.github.com/repository_url")
+                .state(GitHubWebhookMilestoneState.OPEN)
+                .stateReason("state_reason")
+                .subIssuesSummary(webhookSubIssuesSummary())
+                .timelineUrl("https://api.github.com/timeline_url")
+                .title("title")
+                .type(webhookIssueType())
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
+                .url("https://api.github.com/url")
+                .user(webhookUser())
                 .build();
     }
 
@@ -1215,7 +1255,7 @@ final class IssuesCatalogFixtures {
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
                 .issue(webhookIssue())
-                .label(webhookIssuesEditedLabel())
+                .label(webhookPullRequestLabeledLabel())
                 .organization(webhookOrganizationSimple())
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())

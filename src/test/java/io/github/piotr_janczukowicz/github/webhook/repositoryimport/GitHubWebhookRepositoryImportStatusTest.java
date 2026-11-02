@@ -29,7 +29,7 @@ class GitHubWebhookRepositoryImportStatusTest {
         final GitHubWebhookRepositoryImportStatus decoded =
                 GitHubWebhookRepositoryImportStatus.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryImportStatus.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryImportStatus.UNRECOGNIZED);
     }
 
     @Test

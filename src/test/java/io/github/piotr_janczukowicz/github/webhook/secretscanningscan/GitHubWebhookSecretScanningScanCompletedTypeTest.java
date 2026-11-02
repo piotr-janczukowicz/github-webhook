@@ -34,7 +34,7 @@ class GitHubWebhookSecretScanningScanCompletedTypeTest {
         final GitHubWebhookSecretScanningScanCompletedType decoded =
                 GitHubWebhookSecretScanningScanCompletedType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningScanCompletedType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningScanCompletedType.UNRECOGNIZED);
     }
 
     @Test

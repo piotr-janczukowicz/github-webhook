@@ -29,7 +29,7 @@ class GitHubWebhookCommitMessagePatternTypeTest {
         final GitHubWebhookCommitMessagePatternType decoded =
                 GitHubWebhookCommitMessagePatternType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCommitMessagePatternType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCommitMessagePatternType.UNRECOGNIZED);
     }
 
     @Test

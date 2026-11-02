@@ -31,7 +31,7 @@ class GitHubWebhookCustomPropertyForOrganizationValuesEditableByTest {
                 GitHubWebhookCustomPropertyForOrganizationValuesEditableBy.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCustomPropertyForOrganizationValuesEditableBy.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCustomPropertyForOrganizationValuesEditableBy.UNRECOGNIZED);
     }
 
     @Test

@@ -39,7 +39,7 @@ class GitHubWebhookRepositoryRulesetBypassActorActorTypeTest {
         final GitHubWebhookRepositoryRulesetBypassActorActorType decoded =
                 GitHubWebhookRepositoryRulesetBypassActorActorType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryRulesetBypassActorActorType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRepositoryRulesetBypassActorActorType.UNRECOGNIZED);
     }
 
     @Test

@@ -34,7 +34,7 @@ class GitHubWebhookDiscussionStateTest {
         final GitHubWebhookDiscussionState decoded =
                 GitHubWebhookDiscussionState.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookDiscussionState.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookDiscussionState.UNRECOGNIZED);
     }
 
     @Test

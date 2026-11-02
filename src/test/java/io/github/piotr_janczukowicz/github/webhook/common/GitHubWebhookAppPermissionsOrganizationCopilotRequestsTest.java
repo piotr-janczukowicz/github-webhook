@@ -30,7 +30,7 @@ class GitHubWebhookAppPermissionsOrganizationCopilotRequestsTest {
         final GitHubWebhookAppPermissionsOrganizationCopilotRequests decoded =
                 GitHubWebhookAppPermissionsOrganizationCopilotRequests.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookAppPermissionsOrganizationCopilotRequests.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookAppPermissionsOrganizationCopilotRequests.UNRECOGNIZED);
     }
 
     @Test

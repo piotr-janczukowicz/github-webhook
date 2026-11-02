@@ -6,8 +6,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookEnterprise;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookForkRepository;
-import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssuesEditedLabel;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookOrganizationSimple;
+import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPullRequestLabeledLabel;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleInstallation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
@@ -36,7 +36,7 @@ import org.jspecify.annotations.Nullable;
 public record GitHubWebhookLabelCreatedEvent(
         @Nullable GitHubWebhookEnterprise enterprise,
         @Nullable GitHubWebhookSimpleInstallation installation,
-        GitHubWebhookIssuesEditedLabel label,
+        GitHubWebhookPullRequestLabeledLabel label,
         @Nullable GitHubWebhookOrganizationSimple organization,
         GitHubWebhookForkRepository repository,
         @Nullable GitHubWebhookSimpleUser sender)

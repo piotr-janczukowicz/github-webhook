@@ -1,7 +1,0 @@
-{
-  "type": "string",
-  "description": "The type of request",
-  "enum": [
-    "license_compliance_dismissal"
-  ]
-}

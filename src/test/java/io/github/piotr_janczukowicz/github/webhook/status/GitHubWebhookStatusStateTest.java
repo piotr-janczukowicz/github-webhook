@@ -28,7 +28,7 @@ class GitHubWebhookStatusStateTest {
         final GitHubWebhookStatusState decoded =
                 GitHubWebhookStatusState.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookStatusState.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookStatusState.UNRECOGNIZED);
     }
 
     @Test

@@ -84,7 +84,7 @@ class GitHubWebhookDeploymentStatusCreatedDeploymentStatusPerformedViaGithubAppE
                         "a value this library does not know");
 
         assertThat(decoded)
-                .isEqualTo(GitHubWebhookDeploymentStatusCreatedDeploymentStatusPerformedViaGithubAppEvent.UNKNOWN);
+                .isEqualTo(GitHubWebhookDeploymentStatusCreatedDeploymentStatusPerformedViaGithubAppEvent.UNRECOGNIZED);
     }
 
     @Test

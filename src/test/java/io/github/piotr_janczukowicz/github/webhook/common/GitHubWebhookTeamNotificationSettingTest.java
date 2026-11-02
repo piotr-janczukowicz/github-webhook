@@ -29,7 +29,7 @@ class GitHubWebhookTeamNotificationSettingTest {
         final GitHubWebhookTeamNotificationSetting decoded =
                 GitHubWebhookTeamNotificationSetting.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookTeamNotificationSetting.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookTeamNotificationSetting.UNRECOGNIZED);
     }
 
     @Test

@@ -29,7 +29,7 @@ class GitHubWebhookFilePathRestrictionTypeTest {
         final GitHubWebhookFilePathRestrictionType decoded =
                 GitHubWebhookFilePathRestrictionType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookFilePathRestrictionType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookFilePathRestrictionType.UNRECOGNIZED);
     }
 
     @Test

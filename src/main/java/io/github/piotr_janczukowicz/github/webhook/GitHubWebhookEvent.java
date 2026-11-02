@@ -73,6 +73,7 @@ import io.github.piotr_janczukowicz.github.webhook.repositoryruleset.GitHubWebho
 import io.github.piotr_janczukowicz.github.webhook.repositoryvulnerabilityalert.GitHubWebhookRepositoryVulnerabilityAlertEvent;
 import io.github.piotr_janczukowicz.github.webhook.secretscanningalert.GitHubWebhookSecretScanningAlertEvent;
 import io.github.piotr_janczukowicz.github.webhook.secretscanningalertlocation.GitHubWebhookSecretScanningAlertLocationEvent;
+import io.github.piotr_janczukowicz.github.webhook.secretscanningpublicmonitoringalert.GitHubWebhookSecretScanningPublicMonitoringAlertEvent;
 import io.github.piotr_janczukowicz.github.webhook.secretscanningscan.GitHubWebhookSecretScanningScanEvent;
 import io.github.piotr_janczukowicz.github.webhook.securityadvisory.GitHubWebhookSecurityAdvisoryEvent;
 import io.github.piotr_janczukowicz.github.webhook.securityandanalysis.GitHubWebhookSecurityAndAnalysisEvent;
@@ -167,6 +168,7 @@ public sealed interface GitHubWebhookEvent
                 GitHubWebhookRepositoryVulnerabilityAlertEvent,
                 GitHubWebhookSecretScanningAlertEvent,
                 GitHubWebhookSecretScanningAlertLocationEvent,
+                GitHubWebhookSecretScanningPublicMonitoringAlertEvent,
                 GitHubWebhookSecretScanningScanEvent,
                 GitHubWebhookSecurityAdvisoryEvent,
                 GitHubWebhookSecurityAndAnalysisEvent,

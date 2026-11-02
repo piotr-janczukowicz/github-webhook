@@ -28,7 +28,7 @@ class GitHubWebhookIssueAssigneeTypeTest {
         final GitHubWebhookIssueAssigneeType decoded =
                 GitHubWebhookIssueAssigneeType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookIssueAssigneeType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookIssueAssigneeType.UNRECOGNIZED);
     }
 
     @Test

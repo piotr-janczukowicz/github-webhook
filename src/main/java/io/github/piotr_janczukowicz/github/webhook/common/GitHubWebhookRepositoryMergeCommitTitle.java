@@ -18,7 +18,7 @@ public enum GitHubWebhookRepositoryMergeCommitTitle {
     PR_TITLE("PR_TITLE"),
     MERGE_MESSAGE("MERGE_MESSAGE"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookRepositoryMergeCommitTitle> WIRE_INDEX = EnumUtils.index(
             GitHubWebhookRepositoryMergeCommitTitle.class, GitHubWebhookRepositoryMergeCommitTitle::wireValue);
@@ -43,13 +43,13 @@ public enum GitHubWebhookRepositoryMergeCommitTitle {
      * The repository merge commit title from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookRepositoryMergeCommitTitle fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

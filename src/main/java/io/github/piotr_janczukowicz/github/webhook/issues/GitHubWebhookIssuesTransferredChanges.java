@@ -16,7 +16,8 @@ import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
 @RecordBuilder
 @CatalogSchema("webhooks/issues-transferred/requestBody/properties/changes")
 public record GitHubWebhookIssuesTransferredChanges(
-        GitHubWebhookIssuesPinnedIssue newIssue, GitHubWebhookIssuesTransferredChangesNewRepository newRepository) {
+        GitHubWebhookIssuesTransferredChangesNewIssue newIssue,
+        GitHubWebhookIssuesTransferredChangesNewRepository newRepository) {
     public GitHubWebhookIssuesTransferredChanges {
         requireNonNull(newIssue, "newIssue");
         requireNonNull(newRepository, "newRepository");

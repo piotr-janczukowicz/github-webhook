@@ -29,7 +29,7 @@ class GitHubWebhookRequiredStatusChecksTypeTest {
         final GitHubWebhookRequiredStatusChecksType decoded =
                 GitHubWebhookRequiredStatusChecksType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRequiredStatusChecksType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRequiredStatusChecksType.UNRECOGNIZED);
     }
 
     @Test

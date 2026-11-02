@@ -1,6 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "merge_queue"
-  ]
-}

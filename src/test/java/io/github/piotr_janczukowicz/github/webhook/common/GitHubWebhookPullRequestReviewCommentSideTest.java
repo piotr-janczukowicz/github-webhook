@@ -30,7 +30,7 @@ class GitHubWebhookPullRequestReviewCommentSideTest {
         final GitHubWebhookPullRequestReviewCommentSide decoded =
                 GitHubWebhookPullRequestReviewCommentSide.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookPullRequestReviewCommentSide.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookPullRequestReviewCommentSide.UNRECOGNIZED);
     }
 
     @Test

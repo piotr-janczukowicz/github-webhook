@@ -28,7 +28,7 @@ class GitHubWebhookCreationTypeTest {
         final GitHubWebhookCreationType decoded =
                 GitHubWebhookCreationType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCreationType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCreationType.UNRECOGNIZED);
     }
 
     @Test

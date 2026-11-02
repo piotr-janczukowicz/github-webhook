@@ -28,7 +28,7 @@ class GitHubWebhookTeamAccessSourceTest {
         final GitHubWebhookTeamAccessSource decoded =
                 GitHubWebhookTeamAccessSource.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookTeamAccessSource.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookTeamAccessSource.UNRECOGNIZED);
     }
 
     @Test

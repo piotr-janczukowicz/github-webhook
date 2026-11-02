@@ -31,7 +31,7 @@ class GitHubWebhookSecretScanningAlertDismissalRequestDataItemReasonTest {
                 GitHubWebhookSecretScanningAlertDismissalRequestDataItemReason.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningAlertDismissalRequestDataItemReason.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookSecretScanningAlertDismissalRequestDataItemReason.UNRECOGNIZED);
     }
 
     @Test

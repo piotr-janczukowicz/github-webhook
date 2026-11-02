@@ -29,7 +29,7 @@ class GitHubWebhookRequiredSignaturesTypeTest {
         final GitHubWebhookRequiredSignaturesType decoded =
                 GitHubWebhookRequiredSignaturesType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookRequiredSignaturesType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookRequiredSignaturesType.UNRECOGNIZED);
     }
 
     @Test

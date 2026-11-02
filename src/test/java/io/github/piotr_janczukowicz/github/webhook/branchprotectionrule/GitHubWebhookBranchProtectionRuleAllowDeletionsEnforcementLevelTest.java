@@ -31,7 +31,7 @@ class GitHubWebhookBranchProtectionRuleAllowDeletionsEnforcementLevelTest {
                 GitHubWebhookBranchProtectionRuleAllowDeletionsEnforcementLevel.fromWire(
                         "a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookBranchProtectionRuleAllowDeletionsEnforcementLevel.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookBranchProtectionRuleAllowDeletionsEnforcementLevel.UNRECOGNIZED);
     }
 
     @Test

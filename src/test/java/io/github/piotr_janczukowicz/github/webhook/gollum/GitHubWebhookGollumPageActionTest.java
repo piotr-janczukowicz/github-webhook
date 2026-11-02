@@ -28,7 +28,7 @@ class GitHubWebhookGollumPageActionTest {
         final GitHubWebhookGollumPageAction decoded =
                 GitHubWebhookGollumPageAction.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookGollumPageAction.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookGollumPageAction.UNRECOGNIZED);
     }
 
     @Test

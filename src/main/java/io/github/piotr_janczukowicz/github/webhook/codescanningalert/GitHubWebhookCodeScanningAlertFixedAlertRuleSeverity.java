@@ -16,7 +16,7 @@ public enum GitHubWebhookCodeScanningAlertFixedAlertRuleSeverity {
     WARNING("warning"),
     ERROR("error"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookCodeScanningAlertFixedAlertRuleSeverity> WIRE_INDEX =
             EnumUtils.index(
@@ -43,13 +43,13 @@ public enum GitHubWebhookCodeScanningAlertFixedAlertRuleSeverity {
      * The code scanning alert fixed alert rule severity from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookCodeScanningAlertFixedAlertRuleSeverity fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

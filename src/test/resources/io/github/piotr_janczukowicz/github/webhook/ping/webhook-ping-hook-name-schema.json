@@ -1,7 +1,0 @@
-{
-  "description": "The type of webhook. The only valid value is 'web'.",
-  "type": "string",
-  "enum": [
-    "web"
-  ]
-}

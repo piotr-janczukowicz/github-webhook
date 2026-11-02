@@ -42,7 +42,7 @@ class GitHubWebhookPullRequestDequeuedReasonTest {
         final GitHubWebhookPullRequestDequeuedReason decoded =
                 GitHubWebhookPullRequestDequeuedReason.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookPullRequestDequeuedReason.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookPullRequestDequeuedReason.UNRECOGNIZED);
     }
 
     @Test

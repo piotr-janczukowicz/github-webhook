@@ -27,7 +27,7 @@ class GitHubWebhookTeamTypeTest {
     void fromWire_shouldReturnUnknown_whenValueNotKnown() {
         final GitHubWebhookTeamType decoded = GitHubWebhookTeamType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookTeamType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookTeamType.UNRECOGNIZED);
     }
 
     @Test

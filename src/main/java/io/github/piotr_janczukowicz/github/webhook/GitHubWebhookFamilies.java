@@ -336,6 +336,11 @@ import io.github.piotr_janczukowicz.github.webhook.secretscanningalert.GitHubWeb
 import io.github.piotr_janczukowicz.github.webhook.secretscanningalert.GitHubWebhookSecretScanningAlertValidatedEvent;
 import io.github.piotr_janczukowicz.github.webhook.secretscanningalertlocation.GitHubWebhookSecretScanningAlertLocationCreatedEvent;
 import io.github.piotr_janczukowicz.github.webhook.secretscanningalertlocation.GitHubWebhookSecretScanningAlertLocationUnknownActionEvent;
+import io.github.piotr_janczukowicz.github.webhook.secretscanningpublicmonitoringalert.GitHubWebhookSecretScanningPublicMonitoringAlertCreatedEvent;
+import io.github.piotr_janczukowicz.github.webhook.secretscanningpublicmonitoringalert.GitHubWebhookSecretScanningPublicMonitoringAlertDismissedEvent;
+import io.github.piotr_janczukowicz.github.webhook.secretscanningpublicmonitoringalert.GitHubWebhookSecretScanningPublicMonitoringAlertReopenedEvent;
+import io.github.piotr_janczukowicz.github.webhook.secretscanningpublicmonitoringalert.GitHubWebhookSecretScanningPublicMonitoringAlertUnknownActionEvent;
+import io.github.piotr_janczukowicz.github.webhook.secretscanningpublicmonitoringalert.GitHubWebhookSecretScanningPublicMonitoringAlertValidatedEvent;
 import io.github.piotr_janczukowicz.github.webhook.secretscanningscan.GitHubWebhookSecretScanningScanCompletedEvent;
 import io.github.piotr_janczukowicz.github.webhook.secretscanningscan.GitHubWebhookSecretScanningScanUnknownActionEvent;
 import io.github.piotr_janczukowicz.github.webhook.securityadvisory.GitHubWebhookSecurityAdvisoryPublishedEvent;
@@ -1040,6 +1045,23 @@ final class GitHubWebhookFamilies {
                             Map.ofEntries(
                                     Map.entry("created", GitHubWebhookSecretScanningAlertLocationCreatedEvent.class)),
                             GitHubWebhookSecretScanningAlertLocationUnknownActionEvent::new)),
+            Map.entry(
+                    "secret_scanning_public_monitoring_alert",
+                    GitHubWebhookFamily.withActions(
+                            Map.ofEntries(
+                                    Map.entry(
+                                            "created",
+                                            GitHubWebhookSecretScanningPublicMonitoringAlertCreatedEvent.class),
+                                    Map.entry(
+                                            "dismissed",
+                                            GitHubWebhookSecretScanningPublicMonitoringAlertDismissedEvent.class),
+                                    Map.entry(
+                                            "reopened",
+                                            GitHubWebhookSecretScanningPublicMonitoringAlertReopenedEvent.class),
+                                    Map.entry(
+                                            "validated",
+                                            GitHubWebhookSecretScanningPublicMonitoringAlertValidatedEvent.class)),
+                            GitHubWebhookSecretScanningPublicMonitoringAlertUnknownActionEvent::new)),
             Map.entry(
                     "secret_scanning_scan",
                     GitHubWebhookFamily.withActions(

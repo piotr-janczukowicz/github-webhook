@@ -1,6 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "branch_name_pattern"
-  ]
-}

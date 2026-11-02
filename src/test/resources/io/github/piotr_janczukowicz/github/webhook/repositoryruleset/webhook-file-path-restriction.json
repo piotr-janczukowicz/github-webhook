@@ -1,5 +1,8 @@
 {
   "parameters": {
+    "ignored_file_paths": [
+      "ignored_file_paths"
+    ],
     "restricted_file_paths": [
       "restricted_file_paths"
     ]

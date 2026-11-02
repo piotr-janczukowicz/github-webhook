@@ -128,7 +128,9 @@ import org.jspecify.annotations.Nullable;
  * @param svnUrl svn_url
  * @param tagsUrl tags_url
  * @param teamsUrl teams_url
- * @param tempCloneToken temp_clone_token
+ * @param tempCloneToken When present and non-empty, a temporary credential for read-only Git access to this repository.
+ *     It expires five minutes after generation and cannot be used to push changes. Treat this value as sensitive and
+ *     avoid recording it in logs.
  * @param templateRepository template_repository
  * @param topics topics
  * @param treesUrl trees_url

@@ -28,7 +28,7 @@ class GitHubWebhookReviewerTypeTest {
         final GitHubWebhookReviewerType decoded =
                 GitHubWebhookReviewerType.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookReviewerType.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookReviewerType.UNRECOGNIZED);
     }
 
     @Test

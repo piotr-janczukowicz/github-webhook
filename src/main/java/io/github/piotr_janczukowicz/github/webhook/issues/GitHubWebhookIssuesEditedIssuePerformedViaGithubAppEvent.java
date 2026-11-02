@@ -60,7 +60,7 @@ public enum GitHubWebhookIssuesEditedIssuePerformedViaGithubAppEvent {
     PULL_REQUEST_REVIEW_THREAD("pull_request_review_thread"),
     REMINDER("reminder"),
     /** A value this library version does not know. */
-    UNKNOWN("unknown");
+    UNRECOGNIZED("unrecognized");
 
     private static final EnumUtils.WireIndex<GitHubWebhookIssuesEditedIssuePerformedViaGithubAppEvent> WIRE_INDEX =
             EnumUtils.index(
@@ -87,13 +87,13 @@ public enum GitHubWebhookIssuesEditedIssuePerformedViaGithubAppEvent {
      * The issues edited issue performed via github app event from a wire value.
      *
      * @param value JSON value
-     * @return matching value, or {@code UNKNOWN} when this library version does not know it
+     * @return matching value, or {@code UNRECOGNIZED} when this library version does not know it
      * @throws NullPointerException if {@code value} is {@code null}
      */
     @JsonCreator
     public static GitHubWebhookIssuesEditedIssuePerformedViaGithubAppEvent fromWire(final String value) {
         requireNonNull(value, "value");
 
-        return WIRE_INDEX.fromWire(value, UNKNOWN);
+        return WIRE_INDEX.fromWire(value, UNRECOGNIZED);
     }
 }

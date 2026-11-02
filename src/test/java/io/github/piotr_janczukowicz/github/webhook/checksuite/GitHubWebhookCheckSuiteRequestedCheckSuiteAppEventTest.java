@@ -84,7 +84,7 @@ class GitHubWebhookCheckSuiteRequestedCheckSuiteAppEventTest {
         final GitHubWebhookCheckSuiteRequestedCheckSuiteAppEvent decoded =
                 GitHubWebhookCheckSuiteRequestedCheckSuiteAppEvent.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCheckSuiteRequestedCheckSuiteAppEvent.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCheckSuiteRequestedCheckSuiteAppEvent.UNRECOGNIZED);
     }
 
     @Test

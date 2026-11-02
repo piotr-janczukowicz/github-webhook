@@ -28,7 +28,7 @@ class GitHubWebhookAlertInstanceStateTest {
         final GitHubWebhookAlertInstanceState decoded =
                 GitHubWebhookAlertInstanceState.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookAlertInstanceState.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookAlertInstanceState.UNRECOGNIZED);
     }
 
     @Test

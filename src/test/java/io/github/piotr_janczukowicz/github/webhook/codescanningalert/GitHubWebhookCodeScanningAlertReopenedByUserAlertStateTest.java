@@ -30,7 +30,7 @@ class GitHubWebhookCodeScanningAlertReopenedByUserAlertStateTest {
         final GitHubWebhookCodeScanningAlertReopenedByUserAlertState decoded =
                 GitHubWebhookCodeScanningAlertReopenedByUserAlertState.fromWire("a value this library does not know");
 
-        assertThat(decoded).isEqualTo(GitHubWebhookCodeScanningAlertReopenedByUserAlertState.UNKNOWN);
+        assertThat(decoded).isEqualTo(GitHubWebhookCodeScanningAlertReopenedByUserAlertState.UNRECOGNIZED);
     }
 
     @Test

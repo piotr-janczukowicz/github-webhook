@@ -16,6 +16,8 @@ import org.jspecify.annotations.Nullable;
  * @param dismissalRestriction Specify people, teams, or apps allowed to dismiss pull request reviews.
  * @param requireCodeOwnerReview Require an approving review in pull requests that modify files that have a designated
  *     code owner.
+ * @param requireExtraApprovalForUnattributedChanges When Copilot opens a pull request without a human collaborator,
+ *     require one more approving review if a non-zero approval count is required.
  * @param requireLastPushApproval Whether the most recent reviewable push must be approved by someone other than the
  *     person who pushed it.
  * @param requiredApprovingReviewCount The number of approving reviews that are required before a pull request can be
@@ -33,6 +35,7 @@ public record GitHubWebhookPullRequestParameters(
         boolean dismissStaleReviewsOnPush,
         @Nullable GitHubWebhookDismissalRestriction dismissalRestriction,
         boolean requireCodeOwnerReview,
+        @Nullable Boolean requireExtraApprovalForUnattributedChanges,
         boolean requireLastPushApproval,
         long requiredApprovingReviewCount,
         boolean requiredReviewThreadResolution,

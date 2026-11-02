@@ -5,12 +5,12 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookForkRepository;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesEditedChangesBody;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesEditedIssueAssignee;
-import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesEditedLabel;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookLabel;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookLicense;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookOrganizationSimple;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookPullRequestBase;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookPullRequestLabel;
+import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookPullRequestLabeledLabel;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookPullRequestLinks;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookPullRequestMilestone;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookPullRequestStack;
@@ -644,7 +644,7 @@ final class PullRequestCatalogFixtures {
         return GitHubWebhookPullRequestLabeledEventBuilder.builder()
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
-                .label(webhookIssuesEditedLabel())
+                .label(webhookPullRequestLabeledLabel())
                 .number(1L)
                 .organization(webhookOrganizationSimple())
                 .pullRequest(webhookPullRequestLabeledPullRequest())
@@ -678,7 +678,7 @@ final class PullRequestCatalogFixtures {
                 .htmlUrl("https://api.github.com/html_url")
                 .id(1L)
                 .issueUrl("https://api.github.com/issue_url")
-                .labels(List.of(webhookIssuesEditedLabel()))
+                .labels(List.of(webhookPullRequestLabeledLabel()))
                 .locked(true)
                 .maintainerCanModify(true)
                 .mergeable(true)
@@ -1466,7 +1466,7 @@ final class PullRequestCatalogFixtures {
         return GitHubWebhookPullRequestUnlabeledEventBuilder.builder()
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
-                .label(webhookIssuesEditedLabel())
+                .label(webhookPullRequestLabeledLabel())
                 .number(1L)
                 .organization(webhookOrganizationSimple())
                 .pullRequest(webhookPullRequestUnlabeledPullRequest())
