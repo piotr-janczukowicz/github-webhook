@@ -1,16 +1,17 @@
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ada66a425c214e32817976810d3f6635)](https://app.codacy.com/gh/piotr-janczukowicz/github-webhook/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
-[![Codacy Coverage](https://app.codacy.com/project/badge/Coverage/ada66a425c214e32817976810d3f6635)](https://app.codacy.com/gh/piotr-janczukowicz/github-webhook/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
-[![Build](https://github.com/piotr-janczukowicz/github-webhook/actions/workflows/main.yml/badge.svg)](https://github.com/piotr-janczukowicz/github-webhook/actions/workflows/main.yml)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.piotr-janczukowicz/github-webhook)](https://central.sonatype.com/artifact/io.github.piotr-janczukowicz/github-webhook)
-[![Release](https://img.shields.io/github/v/release/piotr-janczukowicz/github-webhook)](https://github.com/piotr-janczukowicz/github-webhook/releases)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-![Java 21](https://img.shields.io/badge/Java-21-orange.svg)
-
 # github-webhook
 
-Typed GitHub webhook events for Java 21: a record for every event GitHub documents (309 events in 87 families, for
+Typed GitHub webhook events for Java 21: a record for every event GitHub documents (313 events in 88 families, for
 github.com, GitHub Enterprise Cloud and GitHub Enterprise Server), a decoder, and a receiver that verifies the signature
 before it parses anything.
+
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.piotr-janczukowicz/github-webhook)](https://central.sonatype.com/artifact/io.github.piotr-janczukowicz/github-webhook)
+![Java 21](https://img.shields.io/badge/Java-21-orange.svg)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Build](https://github.com/piotr-janczukowicz/github-webhook/actions/workflows/main.yml/badge.svg)](https://github.com/piotr-janczukowicz/github-webhook/actions/workflows/main.yml)
+[![Codacy Coverage](https://app.codacy.com/project/badge/Coverage/ada66a425c214e32817976810d3f6635)](https://app.codacy.com/gh/piotr-janczukowicz/github-webhook/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ada66a425c214e32817976810d3f6635)](https://app.codacy.com/gh/piotr-janczukowicz/github-webhook/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
+## Why this library
 
 - **Typed.** Every event is a record and every family a sealed interface, so the compiler checks a `switch` over the
   decoded event.
@@ -22,32 +23,25 @@ before it parses anything.
   `receiveDelivery` carry it, `decode` and `receive` return the unknown event without the reason).
 - **Light.** Synchronous, no HTTP client, no dependency on the REST client. Jackson 3 and a few small modules.
 
-**Requirements:** Java 21. The library is a Java module, `io.github.piotr_janczukowicz.githubwebhook`, and also works on the
-class path. It is published on
+## Install
+
+**Requirements:** Java 21. The library is a Java module, `io.github.piotr_janczukowicz.githubwebhook`, and also works on
+the class path. It is published on
 [Maven Central](https://central.sonatype.com/artifact/io.github.piotr-janczukowicz/github-webhook):
 
 ```xml
 <dependency>
     <groupId>io.github.piotr-janczukowicz</groupId>
     <artifactId>github-webhook</artifactId>
-    <version>2026.3.10.0</version>
+    <version>LATEST_VERSION</version>
 </dependency>
 ```
 
-The library is in prerelease; see the [Disclaimer](#disclaimer) before relying on it.
+Replace `LATEST_VERSION` with the version in the Maven Central badge at the top of this page, or with the newest entry on
+the [releases page](https://github.com/piotr-janczukowicz/github-webhook/releases). The library is in prerelease; see the
+[Disclaimer](#disclaimer) before relying on it.
 
-## Supported GitHub products
-
-| Product | Status |
-|---|---|
-| GitHub.com | Supported: every event of the description; a record or enum that not every product sends is marked `@Flavors` |
-| GitHub Enterprise Cloud | Supported: an event that only it sends is marked `@Flavors(GitHubWebhookFlavor.GHEC)` |
-| GitHub Enterprise Server | Supported: version 3.22; an event that only it sends is marked `@Flavors(GitHubWebhookFlavor.GHES)` |
-
-The decoder has no product check: it decodes whatever it receives. [webhook-events.md](docs/guide/webhook-events.md) shows
-which product sends which event.
-
-## Usage
+## Quick start
 
 Build the receiver once with the webhook secret (it is thread-safe) and hand it the two headers and the raw body of every
 delivery:
@@ -76,9 +70,18 @@ To rotate a secret, `GitHubWebhookReceiver.ofSecrets(List.of(newSecret, oldSecre
 next to the typed event (to queue or forward it), use `receiveDelivery`, which returns a `GitHubWebhookDelivery`.
 
 The library is generated from GitHub's OpenAPI descriptions and is not source-stable: a sync can change a component type,
-rename a record or add a record to a sealed interface, so end a `switch` over events with a `default`. The
-[guide](docs/guide/webhooks.md) has the detail, and [webhook-events.md](docs/guide/webhook-events.md) lists every
-supported event with the products that send it.
+rename a record or add a record to a sealed interface, so end a `switch` over events with a `default`.
+
+## Supported GitHub products
+
+The decoder has no product check: it decodes whatever it receives. A record or enum that not every product sends is marked
+`@Flavors`; [webhook-events.md](docs/guide/webhook-events.md) shows which product sends which event.
+
+| Product | Support |
+|---|---|
+| GitHub.com | Every event of the description |
+| GitHub Enterprise Cloud | Every event; one that only it sends is marked `@Flavors(GitHubWebhookFlavor.GHEC)` |
+| GitHub Enterprise Server | Version 3.22; an event that only it sends is marked `@Flavors(GitHubWebhookFlavor.GHES)` |
 
 ## Try it
 
@@ -88,6 +91,30 @@ decode the delivery, and prints one line per event. Run its `main` with the envi
 webhook's secret (the port is the first argument, default 8080), expose it with a tunnel such as `ngrok http 8080`, and add a
 webhook in a repository's Settings with the tunnel URL plus `/github/webhook`, content type `application/json` and the same
 secret. GitHub's first delivery is a `ping`.
+
+## User guide
+
+| Chapter | In short |
+|---|---|
+| [Receiving GitHub webhooks](docs/guide/webhooks.md) | The receiver, the decoded types, what never fails and what does, the payload map, stability and products |
+| [Supported events](docs/guide/webhook-events.md) | Every event the library decodes, with the action, the record and the products that send it |
+
+## Comparison with hub4j/github-api
+
+[hub4j/github-api](https://github.com/hub4j/github-api) is the long-established Java library for GitHub. It also parses
+webhook payloads, as a part of a larger API client. The hub4j column is taken from its source and
+[documentation](https://hub4j.github.io/github-api/) as of November 2026.
+
+| | github-webhook | hub4j/github-api |
+|---|---|---|
+| Purpose | Webhooks only: a decoder and a signature-verifying receiver | A client for the GitHub REST API; webhook payload parsing is one feature of it |
+| Events | A record for every event GitHub documents (313 events in 88 families) | Payload classes for a subset of events (34 classes in `GHEventPayload`) |
+| Dependencies | No HTTP client and no dependency on a REST client | The whole API client |
+| Java | 21 | 11 |
+| Maturity | Prerelease, see the [Disclaimer](#disclaimer) | Long-established and widely used |
+
+Choose hub4j/github-api if you already use it as your GitHub client, or need Java 11. Choose this library if you only
+receive webhooks and want every event typed, with the signature checked before anything is parsed.
 
 ## Disclaimer
 
