@@ -1,6 +1,6 @@
 # Supported webhook events
 
-309 events in 87 families. Generated from the events table; do not edit.
+313 events in 88 families. Generated from the events table; do not edit.
 
 | `X-GitHub-Event` | Action | Type | GitHub.com | Enterprise Cloud | Enterprise Server |
 |---|---|---|---|---|---|
@@ -278,6 +278,10 @@
 | `secret_scanning_alert` | `unassigned` | `GitHubWebhookSecretScanningAlertUnassignedEvent` | yes | yes | yes |
 | `secret_scanning_alert` | `validated` | `GitHubWebhookSecretScanningAlertValidatedEvent` | yes | yes | yes |
 | `secret_scanning_alert_location` | `created` | `GitHubWebhookSecretScanningAlertLocationCreatedEvent` | yes | yes | yes |
+| `secret_scanning_public_monitoring_alert` | `created` | `GitHubWebhookSecretScanningPublicMonitoringAlertCreatedEvent` | - | yes | - |
+| `secret_scanning_public_monitoring_alert` | `dismissed` | `GitHubWebhookSecretScanningPublicMonitoringAlertDismissedEvent` | - | yes | - |
+| `secret_scanning_public_monitoring_alert` | `reopened` | `GitHubWebhookSecretScanningPublicMonitoringAlertReopenedEvent` | - | yes | - |
+| `secret_scanning_public_monitoring_alert` | `validated` | `GitHubWebhookSecretScanningPublicMonitoringAlertValidatedEvent` | - | yes | - |
 | `secret_scanning_scan` | `completed` | `GitHubWebhookSecretScanningScanCompletedEvent` | yes | yes | yes |
 | `security_advisory` | `published` | `GitHubWebhookSecurityAdvisoryPublishedEvent` | yes | yes | yes |
 | `security_advisory` | `updated` | `GitHubWebhookSecurityAdvisoryUpdatedEvent` | yes | yes | yes |
