@@ -11,6 +11,7 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookRepositor
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleInstallation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -36,9 +37,15 @@ import org.jspecify.annotations.Nullable;
 @CatalogSchema("webhooks/issue-dependencies-blocked-by-removed/requestBody")
 public record GitHubWebhookIssueDependenciesBlockedByRemovedEvent(
         @Nullable GitHubWebhookIssue blockedIssue,
-        @Nullable Double blockedIssueId,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: long (blocked_issue_id)")
+        Long blockedIssueId,
+
         @Nullable GitHubWebhookIssue blockingIssue,
-        @Nullable Double blockingIssueId,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: long (blocking_issue_id)")
+        Long blockingIssueId,
+
         @Nullable GitHubWebhookRepository blockingIssueRepo,
         @Nullable GitHubWebhookSimpleInstallation installation,
         GitHubWebhookOrganizationSimple organization,

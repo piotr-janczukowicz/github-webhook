@@ -5,7 +5,6 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
-import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.time.Instant;
 import java.util.List;
 import org.jspecify.annotations.Nullable;
@@ -77,10 +76,7 @@ public record GitHubWebhookIssue(
         long id,
         @Nullable GitHubWebhookIssueDependenciesSummary issueDependenciesSummary,
         @Nullable List<GitHubWebhookIssueFieldValue> issueFieldValues,
-
-        @SuppressSchemaTypeMismatch("a bare string is read as the object with only its name")
         List<GitHubWebhookIssueLabel> labels,
-
         String labelsUrl,
         boolean locked,
         @Nullable GitHubWebhookPullRequestMilestone milestone,

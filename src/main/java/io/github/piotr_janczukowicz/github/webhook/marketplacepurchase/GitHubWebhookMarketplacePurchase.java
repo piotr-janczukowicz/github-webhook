@@ -7,6 +7,8 @@ import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.Flavors;
 import io.github.piotr_janczukowicz.github.webhook.GitHubWebhookFlavor;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -27,7 +29,10 @@ import org.jspecify.annotations.Nullable;
 public record GitHubWebhookMarketplacePurchase(
         GitHubWebhookMarketplacePurchaseAccount account,
         String billingCycle,
-        @Nullable String freeTrialEndsOn,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (free_trial_ends_on)")
+        Instant freeTrialEndsOn,
+
         @Nullable String nextBillingDate,
         boolean onFreeTrial,
         GitHubWebhookMarketplacePurchasePlan plan,

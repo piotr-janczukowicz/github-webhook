@@ -154,10 +154,7 @@ public record GitHubWebhookForkRepository(
         String contentsUrl,
         String contributorsUrl,
         @Nullable Instant createdAt,
-
-        @Nullable @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
-        Map<String, Object> customProperties,
-
+        @Nullable Map<String, Object> customProperties,
         String defaultBranch,
         @Nullable Boolean deleteBranchOnMerge,
         String deploymentsUrl,
@@ -219,7 +216,10 @@ public record GitHubWebhookForkRepository(
         String sshUrl,
         long stargazersCount,
         String stargazersUrl,
-        @Nullable String starredAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (starred_at)")
+        Instant starredAt,
+
         String statusesUrl,
         @Nullable Long subscribersCount,
         String subscribersUrl,

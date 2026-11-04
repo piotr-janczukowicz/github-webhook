@@ -5,6 +5,8 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.OffsetDateTime;
 
 /**
  * The simple commit payload.
@@ -24,7 +26,10 @@ public record GitHubWebhookSimpleCommit(
         GitHubWebhookCommitter committer,
         String id,
         String message,
-        String timestamp,
+
+        @SuppressSchemaTypeMismatch("a git commit time keeps the UTC offset of its author, read as an OffsetDateTime")
+        OffsetDateTime timestamp,
+
         String treeId) {
     public GitHubWebhookSimpleCommit {
         requireNonNull(author, "author");

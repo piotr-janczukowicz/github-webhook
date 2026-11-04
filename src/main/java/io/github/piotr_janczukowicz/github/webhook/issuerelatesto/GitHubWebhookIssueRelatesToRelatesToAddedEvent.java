@@ -12,6 +12,7 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookOrganizat
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleInstallation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -38,10 +39,16 @@ import org.jspecify.annotations.Nullable;
 public record GitHubWebhookIssueRelatesToRelatesToAddedEvent(
         @Nullable GitHubWebhookSimpleInstallation installation,
         @Nullable GitHubWebhookIssue issue,
-        @Nullable Double issueId,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: long (issue_id)")
+        Long issueId,
+
         GitHubWebhookOrganizationSimple organization,
         @Nullable GitHubWebhookIssue relatedIssue,
-        @Nullable Double relatedIssueId,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: long (related_issue_id)")
+        Long relatedIssueId,
+
         GitHubWebhookForkRepository repository,
         GitHubWebhookSimpleUser sender)
         implements GitHubWebhookIssueRelatesToEvent {

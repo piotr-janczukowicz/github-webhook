@@ -26,7 +26,7 @@ final class DiscussionCatalogFixtures {
     static GitHubWebhookDiscussion webhookDiscussion() {
         return GitHubWebhookDiscussionBuilder.builder()
                 .activeLockReason("active_lock_reason")
-                .answerChosenAt("answer_chosen_at")
+                .answerChosenAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .answerChosenBy(webhookUser())
                 .answerHtmlUrl("answer_html_url")
                 .authorAssociation(GitHubWebhookIssueAuthorAssociation.COLLABORATOR)

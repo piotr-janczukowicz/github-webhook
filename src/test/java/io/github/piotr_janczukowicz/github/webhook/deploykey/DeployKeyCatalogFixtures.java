@@ -6,6 +6,8 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleInstallation;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
 
+import java.time.Instant;
+
 final class DeployKeyCatalogFixtures {
 
     private DeployKeyCatalogFixtures() {
@@ -26,7 +28,7 @@ final class DeployKeyCatalogFixtures {
     static GitHubWebhookDeployKeyCreatedKey webhookDeployKeyCreatedKey() {
         return GitHubWebhookDeployKeyCreatedKeyBuilder.builder()
                 .addedBy("added_by")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .enabled(true)
                 .id(1L)
                 .key("key")

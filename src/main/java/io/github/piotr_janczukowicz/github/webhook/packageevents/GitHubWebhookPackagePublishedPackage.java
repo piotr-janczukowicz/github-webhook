@@ -5,6 +5,8 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -27,7 +29,9 @@ import org.jspecify.annotations.Nullable;
 @RecordBuilder
 @CatalogSchema("webhooks/package-published/requestBody/properties/package")
 public record GitHubWebhookPackagePublishedPackage(
-        @Nullable String createdAt,
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         @Nullable String description,
         String ecosystem,
         String htmlUrl,
@@ -38,7 +42,9 @@ public record GitHubWebhookPackagePublishedPackage(
         String packageType,
         @Nullable GitHubWebhookPackagePublishedPackagePackageVersion packageVersion,
         @Nullable GitHubWebhookPackageUpdatedPackageRegistry registry,
-        @Nullable String updatedAt) {
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt) {
     public GitHubWebhookPackagePublishedPackage {
         requireNonNull(ecosystem, "ecosystem");
         requireNonNull(htmlUrl, "htmlUrl");

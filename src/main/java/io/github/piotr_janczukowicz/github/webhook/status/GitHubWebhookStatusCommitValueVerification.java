@@ -5,6 +5,8 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -24,7 +26,9 @@ public record GitHubWebhookStatusCommitValueVerification(
         GitHubWebhookStatusCommitValueVerificationReason reason,
         @Nullable String signature,
         boolean verified,
-        @Nullable String verifiedAt) {
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (verified_at)")
+        Instant verifiedAt) {
     public GitHubWebhookStatusCommitValueVerification {
         requireNonNull(reason, "reason");
     }

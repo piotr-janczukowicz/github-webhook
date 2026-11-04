@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookDeploymentReviewApprovedApprover;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -27,13 +29,19 @@ import org.jspecify.annotations.Nullable;
         "webhooks/registry-package-published/requestBody/properties/registry_package/properties/package_version/properties/release")
 public record GitHubWebhookRegistryPackagePublishedRegistryPackagePackageVersionRelease(
         @Nullable GitHubWebhookDeploymentReviewApprovedApprover author,
-        @Nullable String createdAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         @Nullable Boolean draft,
         @Nullable String htmlUrl,
         @Nullable Long id,
         @Nullable String name,
         @Nullable Boolean prerelease,
-        @Nullable String publishedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (published_at)")
+        Instant publishedAt,
+
         @Nullable String tagName,
         @Nullable String targetCommitish,
         @Nullable String url) {}

@@ -9,6 +9,7 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
 
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookUserType;
+import java.time.Instant;
 
 final class SponsorshipCatalogFixtures {
 
@@ -58,7 +59,7 @@ final class SponsorshipCatalogFixtures {
 
     static GitHubWebhookSponsorshipEditedSponsorship webhookSponsorshipEditedSponsorship() {
         return GitHubWebhookSponsorshipEditedSponsorshipBuilder.builder()
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .maintainer(webhookDeploymentReviewApprovedApprover())
                 .nodeId("node_id")
                 .privacyLevel("privacy_level")
@@ -70,7 +71,7 @@ final class SponsorshipCatalogFixtures {
 
     static GitHubWebhookSponsorshipPendingCancellationEvent webhookSponsorshipPendingCancellationEvent() {
         return GitHubWebhookSponsorshipPendingCancellationEventBuilder.builder()
-                .effectiveDate("effective_date")
+                .effectiveDate(Instant.parse("2026-01-01T00:00:00Z"))
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
                 .organization(webhookOrganizationSimple())
@@ -83,7 +84,7 @@ final class SponsorshipCatalogFixtures {
     static GitHubWebhookSponsorshipPendingTierChangeEvent webhookSponsorshipPendingTierChangeEvent() {
         return GitHubWebhookSponsorshipPendingTierChangeEventBuilder.builder()
                 .changes(webhookSponsorshipTierChangedChanges())
-                .effectiveDate("effective_date")
+                .effectiveDate(Instant.parse("2026-01-01T00:00:00Z"))
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
                 .organization(webhookOrganizationSimple())
@@ -95,7 +96,7 @@ final class SponsorshipCatalogFixtures {
 
     static GitHubWebhookSponsorshipTier webhookSponsorshipTier() {
         return GitHubWebhookSponsorshipTierBuilder.builder()
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .description("description")
                 .isCustomAmmount(true)
                 .isCustomAmount(true)

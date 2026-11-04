@@ -13,6 +13,7 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookRepositor
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleInstallation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -41,11 +42,17 @@ public record GitHubWebhookSubIssuesSubIssueRemovedEvent(
         @Nullable GitHubWebhookSimpleInstallation installation,
         @Nullable GitHubWebhookOrganizationSimple organization,
         GitHubWebhookIssue parentIssue,
-        double parentIssueId,
+
+        @SuppressSchemaTypeMismatch("type rule: long (parent_issue_id)")
+        long parentIssueId,
+
         GitHubWebhookForkRepository repository,
         GitHubWebhookSimpleUser sender,
         @Nullable GitHubWebhookIssue subIssue,
-        @Nullable Double subIssueId,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: long (sub_issue_id)")
+        Long subIssueId,
+
         @Nullable GitHubWebhookRepository subIssueRepo)
         implements GitHubWebhookSubIssuesEvent {
     public GitHubWebhookSubIssuesSubIssueRemovedEvent {

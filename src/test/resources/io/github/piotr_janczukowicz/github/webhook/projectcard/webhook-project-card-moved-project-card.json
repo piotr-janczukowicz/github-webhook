@@ -4,7 +4,7 @@
   "column_id": 1,
   "column_url": "column_url",
   "content_url": "https://api.github.com/content_url",
-  "created_at": "created_at",
+  "created_at": "2026-01-01T00:00:00Z",
   "creator": {
     "avatar_url": "https://api.github.com/avatar_url",
     "deleted": true,
@@ -33,6 +33,6 @@
   "node_id": "node_id",
   "note": "note",
   "project_url": "project_url",
-  "updated_at": "updated_at",
+  "updated_at": "2026-01-01T00:00:00Z",
   "url": "url"
 }

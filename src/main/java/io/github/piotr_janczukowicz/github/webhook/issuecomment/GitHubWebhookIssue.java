@@ -14,6 +14,8 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookLabel;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookMilestoneState;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSubIssuesSummary;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import java.util.List;
 import org.jspecify.annotations.Nullable;
 
@@ -66,10 +68,16 @@ public record GitHubWebhookIssue(
         List<GitHubWebhookIssueAssignee> assignees,
         GitHubWebhookIssueAuthorAssociation authorAssociation,
         @Nullable String body,
-        @Nullable String closedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (closed_at)")
+        Instant closedAt,
+
         long comments,
         String commentsUrl,
-        String createdAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         @Nullable Boolean draft,
         String eventsUrl,
         String htmlUrl,
@@ -91,7 +99,10 @@ public record GitHubWebhookIssue(
         @Nullable String timelineUrl,
         String title,
         @Nullable GitHubWebhookIssueType type,
-        String updatedAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         String url,
         @Nullable GitHubWebhookIssueAssignee user) {
     public GitHubWebhookIssue {

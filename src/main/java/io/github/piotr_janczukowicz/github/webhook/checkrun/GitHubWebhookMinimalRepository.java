@@ -10,7 +10,6 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookRepositor
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookRepositoryTemplateRepositoryPermissions;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
-import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.time.Instant;
 import java.util.List;
 import java.util.Map;
@@ -133,10 +132,7 @@ public record GitHubWebhookMinimalRepository(
         String contentsUrl,
         String contributorsUrl,
         @Nullable Instant createdAt,
-
-        @Nullable @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
-        Map<String, Object> customProperties,
-
+        @Nullable Map<String, Object> customProperties,
         @Nullable String defaultBranch,
         @Nullable Boolean deleteBranchOnMerge,
         String deploymentsUrl,

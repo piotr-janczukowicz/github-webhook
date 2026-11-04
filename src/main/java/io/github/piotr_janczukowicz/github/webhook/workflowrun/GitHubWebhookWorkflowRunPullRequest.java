@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookCheckRunPullRequestBase;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 
 /**
  * The workflow run pull request payload.
@@ -22,7 +23,7 @@ import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
 public record GitHubWebhookWorkflowRunPullRequest(
         GitHubWebhookCheckRunPullRequestBase base,
         GitHubWebhookCheckRunPullRequestBase head,
-        double id,
+        @SuppressSchemaTypeMismatch("type rule: long (id)") long id,
         double number,
         String url) {
     public GitHubWebhookWorkflowRunPullRequest {

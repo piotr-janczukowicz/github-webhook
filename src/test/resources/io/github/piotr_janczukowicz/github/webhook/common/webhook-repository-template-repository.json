@@ -16,7 +16,7 @@
   "compare_url": "compare_url",
   "contents_url": "contents_url",
   "contributors_url": "contributors_url",
-  "created_at": "created_at",
+  "created_at": "2026-01-01T00:00:00Z",
   "default_branch": "default_branch",
   "delete_branch_on_merge": true,
   "deployments_url": "deployments_url",
@@ -88,7 +88,7 @@
   },
   "private": true,
   "pulls_url": "pulls_url",
-  "pushed_at": "pushed_at",
+  "pushed_at": "2026-01-01T00:00:00Z",
   "releases_url": "releases_url",
   "size": 1,
   "squash_merge_commit_message": "PR_BODY",
@@ -108,7 +108,7 @@
     "topics"
   ],
   "trees_url": "trees_url",
-  "updated_at": "updated_at",
+  "updated_at": "2026-01-01T00:00:00Z",
   "url": "url",
   "visibility": "visibility",
   "watchers_count": 1

@@ -9,6 +9,7 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookMilestone
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookProjectsV2StatusUpdate;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
@@ -43,7 +44,7 @@ public record GitHubWebhookProjectsV2Project(
         @Nullable Instant deletedAt,
         @Nullable GitHubWebhookSimpleUser deletedBy,
         @Nullable String description,
-        double id,
+        @SuppressSchemaTypeMismatch("type rule: long (id)") long id,
         @Nullable Boolean isTemplate,
         @Nullable GitHubWebhookProjectsV2StatusUpdate latestStatusUpdate,
         String nodeId,

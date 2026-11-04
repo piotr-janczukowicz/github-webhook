@@ -69,7 +69,7 @@ final class OrganizationCatalogFixtures {
                 .email("email")
                 .failedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .failedReason("failed_reason")
-                .id(1.5)
+                .id(1L)
                 .invitationSource("invitation_source")
                 .invitationTeamsUrl("https://api.github.com/invitation_teams_url")
                 .inviter(webhookUser())

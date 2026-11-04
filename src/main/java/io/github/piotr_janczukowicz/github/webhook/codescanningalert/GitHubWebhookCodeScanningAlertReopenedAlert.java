@@ -39,7 +39,9 @@ import org.jspecify.annotations.Nullable;
 public record GitHubWebhookCodeScanningAlertReopenedAlert(
         @Nullable List<GitHubWebhookSimpleUser> assignees,
         Instant createdAt,
-        @Nullable String dismissedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (dismissed_at)")
+        Instant dismissedAt,
 
         @Nullable @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
         Map<String, Object> dismissedBy,
@@ -53,7 +55,10 @@ public record GitHubWebhookCodeScanningAlertReopenedAlert(
         GitHubWebhookCodeScanningAlertFixedAlertRule rule,
         @Nullable GitHubWebhookAlertInstanceState state,
         GitHubWebhookCodeScanningAlertFixedAlertTool tool,
-        @Nullable String updatedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         String url) {
     public GitHubWebhookCodeScanningAlertReopenedAlert {
         requireNonNull(createdAt, "createdAt");

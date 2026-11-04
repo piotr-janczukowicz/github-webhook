@@ -43,7 +43,7 @@ final class DeploymentStatusCatalogFixtures {
 
     static GitHubWebhookDeployment webhookDeployment() {
         return GitHubWebhookDeploymentBuilder.builder()
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .creator(webhookUser())
                 .description("description")
                 .environment("environment")
@@ -59,7 +59,7 @@ final class DeploymentStatusCatalogFixtures {
                 .statusesUrl("https://api.github.com/statuses_url")
                 .task("task")
                 .transientEnvironment(true)
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .url("https://api.github.com/url")
                 .build();
     }
@@ -83,7 +83,7 @@ final class DeploymentStatusCatalogFixtures {
 
     static GitHubWebhookDeploymentStatusCreatedDeploymentStatus webhookDeploymentStatusCreatedDeploymentStatus() {
         return GitHubWebhookDeploymentStatusCreatedDeploymentStatusBuilder.builder()
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .creator(webhookUser())
                 .deploymentUrl("https://api.github.com/deployment_url")
                 .description("description")
@@ -96,7 +96,7 @@ final class DeploymentStatusCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state("state")
                 .targetUrl("target_url")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .url("https://api.github.com/url")
                 .build();
     }

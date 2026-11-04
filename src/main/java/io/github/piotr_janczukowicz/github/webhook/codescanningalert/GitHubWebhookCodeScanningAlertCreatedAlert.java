@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.time.Instant;
 import java.util.List;
 import org.jspecify.annotations.Nullable;
@@ -41,7 +42,10 @@ public record GitHubWebhookCodeScanningAlertCreatedAlert(
         GitHubWebhookCodeScanningAlertFixedAlertRule rule,
         @Nullable GitHubWebhookCodeScanningAlertCreatedAlertState state,
         @Nullable GitHubWebhookCodeScanningAlertFixedAlertTool tool,
-        @Nullable String updatedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         String url) {
     public GitHubWebhookCodeScanningAlertCreatedAlert {
         requireNonNull(htmlUrl, "htmlUrl");

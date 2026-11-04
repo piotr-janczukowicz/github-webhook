@@ -5,7 +5,6 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
-import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.time.Instant;
 import java.util.Map;
 import org.jspecify.annotations.Nullable;
@@ -45,11 +44,7 @@ public record GitHubWebhookDeployment(
         long id,
         String nodeId,
         @Nullable String originalEnvironment,
-
-        @SuppressSchemaTypeMismatch(
-                "a string or number or boolean is read as the value of `value` of a free-form object")
         Map<String, Object> payload,
-
         @Nullable GitHubWebhookGitHubApp performedViaGithubApp,
         @Nullable Boolean productionEnvironment,
         String ref,

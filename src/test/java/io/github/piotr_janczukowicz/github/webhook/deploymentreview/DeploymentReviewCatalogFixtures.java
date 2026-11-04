@@ -74,25 +74,25 @@ final class DeploymentReviewCatalogFixtures {
 
     static GitHubWebhookDeploymentReviewApprovedWorkflowJobRun webhookDeploymentReviewApprovedWorkflowJobRun() {
         return GitHubWebhookDeploymentReviewApprovedWorkflowJobRunBuilder.builder()
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .environment("environment")
                 .htmlUrl("html_url")
                 .id(1L)
                 .status("status")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 
     static GitHubWebhookDeploymentReviewApprovedWorkflowJobRunsItem
             webhookDeploymentReviewApprovedWorkflowJobRunsItem() {
         return GitHubWebhookDeploymentReviewApprovedWorkflowJobRunsItemBuilder.builder()
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .environment("environment")
                 .htmlUrl("html_url")
                 .id(1L)
                 .name("name")
                 .status("status")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 
@@ -116,13 +116,13 @@ final class DeploymentReviewCatalogFixtures {
     static GitHubWebhookDeploymentReviewRejectedWorkflowJobRun webhookDeploymentReviewRejectedWorkflowJobRun() {
         return GitHubWebhookDeploymentReviewRejectedWorkflowJobRunBuilder.builder()
                 .conclusion("conclusion")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .environment("environment")
                 .htmlUrl("html_url")
                 .id(1L)
                 .name("name")
                 .status("status")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 
@@ -218,13 +218,13 @@ final class DeploymentReviewCatalogFixtures {
 
     static GitHubWebhookDeploymentReviewRequestedWorkflowJobRun webhookDeploymentReviewRequestedWorkflowJobRun() {
         return GitHubWebhookDeploymentReviewRequestedWorkflowJobRunBuilder.builder()
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .environment("environment")
                 .htmlUrl("html_url")
                 .id(1L)
                 .name("name")
                 .status("status")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 

@@ -5,6 +5,7 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
@@ -35,7 +36,9 @@ public record GitHubWebhookDiscussionCategory(
         @Nullable String nodeId,
         long repositoryId,
         String slug,
-        String updatedAt) {
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt) {
     public GitHubWebhookDiscussionCategory {
         requireNonNull(createdAt, "createdAt");
         requireNonNull(description, "description");

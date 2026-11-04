@@ -116,7 +116,7 @@ final class ForkCatalogFixtures {
                 .teamsUrl("teams_url")
                 .topics(List.of("topics"))
                 .treesUrl("trees_url")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .url("url")
                 .visibility(GitHubWebhookRepositoryVisibility.PUBLIC)
                 .watchers(1L)

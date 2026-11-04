@@ -7,6 +7,8 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleInstallation;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
 
+import java.time.Instant;
+
 final class InstallationTargetCatalogFixtures {
 
     private InstallationTargetCatalogFixtures() {
@@ -15,9 +17,9 @@ final class InstallationTargetCatalogFixtures {
 
     static GitHubWebhookInstallationTargetRenamedAccount webhookInstallationTargetRenamedAccount() {
         return GitHubWebhookInstallationTargetRenamedAccountBuilder.builder()
-                .archivedAt("archived_at")
+                .archivedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .avatarUrl("avatar_url")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .eventsUrl("events_url")
                 .followers(1L)
                 .followersUrl("followers_url")
@@ -47,7 +49,7 @@ final class InstallationTargetCatalogFixtures {
                 .starredUrl("starred_url")
                 .subscriptionsUrl("subscriptions_url")
                 .type("type")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .url("url")
                 .userViewType("user_view_type")
                 .build();

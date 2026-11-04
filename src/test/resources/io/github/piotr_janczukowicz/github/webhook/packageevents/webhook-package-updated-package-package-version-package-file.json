@@ -1,6 +1,6 @@
 {
   "content_type": "content_type",
-  "created_at": "created_at",
+  "created_at": "2026-01-01T00:00:00Z",
   "download_url": "https://api.github.com/download_url",
   "id": 1,
   "md5": "md5",
@@ -9,5 +9,5 @@
   "sha256": "sha256",
   "size": 1,
   "state": "state",
-  "updated_at": "updated_at"
+  "updated_at": "2026-01-01T00:00:00Z"
 }

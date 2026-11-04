@@ -1,5 +1,5 @@
 {
-  "created_at": "created_at",
+  "created_at": "2026-01-01T00:00:00Z",
   "description": "description",
   "ecosystem": "ecosystem",
   "html_url": "html_url",
@@ -66,7 +66,7 @@
         "name": "name"
       }
     },
-    "created_at": "created_at",
+    "created_at": "2026-01-01T00:00:00Z",
     "description": "description",
     "docker_metadata": [
       {
@@ -177,8 +177,8 @@
     "package_files": [
       {
         "content_type": "content_type",
-        "created_at": "created_at",
-        "download_url": "https://api.github.com/download_url",
+        "created_at": "2026-01-01T00:00:00Z",
+        "download_url": "download_url",
         "id": 1,
         "md5": "md5",
         "name": "name",
@@ -186,7 +186,7 @@
         "sha256": "sha256",
         "size": 1,
         "state": "state",
-        "updated_at": "updated_at"
+        "updated_at": "2026-01-01T00:00:00Z"
       }
     ],
     "package_url": "package_url",
@@ -213,13 +213,13 @@
         "url": "url",
         "user_view_type": "user_view_type"
       },
-      "created_at": "created_at",
+      "created_at": "2026-01-01T00:00:00Z",
       "draft": true,
       "html_url": "html_url",
       "id": 1,
       "name": "name",
       "prerelease": true,
-      "published_at": "published_at",
+      "published_at": "2026-01-01T00:00:00Z",
       "tag_name": "tag_name",
       "target_commitish": "target_commitish",
       "url": "url"
@@ -250,7 +250,7 @@
     "tag_name": "tag_name",
     "target_commitish": "target_commitish",
     "target_oid": "target_oid",
-    "updated_at": "updated_at",
+    "updated_at": "2026-01-01T00:00:00Z",
     "version": "version"
   },
   "registry": {
@@ -260,5 +260,5 @@
     "url": "url",
     "vendor": "vendor"
   },
-  "updated_at": "updated_at"
+  "updated_at": "2026-01-01T00:00:00Z"
 }

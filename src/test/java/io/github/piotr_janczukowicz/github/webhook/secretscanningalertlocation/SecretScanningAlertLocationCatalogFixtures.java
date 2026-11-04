@@ -74,12 +74,12 @@ final class SecretScanningAlertLocationCatalogFixtures {
                 .blobUrl("blob_url")
                 .commitSha("af5626b4a114abcb82d63db7c8082c3c4756e51b")
                 .commitUrl("commit_url")
-                .endColumn(1.5)
-                .endLine(1.5)
+                .endColumn(1)
+                .endLine(1)
                 .htmlUrl("https://github.com/octocat/Hello-World/blob/af5626b/example/secrets.txt#L1-L1")
                 .path("/example/secrets.txt")
-                .startColumn(1.5)
-                .startLine(1.5)
+                .startColumn(1)
+                .startLine(1)
                 .build();
     }
 
@@ -128,12 +128,12 @@ final class SecretScanningAlertLocationCatalogFixtures {
                 .commitSha("302c0b7e200761c9dd9b57e57db540ee0b4293a5")
                 .commitUrl(
                         "https://github.com/octocat/Hello-World/wiki/_compare/302c0b7e200761c9dd9b57e57db540ee0b4293a5")
-                .endColumn(1.5)
-                .endLine(1.5)
+                .endColumn(1)
+                .endLine(1)
                 .pageUrl("https://github.com/octocat/Hello-World/wiki/Home/302c0b7e200761c9dd9b57e57db540ee0b4293a5")
                 .path("/example/Home.md")
-                .startColumn(1.5)
-                .startLine(1.5)
+                .startColumn(1)
+                .startLine(1)
                 .build();
     }
 

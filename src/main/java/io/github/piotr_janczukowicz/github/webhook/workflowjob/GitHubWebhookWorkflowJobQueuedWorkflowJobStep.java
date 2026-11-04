@@ -5,6 +5,8 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -21,11 +23,16 @@ import org.jspecify.annotations.Nullable;
 @RecordBuilder
 @CatalogSchema("webhooks/workflow-job-queued/requestBody/properties/workflow_job/properties/steps/items")
 public record GitHubWebhookWorkflowJobQueuedWorkflowJobStep(
-        @Nullable String completedAt,
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (completed_at)")
+        Instant completedAt,
+
         @Nullable GitHubWebhookWorkflowJobInProgressWorkflowJobStepConclusion conclusion,
         String name,
         long number,
-        @Nullable String startedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (started_at)")
+        Instant startedAt,
+
         GitHubWebhookWorkflowJobQueuedWorkflowJobStepStatus status) {
     public GitHubWebhookWorkflowJobQueuedWorkflowJobStep {
         requireNonNull(name, "name");

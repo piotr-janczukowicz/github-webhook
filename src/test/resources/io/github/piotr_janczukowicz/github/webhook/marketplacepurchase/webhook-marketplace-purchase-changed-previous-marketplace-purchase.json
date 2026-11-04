@@ -7,7 +7,7 @@
     "type": "type"
   },
   "billing_cycle": "billing_cycle",
-  "free_trial_ends_on": "free_trial_ends_on",
+  "free_trial_ends_on": "2026-01-01T00:00:00Z",
   "next_billing_date": "next_billing_date",
   "on_free_trial": true,
   "plan": {

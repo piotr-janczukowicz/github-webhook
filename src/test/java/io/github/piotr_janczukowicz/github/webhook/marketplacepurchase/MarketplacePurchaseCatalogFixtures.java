@@ -6,6 +6,7 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleInstallation;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
 
+import java.time.Instant;
 import java.util.List;
 
 final class MarketplacePurchaseCatalogFixtures {
@@ -18,7 +19,7 @@ final class MarketplacePurchaseCatalogFixtures {
         return GitHubWebhookMarketplacePurchaseBuilder.builder()
                 .account(webhookMarketplacePurchaseAccount())
                 .billingCycle("billing_cycle")
-                .freeTrialEndsOn("free_trial_ends_on")
+                .freeTrialEndsOn(Instant.parse("2026-01-01T00:00:00Z"))
                 .nextBillingDate("next_billing_date")
                 .onFreeTrial(true)
                 .plan(webhookMarketplacePurchasePlan())
@@ -38,7 +39,7 @@ final class MarketplacePurchaseCatalogFixtures {
 
     static GitHubWebhookMarketplacePurchaseCancelledEvent webhookMarketplacePurchaseCancelledEvent() {
         return GitHubWebhookMarketplacePurchaseCancelledEventBuilder.builder()
-                .effectiveDate("effective_date")
+                .effectiveDate(Instant.parse("2026-01-01T00:00:00Z"))
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
                 .marketplacePurchase(webhookMarketplacePurchase())
@@ -63,7 +64,7 @@ final class MarketplacePurchaseCatalogFixtures {
 
     static GitHubWebhookMarketplacePurchaseChangedEvent webhookMarketplacePurchaseChangedEvent() {
         return GitHubWebhookMarketplacePurchaseChangedEventBuilder.builder()
-                .effectiveDate("effective_date")
+                .effectiveDate(Instant.parse("2026-01-01T00:00:00Z"))
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
                 .marketplacePurchase(webhookMarketplacePurchase())
@@ -79,7 +80,7 @@ final class MarketplacePurchaseCatalogFixtures {
         return GitHubWebhookMarketplacePurchaseChangedPreviousMarketplacePurchaseBuilder.builder()
                 .account(webhookMarketplacePurchaseAccount())
                 .billingCycle("billing_cycle")
-                .freeTrialEndsOn("free_trial_ends_on")
+                .freeTrialEndsOn(Instant.parse("2026-01-01T00:00:00Z"))
                 .nextBillingDate("next_billing_date")
                 .onFreeTrial(true)
                 .plan(webhookMarketplacePurchasePlan())
@@ -90,7 +91,7 @@ final class MarketplacePurchaseCatalogFixtures {
     static GitHubWebhookMarketplacePurchasePendingChangeCancelledEvent
             webhookMarketplacePurchasePendingChangeCancelledEvent() {
         return GitHubWebhookMarketplacePurchasePendingChangeCancelledEventBuilder.builder()
-                .effectiveDate("effective_date")
+                .effectiveDate(Instant.parse("2026-01-01T00:00:00Z"))
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
                 .marketplacePurchase(webhookMarketplacePurchaseCancelledPreviousMarketplacePurchase())
@@ -103,7 +104,7 @@ final class MarketplacePurchaseCatalogFixtures {
 
     static GitHubWebhookMarketplacePurchasePendingChangeEvent webhookMarketplacePurchasePendingChangeEvent() {
         return GitHubWebhookMarketplacePurchasePendingChangeEventBuilder.builder()
-                .effectiveDate("effective_date")
+                .effectiveDate(Instant.parse("2026-01-01T00:00:00Z"))
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
                 .marketplacePurchase(webhookMarketplacePurchase())
@@ -130,7 +131,7 @@ final class MarketplacePurchaseCatalogFixtures {
 
     static GitHubWebhookMarketplacePurchasePurchasedEvent webhookMarketplacePurchasePurchasedEvent() {
         return GitHubWebhookMarketplacePurchasePurchasedEventBuilder.builder()
-                .effectiveDate("effective_date")
+                .effectiveDate(Instant.parse("2026-01-01T00:00:00Z"))
                 .enterprise(webhookEnterprise())
                 .installation(webhookSimpleInstallation())
                 .marketplacePurchase(webhookMarketplacePurchase())

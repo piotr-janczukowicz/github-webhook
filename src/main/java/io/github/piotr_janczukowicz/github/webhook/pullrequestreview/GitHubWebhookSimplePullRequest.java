@@ -13,6 +13,8 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookMilestone
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPullRequestLinks;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPullRequestStack;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import java.util.List;
 import org.jspecify.annotations.Nullable;
 
@@ -68,10 +70,16 @@ public record GitHubWebhookSimplePullRequest(
         @Nullable GitHubWebhookPullRequestAutoMerge autoMerge,
         GitHubWebhookSimplePullRequestBase base,
         @Nullable String body,
-        @Nullable String closedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (closed_at)")
+        Instant closedAt,
+
         String commentsUrl,
         String commitsUrl,
-        String createdAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         String diffUrl,
         boolean draft,
         GitHubWebhookSimplePullRequestHead head,
@@ -80,7 +88,10 @@ public record GitHubWebhookSimplePullRequest(
         String issueUrl,
         List<GitHubWebhookLabel> labels,
         boolean locked,
-        @Nullable String mergedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (merged_at)")
+        Instant mergedAt,
+
         @Nullable GitHubWebhookSimplePullRequestMilestone milestone,
         String nodeId,
         long number,
@@ -93,7 +104,10 @@ public record GitHubWebhookSimplePullRequest(
         GitHubWebhookMilestoneState state,
         String statusesUrl,
         String title,
-        String updatedAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         String url,
         @Nullable GitHubWebhookUser user) {
     public GitHubWebhookSimplePullRequest {

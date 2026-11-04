@@ -336,7 +336,7 @@ final class WorkflowRunCatalogFixtures {
         return GitHubWebhookWorkflowRunPullRequestBuilder.builder()
                 .base(webhookCheckRunPullRequestBase())
                 .head(webhookCheckRunPullRequestBase())
-                .id(1.5)
+                .id(1L)
                 .number(1.5)
                 .url("https://api.github.com/url")
                 .build();

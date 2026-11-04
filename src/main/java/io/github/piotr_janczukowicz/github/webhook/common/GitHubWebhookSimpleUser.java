@@ -6,6 +6,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -56,7 +58,10 @@ public record GitHubWebhookSimpleUser(
         String receivedEventsUrl,
         String reposUrl,
         boolean siteAdmin,
-        @Nullable String starredAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (starred_at)")
+        Instant starredAt,
+
         String starredUrl,
         String subscriptionsUrl,
         String type,

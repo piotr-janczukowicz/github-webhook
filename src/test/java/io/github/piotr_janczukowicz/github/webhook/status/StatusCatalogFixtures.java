@@ -7,6 +7,7 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
 
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookUserType;
+import java.time.Instant;
 import java.util.List;
 
 final class StatusCatalogFixtures {
@@ -86,7 +87,7 @@ final class StatusCatalogFixtures {
                 .reason(GitHubWebhookStatusCommitValueVerificationReason.EXPIRED_KEY)
                 .signature("signature")
                 .verified(true)
-                .verifiedAt("verified_at")
+                .verifiedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 
@@ -96,7 +97,7 @@ final class StatusCatalogFixtures {
                 .branches(List.of(webhookStatusBranch()))
                 .commit(webhookStatusCommit())
                 .context("context")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .description("description")
                 .enterprise(webhookEnterprise())
                 .id(1L)
@@ -108,7 +109,7 @@ final class StatusCatalogFixtures {
                 .sha("sha")
                 .state(GitHubWebhookStatusState.PENDING)
                 .targetUrl("target_url")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 

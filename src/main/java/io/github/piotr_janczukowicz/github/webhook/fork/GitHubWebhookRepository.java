@@ -202,7 +202,10 @@ public record GitHubWebhookRepository(
         String teamsUrl,
         List<String> topics,
         String treesUrl,
-        String updatedAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         String url,
         GitHubWebhookRepositoryVisibility visibility,
         long watchers,

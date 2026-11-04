@@ -19,9 +19,9 @@ final class WorkflowJobCatalogFixtures {
     static GitHubWebhookWorkflowJob webhookWorkflowJob() {
         return GitHubWebhookWorkflowJobBuilder.builder()
                 .checkRunUrl("check_run_url")
-                .completedAt("completed_at")
+                .completedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .conclusion(GitHubWebhookWorkflowJobConclusion.SUCCESS)
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .headBranch("head_branch")
                 .headSha("head_sha")
                 .htmlUrl("html_url")
@@ -36,7 +36,7 @@ final class WorkflowJobCatalogFixtures {
                 .runnerGroupName("runner_group_name")
                 .runnerId(1L)
                 .runnerName("runner_name")
-                .startedAt("started_at")
+                .startedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .status(GitHubWebhookWorkflowJobStatus.QUEUED)
                 .steps(List.of(webhookWorkflowStep()))
                 .url("url")
@@ -71,9 +71,9 @@ final class WorkflowJobCatalogFixtures {
     static GitHubWebhookWorkflowJobInProgressWorkflowJob webhookWorkflowJobInProgressWorkflowJob() {
         return GitHubWebhookWorkflowJobInProgressWorkflowJobBuilder.builder()
                 .checkRunUrl("check_run_url")
-                .completedAt("completed_at")
+                .completedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .conclusion(GitHubWebhookWorkflowJobInProgressWorkflowJobConclusion.SUCCESS)
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .headBranch("head_branch")
                 .headSha("head_sha")
                 .htmlUrl("html_url")
@@ -88,7 +88,7 @@ final class WorkflowJobCatalogFixtures {
                 .runnerGroupName("runner_group_name")
                 .runnerId(1L)
                 .runnerName("runner_name")
-                .startedAt("started_at")
+                .startedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .status(GitHubWebhookWorkflowJobInProgressWorkflowJobStatus.IN_PROGRESS)
                 .steps(List.of(webhookWorkflowJobInProgressWorkflowJobStep()))
                 .url("url")
@@ -98,11 +98,11 @@ final class WorkflowJobCatalogFixtures {
 
     static GitHubWebhookWorkflowJobInProgressWorkflowJobStep webhookWorkflowJobInProgressWorkflowJobStep() {
         return GitHubWebhookWorkflowJobInProgressWorkflowJobStepBuilder.builder()
-                .completedAt("completed_at")
+                .completedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .conclusion(GitHubWebhookWorkflowJobInProgressWorkflowJobStepConclusion.FAILURE)
                 .name("name")
                 .number(1L)
-                .startedAt("started_at")
+                .startedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .status(GitHubWebhookWorkflowJobInProgressWorkflowJobStepStatus.IN_PROGRESS)
                 .build();
     }
@@ -122,9 +122,9 @@ final class WorkflowJobCatalogFixtures {
     static GitHubWebhookWorkflowJobQueuedWorkflowJob webhookWorkflowJobQueuedWorkflowJob() {
         return GitHubWebhookWorkflowJobQueuedWorkflowJobBuilder.builder()
                 .checkRunUrl("https://api.github.com/check_run_url")
-                .completedAt("completed_at")
+                .completedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .conclusion("conclusion")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .headBranch("head_branch")
                 .headSha("head_sha")
                 .htmlUrl("https://api.github.com/html_url")
@@ -133,7 +133,7 @@ final class WorkflowJobCatalogFixtures {
                 .name("name")
                 .nodeId("node_id")
                 .runAttempt(1L)
-                .runId(1.5)
+                .runId(1L)
                 .runUrl("https://api.github.com/run_url")
                 .runnerGroupId(1L)
                 .runnerGroupName("runner_group_name")
@@ -149,11 +149,11 @@ final class WorkflowJobCatalogFixtures {
 
     static GitHubWebhookWorkflowJobQueuedWorkflowJobStep webhookWorkflowJobQueuedWorkflowJobStep() {
         return GitHubWebhookWorkflowJobQueuedWorkflowJobStepBuilder.builder()
-                .completedAt("completed_at")
+                .completedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .conclusion(GitHubWebhookWorkflowJobInProgressWorkflowJobStepConclusion.FAILURE)
                 .name("name")
                 .number(1L)
-                .startedAt("started_at")
+                .startedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .status(GitHubWebhookWorkflowJobQueuedWorkflowJobStepStatus.COMPLETED)
                 .build();
     }
@@ -173,9 +173,9 @@ final class WorkflowJobCatalogFixtures {
     static GitHubWebhookWorkflowJobWaitingWorkflowJob webhookWorkflowJobWaitingWorkflowJob() {
         return GitHubWebhookWorkflowJobWaitingWorkflowJobBuilder.builder()
                 .checkRunUrl("https://api.github.com/check_run_url")
-                .completedAt("completed_at")
+                .completedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .conclusion("conclusion")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .headBranch("head_branch")
                 .headSha("head_sha")
                 .htmlUrl("https://api.github.com/html_url")
@@ -184,7 +184,7 @@ final class WorkflowJobCatalogFixtures {
                 .name("name")
                 .nodeId("node_id")
                 .runAttempt(1L)
-                .runId(1.5)
+                .runId(1L)
                 .runUrl("https://api.github.com/run_url")
                 .runnerGroupId(1L)
                 .runnerGroupName("runner_group_name")
@@ -200,22 +200,22 @@ final class WorkflowJobCatalogFixtures {
 
     static GitHubWebhookWorkflowJobWaitingWorkflowJobStep webhookWorkflowJobWaitingWorkflowJobStep() {
         return GitHubWebhookWorkflowJobWaitingWorkflowJobStepBuilder.builder()
-                .completedAt("completed_at")
+                .completedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .conclusion(GitHubWebhookWorkflowJobInProgressWorkflowJobStepConclusion.FAILURE)
                 .name("name")
                 .number(1L)
-                .startedAt("started_at")
+                .startedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .status(GitHubWebhookWorkflowJobWaitingWorkflowJobStepStatus.COMPLETED)
                 .build();
     }
 
     static GitHubWebhookWorkflowStep webhookWorkflowStep() {
         return GitHubWebhookWorkflowStepBuilder.builder()
-                .completedAt("completed_at")
+                .completedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .conclusion(GitHubWebhookWorkflowJobInProgressWorkflowJobStepConclusion.FAILURE)
                 .name("name")
                 .number(1L)
-                .startedAt("started_at")
+                .startedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .status(GitHubWebhookWorkflowJobInProgressWorkflowJobStatus.IN_PROGRESS)
                 .build();
     }

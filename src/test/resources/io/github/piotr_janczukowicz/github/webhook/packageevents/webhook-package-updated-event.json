@@ -30,7 +30,7 @@
     "url": "https://api.github.com/orgs/github"
   },
   "package": {
-    "created_at": "created_at",
+    "created_at": "2026-01-01T00:00:00Z",
     "description": "description",
     "ecosystem": "ecosystem",
     "html_url": "https://api.github.com/html_url",
@@ -89,7 +89,7 @@
       },
       "body": "body",
       "body_html": "body_html",
-      "created_at": "created_at",
+      "created_at": "2026-01-01T00:00:00Z",
       "description": "description",
       "docker_metadata": [
         {
@@ -112,7 +112,7 @@
       "package_files": [
         {
           "content_type": "content_type",
-          "created_at": "created_at",
+          "created_at": "2026-01-01T00:00:00Z",
           "download_url": "https://api.github.com/download_url",
           "id": 1,
           "md5": "md5",
@@ -121,7 +121,7 @@
           "sha256": "sha256",
           "size": 1,
           "state": "state",
-          "updated_at": "updated_at"
+          "updated_at": "2026-01-01T00:00:00Z"
         }
       ],
       "package_url": "package_url",
@@ -151,13 +151,13 @@
           "url": "https://api.github.com/url",
           "user_view_type": "user_view_type"
         },
-        "created_at": "created_at",
+        "created_at": "2026-01-01T00:00:00Z",
         "draft": true,
         "html_url": "https://api.github.com/html_url",
         "id": 1,
         "name": "name",
         "prerelease": true,
-        "published_at": "published_at",
+        "published_at": "2026-01-01T00:00:00Z",
         "tag_name": "tag_name",
         "target_commitish": "target_commitish",
         "url": "https://api.github.com/url"
@@ -189,7 +189,7 @@
       "tag_name": "tag_name",
       "target_commitish": "target_commitish",
       "target_oid": "target_oid",
-      "updated_at": "updated_at",
+      "updated_at": "2026-01-01T00:00:00Z",
       "version": "version"
     },
     "registry": {
@@ -199,7 +199,7 @@
       "url": "https://api.github.com/url",
       "vendor": "vendor"
     },
-    "updated_at": "updated_at"
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   "repository": {
     "allow_auto_merge": false,
@@ -296,7 +296,7 @@
       "received_events_url": "https://api.github.com/users/octocat/received_events",
       "repos_url": "https://api.github.com/users/octocat/repos",
       "site_admin": true,
-      "starred_at": "\"2020-07-09T00:17:55Z\"",
+      "starred_at": "2026-01-01T00:00:00Z",
       "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
       "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
       "type": "User",
@@ -320,7 +320,7 @@
       "received_events_url": "https://api.github.com/users/octocat/received_events",
       "repos_url": "https://api.github.com/users/octocat/repos",
       "site_admin": true,
-      "starred_at": "\"2020-07-09T00:17:55Z\"",
+      "starred_at": "2026-01-01T00:00:00Z",
       "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
       "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
       "type": "User",
@@ -345,7 +345,7 @@
     "ssh_url": "git@github.com:octocat/Hello-World.git",
     "stargazers_count": 80,
     "stargazers_url": "http://api.github.com/repos/octocat/Hello-World/stargazers",
-    "starred_at": "\"2020-07-09T00:17:42Z\"",
+    "starred_at": "2026-01-01T00:00:00Z",
     "statuses_url": "http://api.github.com/repos/octocat/Hello-World/statuses/{sha}",
     "subscribers_count": 1,
     "subscribers_url": "http://api.github.com/repos/octocat/Hello-World/subscribers",
@@ -372,7 +372,7 @@
       "compare_url": "compare_url",
       "contents_url": "contents_url",
       "contributors_url": "contributors_url",
-      "created_at": "created_at",
+      "created_at": "2026-01-01T00:00:00Z",
       "default_branch": "default_branch",
       "delete_branch_on_merge": true,
       "deployments_url": "deployments_url",
@@ -444,7 +444,7 @@
       },
       "private": true,
       "pulls_url": "pulls_url",
-      "pushed_at": "pushed_at",
+      "pushed_at": "2026-01-01T00:00:00Z",
       "releases_url": "releases_url",
       "size": 1,
       "squash_merge_commit_message": "PR_BODY",
@@ -464,7 +464,7 @@
         "topics"
       ],
       "trees_url": "trees_url",
-      "updated_at": "updated_at",
+      "updated_at": "2026-01-01T00:00:00Z",
       "url": "url",
       "visibility": "visibility",
       "watchers_count": 1
@@ -497,7 +497,7 @@
     "received_events_url": "https://api.github.com/users/octocat/received_events",
     "repos_url": "https://api.github.com/users/octocat/repos",
     "site_admin": true,
-    "starred_at": "\"2020-07-09T00:17:55Z\"",
+    "starred_at": "2026-01-01T00:00:00Z",
     "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
     "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
     "type": "User",

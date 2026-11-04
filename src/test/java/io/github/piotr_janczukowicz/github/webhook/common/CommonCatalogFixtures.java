@@ -1,6 +1,7 @@
 package io.github.piotr_janczukowicz.github.webhook.common;
 
 import java.time.Instant;
+import java.time.OffsetDateTime;
 import java.util.List;
 import java.util.Map;
 
@@ -286,7 +287,7 @@ public final class CommonCatalogFixtures {
                 .nodeId("node_id")
                 .repositoryId(1L)
                 .slug("slug")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 
@@ -429,7 +430,7 @@ public final class CommonCatalogFixtures {
                 .sshUrl("git@github.com:octocat/Hello-World.git")
                 .stargazersCount(80L)
                 .stargazersUrl("http://api.github.com/repos/octocat/Hello-World/stargazers")
-                .starredAt("\"2020-07-09T00:17:42Z\"")
+                .starredAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .statusesUrl("http://api.github.com/repos/octocat/Hello-World/statuses/{sha}")
                 .subscribersCount(1L)
                 .subscribersUrl("http://api.github.com/repos/octocat/Hello-World/subscribers")
@@ -930,8 +931,8 @@ public final class CommonCatalogFixtures {
             webhookPackagePublishedPackagePackageVersionPackageFile() {
         return GitHubWebhookPackagePublishedPackagePackageVersionPackageFileBuilder.builder()
                 .contentType("content_type")
-                .createdAt("created_at")
-                .downloadUrl("https://api.github.com/download_url")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
+                .downloadUrl("download_url")
                 .id(1L)
                 .md5("md5")
                 .name("name")
@@ -939,7 +940,7 @@ public final class CommonCatalogFixtures {
                 .sha256("sha256")
                 .size(1L)
                 .state("state")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 
@@ -983,7 +984,7 @@ public final class CommonCatalogFixtures {
                 .body("The project is off to a great start!")
                 .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .creator(webhookSimpleUser())
-                .id(1.5)
+                .id(1L)
                 .nodeId("node_id")
                 .projectNodeId("project_node_id")
                 .startDate("2022-04-28")
@@ -1211,7 +1212,7 @@ public final class CommonCatalogFixtures {
                 .sshUrl("git@github.com:octocat/Hello-World.git")
                 .stargazersCount(80L)
                 .stargazersUrl("http://api.github.com/repos/octocat/Hello-World/stargazers")
-                .starredAt("\"2020-07-09T00:17:42Z\"")
+                .starredAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .statusesUrl("http://api.github.com/repos/octocat/Hello-World/statuses/{sha}")
                 .subscribersUrl("http://api.github.com/repos/octocat/Hello-World/subscribers")
                 .subscriptionUrl("http://api.github.com/repos/octocat/Hello-World/subscription")
@@ -1272,7 +1273,7 @@ public final class CommonCatalogFixtures {
                 .compareUrl("compare_url")
                 .contentsUrl("contents_url")
                 .contributorsUrl("contributors_url")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .defaultBranch("default_branch")
                 .deleteBranchOnMerge(true)
                 .deploymentsUrl("deployments_url")
@@ -1319,7 +1320,7 @@ public final class CommonCatalogFixtures {
                 .permissions(webhookRepositoryTemplateRepositoryPermissions())
                 .privateValue(true)
                 .pullsUrl("pulls_url")
-                .pushedAt("pushed_at")
+                .pushedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .releasesUrl("releases_url")
                 .size(1L)
                 .squashMergeCommitMessage(GitHubWebhookRepositorySquashMergeCommitMessage.PR_BODY)
@@ -1337,7 +1338,7 @@ public final class CommonCatalogFixtures {
                 .tempCloneToken("temp_clone_token")
                 .topics(List.of("topics"))
                 .treesUrl("trees_url")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .url("url")
                 .visibility("visibility")
                 .watchersCount(1L)
@@ -1537,7 +1538,7 @@ public final class CommonCatalogFixtures {
                 .committer(webhookCommitter())
                 .id("id")
                 .message("message")
-                .timestamp("timestamp")
+                .timestamp(OffsetDateTime.parse("2026-01-01T00:00:00Z"))
                 .treeId("tree_id")
                 .build();
     }
@@ -1567,7 +1568,7 @@ public final class CommonCatalogFixtures {
                 .receivedEventsUrl("https://api.github.com/users/octocat/received_events")
                 .reposUrl("https://api.github.com/users/octocat/repos")
                 .siteAdmin(true)
-                .starredAt("\"2020-07-09T00:17:55Z\"")
+                .starredAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .starredUrl("https://api.github.com/users/octocat/starred{/owner}{/repo}")
                 .subscriptionsUrl("https://api.github.com/users/octocat/subscriptions")
                 .type("User")

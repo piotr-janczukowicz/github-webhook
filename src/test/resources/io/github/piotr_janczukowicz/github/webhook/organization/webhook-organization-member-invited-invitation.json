@@ -3,7 +3,7 @@
   "email": "email",
   "failed_at": "2026-01-01T00:00:00Z",
   "failed_reason": "failed_reason",
-  "id": 1.5,
+  "id": 1,
   "invitation_source": "invitation_source",
   "invitation_teams_url": "https://api.github.com/invitation_teams_url",
   "inviter": {

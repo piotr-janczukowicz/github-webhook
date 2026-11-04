@@ -7,6 +7,7 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
 
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookUserType;
+import java.time.Instant;
 
 final class PageBuildCatalogFixtures {
 
@@ -29,12 +30,12 @@ final class PageBuildCatalogFixtures {
     static GitHubWebhookPageBuildValue webhookPageBuildValue() {
         return GitHubWebhookPageBuildValueBuilder.builder()
                 .commit("commit")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .duration(1L)
                 .error(webhookPageBuildValueError())
                 .pusher(webhookUser())
                 .status("status")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .url("https://api.github.com/url")
                 .build();
     }

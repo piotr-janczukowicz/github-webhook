@@ -6,12 +6,12 @@
     "secret": "secret",
     "url": "https://api.github.com/url"
   },
-  "created_at": "created_at",
+  "created_at": "2026-01-01T00:00:00Z",
   "events": [
     "*"
   ],
   "id": 1,
   "name": "name",
   "type": "type",
-  "updated_at": "updated_at"
+  "updated_at": "2026-01-01T00:00:00Z"
 }

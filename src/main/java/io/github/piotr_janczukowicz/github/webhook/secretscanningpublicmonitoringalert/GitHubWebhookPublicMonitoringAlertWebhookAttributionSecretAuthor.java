@@ -5,6 +5,8 @@ import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.Flavors;
 import io.github.piotr_janczukowicz.github.webhook.GitHubWebhookFlavor;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -55,7 +57,10 @@ public record GitHubWebhookPublicMonitoringAlertWebhookAttributionSecretAuthor(
         @Nullable String receivedEventsUrl,
         @Nullable String reposUrl,
         @Nullable Boolean siteAdmin,
-        @Nullable String starredAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (starred_at)")
+        Instant starredAt,
+
         @Nullable String starredUrl,
         @Nullable String subscriptionsUrl,
         @Nullable String type,

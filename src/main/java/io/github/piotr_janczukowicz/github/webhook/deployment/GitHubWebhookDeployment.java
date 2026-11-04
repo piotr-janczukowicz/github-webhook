@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
 import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import java.util.Map;
 import org.jspecify.annotations.Nullable;
 
@@ -37,18 +38,16 @@ import org.jspecify.annotations.Nullable;
 @RecordBuilder
 @CatalogSchema("webhooks/deployment-created/requestBody/properties/deployment")
 public record GitHubWebhookDeployment(
-        String createdAt,
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         @Nullable GitHubWebhookUser creator,
         @Nullable String description,
         String environment,
         long id,
         String nodeId,
         String originalEnvironment,
-
-        @SuppressSchemaTypeMismatch(
-                "a string or number or boolean is read as the value of `value` of a free-form object")
         Map<String, Object> payload,
-
         @Nullable GitHubWebhookApp performedViaGithubApp,
         @Nullable Boolean productionEnvironment,
         String ref,
@@ -57,7 +56,10 @@ public record GitHubWebhookDeployment(
         String statusesUrl,
         String task,
         @Nullable Boolean transientEnvironment,
-        String updatedAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         String url) {
     public GitHubWebhookDeployment {
         requireNonNull(createdAt, "createdAt");

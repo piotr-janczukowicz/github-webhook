@@ -136,9 +136,7 @@ public record GitHubWebhookRepository(
         @SuppressSchemaTypeMismatch("epoch seconds or an ISO-8601 string, read as an Instant")
         Instant createdAt,
 
-        @Nullable @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
-        Map<String, Object> customProperties,
-
+        @Nullable Map<String, Object> customProperties,
         String defaultBranch,
         @Nullable Boolean deleteBranchOnMerge,
         String deploymentsUrl,

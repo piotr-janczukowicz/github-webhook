@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
@@ -31,7 +32,7 @@ public record GitHubWebhookProjectsV2Item(
         GitHubWebhookProjectsV2ItemContentType contentType,
         Instant createdAt,
         @Nullable GitHubWebhookSimpleUser creator,
-        double id,
+        @SuppressSchemaTypeMismatch("type rule: long (id)") long id,
         @Nullable String nodeId,
         @Nullable String projectNodeId,
         Instant updatedAt) {

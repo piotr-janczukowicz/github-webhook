@@ -1,5 +1,5 @@
 {
-  "created_at": "created_at",
+  "created_at": "2026-01-01T00:00:00Z",
   "creator": {
     "avatar_url": "https://api.github.com/avatar_url",
     "deleted": true,
@@ -113,6 +113,6 @@
   "statuses_url": "https://api.github.com/statuses_url",
   "task": "task",
   "transient_environment": true,
-  "updated_at": "updated_at",
+  "updated_at": "2026-01-01T00:00:00Z",
   "url": "https://api.github.com/url"
 }

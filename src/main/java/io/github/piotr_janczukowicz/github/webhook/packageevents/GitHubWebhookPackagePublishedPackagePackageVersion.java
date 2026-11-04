@@ -10,6 +10,7 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPackageVe
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookRubyGemsMetadata;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
 import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 import org.jspecify.annotations.Nullable;
@@ -51,14 +52,13 @@ import org.jspecify.annotations.Nullable;
 @CatalogSchema("webhooks/package-published/requestBody/properties/package/properties/package_version")
 public record GitHubWebhookPackagePublishedPackagePackageVersion(
         @Nullable GitHubWebhookUser author,
-
-        @Nullable @SuppressSchemaTypeMismatch(
-                "a string or number or boolean is read as the value of `value` of a free-form object")
-        Map<String, Object> body,
-
+        @Nullable Map<String, Object> body,
         @Nullable String bodyHtml,
         @Nullable GitHubWebhookPackageVersionContainerMetadata containerMetadata,
-        @Nullable String createdAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         String description,
         @Nullable List<GitHubWebhookPackageUpdatedPackagePackageVersionDockerMetadata> dockerMetadata,
         @Nullable Boolean draft,
@@ -66,10 +66,7 @@ public record GitHubWebhookPackagePublishedPackagePackageVersion(
         long id,
         String installationCommand,
         @Nullable String manifest,
-
-        @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
         List<Map<String, Object>> metadata,
-
         String name,
         @Nullable GitHubWebhookPackagePublishedPackagePackageVersionNpmMetadata npmMetadata,
         @Nullable List<GitHubWebhookPackagePublishedPackagePackageVersionNugetMetadata> nugetMetadata,
@@ -83,7 +80,10 @@ public record GitHubWebhookPackagePublishedPackagePackageVersion(
         @Nullable String tagName,
         @Nullable String targetCommitish,
         @Nullable String targetOid,
-        @Nullable String updatedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         String version) {
     public GitHubWebhookPackagePublishedPackagePackageVersion {
         requireNonNull(description, "description");

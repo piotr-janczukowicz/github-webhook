@@ -8,6 +8,7 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPackageUp
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookRubyGemsMetadata;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
 import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 import org.jspecify.annotations.Nullable;
@@ -48,7 +49,10 @@ public record GitHubWebhookPackageUpdatedPackagePackageVersion(
         @Nullable GitHubWebhookUser author,
         String body,
         String bodyHtml,
-        String createdAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         String description,
         @Nullable List<GitHubWebhookPackageUpdatedPackagePackageVersionDockerMetadata> dockerMetadata,
         @Nullable Boolean draft,
@@ -56,10 +60,7 @@ public record GitHubWebhookPackageUpdatedPackagePackageVersion(
         long id,
         String installationCommand,
         @Nullable String manifest,
-
-        @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
         List<Map<String, Object>> metadata,
-
         String name,
         List<GitHubWebhookPackageUpdatedPackagePackageVersionPackageFile> packageFiles,
         @Nullable String packageUrl,
@@ -71,7 +72,10 @@ public record GitHubWebhookPackageUpdatedPackagePackageVersion(
         @Nullable String tagName,
         String targetCommitish,
         String targetOid,
-        String updatedAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         String version) {
     public GitHubWebhookPackageUpdatedPackagePackageVersion {
         requireNonNull(body, "body");

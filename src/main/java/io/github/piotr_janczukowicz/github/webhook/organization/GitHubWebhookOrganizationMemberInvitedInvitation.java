@@ -5,6 +5,7 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
@@ -32,7 +33,7 @@ public record GitHubWebhookOrganizationMemberInvitedInvitation(
         @Nullable String email,
         @Nullable Instant failedAt,
         @Nullable String failedReason,
-        double id,
+        @SuppressSchemaTypeMismatch("type rule: long (id)") long id,
         @Nullable String invitationSource,
         String invitationTeamsUrl,
         @Nullable GitHubWebhookUser inviter,

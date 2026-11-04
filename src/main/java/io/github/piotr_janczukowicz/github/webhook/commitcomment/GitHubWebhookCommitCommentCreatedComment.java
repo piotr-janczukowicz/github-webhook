@@ -7,6 +7,8 @@ import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueAuthorAssociation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookReactions;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -36,7 +38,10 @@ public record GitHubWebhookCommitCommentCreatedComment(
         GitHubWebhookIssueAuthorAssociation authorAssociation,
         String body,
         String commitId,
-        String createdAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         String htmlUrl,
         long id,
         @Nullable Long line,
@@ -44,7 +49,10 @@ public record GitHubWebhookCommitCommentCreatedComment(
         @Nullable String path,
         @Nullable Long position,
         @Nullable GitHubWebhookReactions reactions,
-        String updatedAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         String url,
         @Nullable GitHubWebhookUser user) {
     public GitHubWebhookCommitCommentCreatedComment {

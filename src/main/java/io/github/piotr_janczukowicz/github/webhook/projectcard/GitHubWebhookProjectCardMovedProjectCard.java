@@ -5,6 +5,8 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -33,13 +35,19 @@ public record GitHubWebhookProjectCardMovedProjectCard(
         long columnId,
         String columnUrl,
         @Nullable String contentUrl,
-        String createdAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         @Nullable GitHubWebhookProjectCardMovedProjectCardCreator creator,
         long id,
         String nodeId,
         @Nullable String note,
         String projectUrl,
-        String updatedAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         String url) {
     public GitHubWebhookProjectCardMovedProjectCard {
         requireNonNull(columnUrl, "columnUrl");

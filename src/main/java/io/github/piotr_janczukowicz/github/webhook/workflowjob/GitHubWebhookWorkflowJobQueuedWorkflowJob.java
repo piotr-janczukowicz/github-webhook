@@ -5,6 +5,7 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.time.Instant;
 import java.util.List;
 import org.jspecify.annotations.Nullable;
@@ -41,9 +42,15 @@ import org.jspecify.annotations.Nullable;
 @CatalogSchema("webhooks/workflow-job-queued/requestBody/properties/workflow_job")
 public record GitHubWebhookWorkflowJobQueuedWorkflowJob(
         String checkRunUrl,
-        @Nullable String completedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (completed_at)")
+        Instant completedAt,
+
         @Nullable String conclusion,
-        String createdAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         @Nullable String headBranch,
         String headSha,
         String htmlUrl,
@@ -52,7 +59,10 @@ public record GitHubWebhookWorkflowJobQueuedWorkflowJob(
         String name,
         String nodeId,
         long runAttempt,
-        double runId,
+
+        @SuppressSchemaTypeMismatch("type rule: long (run_id)")
+        long runId,
+
         String runUrl,
         @Nullable Long runnerGroupId,
         @Nullable String runnerGroupName,

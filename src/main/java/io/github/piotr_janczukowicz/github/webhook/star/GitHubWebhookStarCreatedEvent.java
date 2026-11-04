@@ -10,6 +10,8 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookOrganizat
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleInstallation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -39,7 +41,9 @@ public record GitHubWebhookStarCreatedEvent(
         @Nullable GitHubWebhookOrganizationSimple organization,
         GitHubWebhookForkRepository repository,
         GitHubWebhookSimpleUser sender,
-        @Nullable String starredAt)
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (starred_at)")
+        Instant starredAt)
         implements GitHubWebhookStarEvent {
     public GitHubWebhookStarCreatedEvent {
         requireNonNull(repository, "repository");

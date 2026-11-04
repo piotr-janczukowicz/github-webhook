@@ -5,6 +5,8 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import java.util.List;
 
 /**
@@ -26,12 +28,17 @@ import java.util.List;
 public record GitHubWebhookMetaDeletedHook(
         boolean active,
         GitHubWebhookMetaDeletedHookConfig config,
-        String createdAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         List<GitHubWebhookMetaDeletedHookEvent> events,
         long id,
         String name,
         String type,
-        String updatedAt) {
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt) {
     public GitHubWebhookMetaDeletedHook {
         requireNonNull(config, "config");
         requireNonNull(createdAt, "createdAt");

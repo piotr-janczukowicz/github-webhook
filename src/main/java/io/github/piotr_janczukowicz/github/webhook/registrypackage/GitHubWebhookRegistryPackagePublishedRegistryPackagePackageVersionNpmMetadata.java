@@ -55,17 +55,12 @@ import org.jspecify.annotations.Nullable;
         "webhooks/registry-package-published/requestBody/properties/registry_package/properties/package_version/properties/npm_metadata")
 @SuppressWarnings("PMD.AvoidDuplicateLiterals")
 public record GitHubWebhookRegistryPackagePublishedRegistryPackagePackageVersionNpmMetadata(
-        @Nullable @SuppressSchemaTypeMismatch(
-                "a string or number or boolean is read as the value of `value` of a free-form object")
-        Map<String, Object> author,
+        @Nullable Map<String, Object> author,
 
         @Nullable @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
         Map<String, Object> bin,
 
-        @Nullable @SuppressSchemaTypeMismatch(
-                "a string or number or boolean is read as the value of `value` of a free-form object")
-        Map<String, Object> bugs,
-
+        @Nullable Map<String, Object> bugs,
         @Nullable String commitOid,
         @Nullable List<String> contributors,
         @Nullable List<String> cpu,
@@ -79,13 +74,8 @@ public record GitHubWebhookRegistryPackagePublishedRegistryPackagePackageVersion
         @Nullable @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
         Map<String, Object> devDependencies,
 
-        @Nullable @SuppressSchemaTypeMismatch(
-                "a string or number or boolean is read as the value of `value` of a free-form object")
-        Map<String, Object> directories,
-
-        @Nullable @SuppressSchemaTypeMismatch(
-                "a string or number or boolean is read as the value of `value` of a free-form object")
-        Map<String, Object> dist,
+        @Nullable Map<String, Object> directories,
+        @Nullable Map<String, Object> dist,
 
         @Nullable @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
         Map<String, Object> engines,
@@ -120,10 +110,7 @@ public record GitHubWebhookRegistryPackagePublishedRegistryPackagePackageVersion
         @Nullable Boolean publishedViaActions,
         @Nullable String readme,
         @Nullable Long releaseId,
-
-        @Nullable @SuppressSchemaTypeMismatch(
-                "a string or number or boolean is read as the value of `value` of a free-form object")
-        Map<String, Object> repository,
+        @Nullable Map<String, Object> repository,
 
         @Nullable @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
         Map<String, Object> scripts,

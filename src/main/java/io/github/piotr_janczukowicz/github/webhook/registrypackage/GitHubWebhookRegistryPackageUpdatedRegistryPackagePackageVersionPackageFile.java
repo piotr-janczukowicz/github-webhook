@@ -3,6 +3,8 @@ package io.github.piotr_janczukowicz.github.webhook.registrypackage;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -26,7 +28,10 @@ import org.jspecify.annotations.Nullable;
         "webhooks/registry-package-updated/requestBody/properties/registry_package/properties/package_version/properties/package_files/items")
 public record GitHubWebhookRegistryPackageUpdatedRegistryPackagePackageVersionPackageFile(
         @Nullable String contentType,
-        @Nullable String createdAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         @Nullable String downloadUrl,
         @Nullable Long id,
         @Nullable String md5,
@@ -35,4 +40,6 @@ public record GitHubWebhookRegistryPackageUpdatedRegistryPackagePackageVersionPa
         @Nullable String sha256,
         @Nullable Long size,
         @Nullable String state,
-        @Nullable String updatedAt) {}
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt) {}

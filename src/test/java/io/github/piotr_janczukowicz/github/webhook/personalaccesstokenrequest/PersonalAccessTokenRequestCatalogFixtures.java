@@ -6,6 +6,7 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleInstallation;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
 
+import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 
@@ -17,7 +18,7 @@ final class PersonalAccessTokenRequestCatalogFixtures {
 
     static GitHubWebhookPersonalAccessTokenRequest webhookPersonalAccessTokenRequest() {
         return GitHubWebhookPersonalAccessTokenRequestBuilder.builder()
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .id(1L)
                 .owner(webhookSimpleUser())
                 .permissionsAdded(webhookPersonalAccessTokenRequestPermissionsAdded())
@@ -27,9 +28,9 @@ final class PersonalAccessTokenRequestCatalogFixtures {
                 .repositoryCount(1L)
                 .repositorySelection(GitHubWebhookPersonalAccessTokenRequestRepositorySelection.NONE)
                 .tokenExpired(true)
-                .tokenExpiresAt("token_expires_at")
+                .tokenExpiresAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .tokenId(1L)
-                .tokenLastUsedAt("token_last_used_at")
+                .tokenLastUsedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .tokenName("token_name")
                 .build();
     }
