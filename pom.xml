@@ -18,8 +18,7 @@
   <url>https://github.com/piotr-janczukowicz/github-webhook</url>
 
   <properties>
-    <common-core.version>2</common-core.version>
-    <common-test-support.version>9</common-test-support.version>
+    <common-core.version>3</common-core.version>
     <junit.parallel.enabled>true</junit.parallel.enabled>
   </properties>
 
@@ -47,8 +46,9 @@
     </dependency>
     <dependency>
       <groupId>io.github.piotr-janczukowicz</groupId>
-      <artifactId>common-test-support</artifactId>
-      <version>${common-test-support.version}</version>
+      <artifactId>common-core</artifactId>
+      <version>${common-core.version}</version>
+      <type>test-jar</type>
       <scope>test</scope>
     </dependency>
   </dependencies>
