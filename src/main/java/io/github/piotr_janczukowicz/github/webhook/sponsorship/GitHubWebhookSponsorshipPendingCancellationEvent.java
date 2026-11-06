@@ -10,6 +10,8 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookOrganizat
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleInstallation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -35,7 +37,9 @@ import org.jspecify.annotations.Nullable;
 @RecordBuilder
 @CatalogSchema("webhooks/sponsorship-pending-cancellation/requestBody")
 public record GitHubWebhookSponsorshipPendingCancellationEvent(
-        @Nullable String effectiveDate,
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (effective_date)")
+        Instant effectiveDate,
+
         @Nullable GitHubWebhookEnterprise enterprise,
         @Nullable GitHubWebhookSimpleInstallation installation,
         @Nullable GitHubWebhookOrganizationSimple organization,

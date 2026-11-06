@@ -5,6 +5,8 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 
 /**
  * The registry package updated registry package package version release payload.
@@ -27,13 +29,19 @@ import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
         "webhooks/registry-package-updated/requestBody/properties/registry_package/properties/package_version/properties/release")
 public record GitHubWebhookRegistryPackageUpdatedRegistryPackagePackageVersionRelease(
         GitHubWebhookRegistryPackageUpdatedRegistryPackageOwner author,
-        String createdAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         boolean draft,
         String htmlUrl,
         long id,
         String name,
         boolean prerelease,
-        String publishedAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (published_at)")
+        Instant publishedAt,
+
         String tagName,
         String targetCommitish,
         String url) {

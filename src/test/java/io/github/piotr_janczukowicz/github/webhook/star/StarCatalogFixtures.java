@@ -6,6 +6,8 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleInstallation;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
 
+import java.time.Instant;
+
 final class StarCatalogFixtures {
 
     private StarCatalogFixtures() {
@@ -19,7 +21,7 @@ final class StarCatalogFixtures {
                 .organization(webhookOrganizationSimple())
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())
-                .starredAt("starred_at")
+                .starredAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 

@@ -18,12 +18,12 @@ final class SubIssuesCatalogFixtures {
                 .installation(webhookSimpleInstallation())
                 .organization(webhookOrganizationSimple())
                 .parentIssue(webhookIssue())
-                .parentIssueId(1.5)
+                .parentIssueId(1L)
                 .parentIssueRepo(webhookRepository())
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())
                 .subIssue(webhookIssue())
-                .subIssueId(1.5)
+                .subIssueId(1L)
                 .build();
     }
 
@@ -32,12 +32,12 @@ final class SubIssuesCatalogFixtures {
                 .installation(webhookSimpleInstallation())
                 .organization(webhookOrganizationSimple())
                 .parentIssue(webhookIssue())
-                .parentIssueId(1.5)
+                .parentIssueId(1L)
                 .parentIssueRepo(webhookRepository())
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())
                 .subIssue(webhookIssue())
-                .subIssueId(1.5)
+                .subIssueId(1L)
                 .build();
     }
 
@@ -46,11 +46,11 @@ final class SubIssuesCatalogFixtures {
                 .installation(webhookSimpleInstallation())
                 .organization(webhookOrganizationSimple())
                 .parentIssue(webhookIssue())
-                .parentIssueId(1.5)
+                .parentIssueId(1L)
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())
                 .subIssue(webhookIssue())
-                .subIssueId(1.5)
+                .subIssueId(1L)
                 .subIssueRepo(webhookRepository())
                 .build();
     }
@@ -60,11 +60,11 @@ final class SubIssuesCatalogFixtures {
                 .installation(webhookSimpleInstallation())
                 .organization(webhookOrganizationSimple())
                 .parentIssue(webhookIssue())
-                .parentIssueId(1.5)
+                .parentIssueId(1L)
                 .repository(webhookForkRepository())
                 .sender(webhookSimpleUser())
                 .subIssue(webhookIssue())
-                .subIssueId(1.5)
+                .subIssueId(1L)
                 .subIssueRepo(webhookRepository())
                 .build();
     }

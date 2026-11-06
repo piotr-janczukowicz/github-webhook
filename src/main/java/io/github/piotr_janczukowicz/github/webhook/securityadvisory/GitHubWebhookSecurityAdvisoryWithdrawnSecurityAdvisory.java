@@ -8,6 +8,8 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSecurityA
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSecurityAdvisoryUpdatedSecurityAdvisoryCwe;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSecurityAdvisoryUpdatedSecurityAdvisoryReference;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import java.util.List;
 import org.jspecify.annotations.Nullable;
 
@@ -36,13 +38,21 @@ public record GitHubWebhookSecurityAdvisoryWithdrawnSecurityAdvisory(
         String description,
         String ghsaId,
         List<GitHubWebhookSecurityAdvisoryUpdatedSecurityAdvisoryIdentifier> identifiers,
-        String publishedAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (published_at)")
+        Instant publishedAt,
+
         List<GitHubWebhookSecurityAdvisoryUpdatedSecurityAdvisoryReference> references,
         String severity,
         String summary,
-        String updatedAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         List<GitHubWebhookSecurityAdvisoryUpdatedSecurityAdvisoryVulnerability> vulnerabilities,
-        String withdrawnAt) {
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (withdrawn_at)")
+        Instant withdrawnAt) {
     public GitHubWebhookSecurityAdvisoryWithdrawnSecurityAdvisory {
         requireNonNull(cwes, "cwes");
         requireNonNull(description, "description");

@@ -11,6 +11,7 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueAuth
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPullRequestLabeledLabel;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookReactions;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.time.Instant;
 import java.util.List;
 import org.jspecify.annotations.Nullable;
@@ -48,7 +49,10 @@ import org.jspecify.annotations.Nullable;
 @CatalogSchema("webhooks/discussion-comment-created/requestBody/properties/discussion")
 public record GitHubWebhookDiscussion(
         @Nullable String activeLockReason,
-        @Nullable String answerChosenAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (answer_chosen_at)")
+        Instant answerChosenAt,
+
         @Nullable GitHubWebhookUser answerChosenBy,
         @Nullable String answerHtmlUrl,
         @Nullable GitHubWebhookIssueAuthorAssociation authorAssociation,

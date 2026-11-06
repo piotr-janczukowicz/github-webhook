@@ -5,6 +5,8 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -24,12 +26,18 @@ import org.jspecify.annotations.Nullable;
 @CatalogSchema("webhooks/page-build/requestBody/properties/build")
 public record GitHubWebhookPageBuildValue(
         @Nullable String commit,
-        String createdAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         long duration,
         GitHubWebhookPageBuildValueError error,
         @Nullable GitHubWebhookUser pusher,
         String status,
-        String updatedAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         String url) {
     public GitHubWebhookPageBuildValue {
         requireNonNull(createdAt, "createdAt");

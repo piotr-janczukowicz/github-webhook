@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSimpleXor;
-import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.util.Map;
 import org.jspecify.annotations.Nullable;
 
@@ -22,7 +21,4 @@ import org.jspecify.annotations.Nullable;
 public record GitHubWebhookPackagePublishedPackagePackageVersionNugetMetadata(
         @Nullable @CatalogSimpleXor("integer|string") String id,
         @Nullable String name,
-
-        @Nullable @SuppressSchemaTypeMismatch(
-                "a string or number or boolean is read as the value of `value` of a free-form object")
-        Map<String, Object> value) {}
+        @Nullable Map<String, Object> value) {}

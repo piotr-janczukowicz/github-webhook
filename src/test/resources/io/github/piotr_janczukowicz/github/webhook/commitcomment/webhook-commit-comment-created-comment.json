@@ -2,7 +2,7 @@
   "author_association": "COLLABORATOR",
   "body": "body",
   "commit_id": "commit_id",
-  "created_at": "created_at",
+  "created_at": "2026-01-01T00:00:00Z",
   "html_url": "https://api.github.com/html_url",
   "id": 1,
   "line": 1,
@@ -21,7 +21,7 @@
     "total_count": 1,
     "url": "https://api.github.com/url"
   },
-  "updated_at": "updated_at",
+  "updated_at": "2026-01-01T00:00:00Z",
   "url": "https://api.github.com/url",
   "user": {
     "avatar_url": "https://api.github.com/avatar_url",

@@ -143,13 +143,13 @@ final class ProjectCardCatalogFixtures {
                 .columnId(1L)
                 .columnUrl("column_url")
                 .contentUrl("https://api.github.com/content_url")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .creator(webhookProjectCardMovedProjectCardCreator())
                 .id(1L)
                 .nodeId("node_id")
                 .note("note")
                 .projectUrl("project_url")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .url("url")
                 .build();
     }

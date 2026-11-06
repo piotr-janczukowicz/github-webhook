@@ -7,6 +7,8 @@ import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookInstallationCreatedRepository;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import java.util.List;
 import org.jspecify.annotations.Nullable;
 
@@ -40,7 +42,9 @@ import org.jspecify.annotations.Nullable;
 @RecordBuilder
 @CatalogSchema("webhooks/personal-access-token-request-approved/requestBody/properties/personal_access_token_request")
 public record GitHubWebhookPersonalAccessTokenRequest(
-        String createdAt,
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         long id,
         GitHubWebhookSimpleUser owner,
         GitHubWebhookPersonalAccessTokenRequestPermissionsAdded permissionsAdded,
@@ -50,9 +54,15 @@ public record GitHubWebhookPersonalAccessTokenRequest(
         @Nullable Long repositoryCount,
         GitHubWebhookPersonalAccessTokenRequestRepositorySelection repositorySelection,
         boolean tokenExpired,
-        @Nullable String tokenExpiresAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (token_expires_at)")
+        Instant tokenExpiresAt,
+
         long tokenId,
-        @Nullable String tokenLastUsedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (token_last_used_at)")
+        Instant tokenLastUsedAt,
+
         String tokenName) {
     public GitHubWebhookPersonalAccessTokenRequest {
         requireNonNull(createdAt, "createdAt");

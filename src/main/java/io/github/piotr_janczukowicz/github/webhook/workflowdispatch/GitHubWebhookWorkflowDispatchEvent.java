@@ -11,7 +11,6 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookOrganizat
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleInstallation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
-import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.util.Map;
 import org.jspecify.annotations.Nullable;
 
@@ -39,10 +38,7 @@ import org.jspecify.annotations.Nullable;
 @CatalogSchema("webhooks/workflow-dispatch/requestBody")
 public record GitHubWebhookWorkflowDispatchEvent(
         @Nullable GitHubWebhookEnterprise enterprise,
-
-        @Nullable @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
-        Map<String, Object> inputs,
-
+        @Nullable Map<String, Object> inputs,
         @Nullable GitHubWebhookSimpleInstallation installation,
         @Nullable GitHubWebhookOrganizationSimple organization,
         String ref,

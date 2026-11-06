@@ -7,6 +7,8 @@ import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueAuthorAssociation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookReactions;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -33,7 +35,10 @@ public record GitHubWebhookDiscussionCommentEditedComment(
         GitHubWebhookIssueAuthorAssociation authorAssociation,
         String body,
         long childCommentCount,
-        String createdAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         long discussionId,
         String htmlUrl,
         long id,
@@ -41,7 +46,10 @@ public record GitHubWebhookDiscussionCommentEditedComment(
         @Nullable Long parentId,
         GitHubWebhookReactions reactions,
         String repositoryUrl,
-        String updatedAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         @Nullable GitHubWebhookUser user) {
     public GitHubWebhookDiscussionCommentEditedComment {
         requireNonNull(authorAssociation, "authorAssociation");

@@ -26,11 +26,13 @@ import java.util.concurrent.TimeUnit;
 import javax.crypto.Mac;
 import javax.crypto.MacSpi;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Isolated;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.NullSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 @UnitTest
+@Isolated
 class GitHubWebhookVerifierTest {
 
     private static final String DOCUMENTED_SECRET = "It's a Secret to Everybody";

@@ -11,7 +11,6 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookOrganizat
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleInstallation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
-import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.util.Map;
 import org.jspecify.annotations.Nullable;
 
@@ -41,10 +40,7 @@ import org.jspecify.annotations.Nullable;
 public record GitHubWebhookRepositoryDispatchEvent(
         String action,
         String branch,
-
-        @Nullable @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
-        Map<String, Object> clientPayload,
-
+        @Nullable Map<String, Object> clientPayload,
         @Nullable GitHubWebhookEnterprise enterprise,
         GitHubWebhookSimpleInstallation installation,
         @Nullable GitHubWebhookOrganizationSimple organization,

@@ -6,6 +6,7 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleInstallation;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
 
+import java.time.Instant;
 import java.util.List;
 
 final class MetaCatalogFixtures {
@@ -30,12 +31,12 @@ final class MetaCatalogFixtures {
         return GitHubWebhookMetaDeletedHookBuilder.builder()
                 .active(true)
                 .config(webhookMetaDeletedHookConfig())
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .events(List.of(GitHubWebhookMetaDeletedHookEvent.EMPTY))
                 .id(1L)
                 .name("name")
                 .type("type")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 

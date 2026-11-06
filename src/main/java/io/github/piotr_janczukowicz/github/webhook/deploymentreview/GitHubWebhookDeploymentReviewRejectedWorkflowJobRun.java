@@ -3,6 +3,8 @@ package io.github.piotr_janczukowicz.github.webhook.deploymentreview;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -22,10 +24,15 @@ import org.jspecify.annotations.Nullable;
 @CatalogSchema("webhooks/deployment-review-rejected/requestBody/properties/workflow_job_runs/items")
 public record GitHubWebhookDeploymentReviewRejectedWorkflowJobRun(
         @Nullable String conclusion,
-        @Nullable String createdAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         @Nullable String environment,
         @Nullable String htmlUrl,
         @Nullable Long id,
         @Nullable String name,
         @Nullable String status,
-        @Nullable String updatedAt) {}
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt) {}

@@ -331,7 +331,7 @@ final class SecretScanningPublicMonitoringAlertCatalogFixtures {
                 .receivedEventsUrl("https://api.github.com/users/octocat/received_events")
                 .reposUrl("https://api.github.com/users/octocat/repos")
                 .siteAdmin(true)
-                .starredAt("\"2020-07-09T00:17:55Z\"")
+                .starredAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .starredUrl("https://api.github.com/users/octocat/starred{/owner}{/repo}")
                 .subscriptionsUrl("https://api.github.com/users/octocat/subscriptions")
                 .type("User")

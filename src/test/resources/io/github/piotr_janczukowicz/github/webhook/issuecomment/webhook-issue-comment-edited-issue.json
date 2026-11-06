@@ -52,10 +52,10 @@
   ],
   "author_association": "COLLABORATOR",
   "body": "body",
-  "closed_at": "closed_at",
+  "closed_at": "2026-01-01T00:00:00Z",
   "comments": 1,
   "comments_url": "comments_url",
-  "created_at": "created_at",
+  "created_at": "2026-01-01T00:00:00Z",
   "draft": true,
   "events_url": "events_url",
   "html_url": "html_url",
@@ -235,7 +235,7 @@
     "node_id": "node_id",
     "updated_at": "2026-01-01T00:00:00Z"
   },
-  "updated_at": "updated_at",
+  "updated_at": "2026-01-01T00:00:00Z",
   "url": "url",
   "user": {
     "avatar_url": "https://api.github.com/avatar_url",

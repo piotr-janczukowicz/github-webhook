@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.time.Instant;
 import java.util.List;
 import org.jspecify.annotations.Nullable;
@@ -205,7 +206,10 @@ public record GitHubWebhookRepository(
         String sshUrl,
         long stargazersCount,
         String stargazersUrl,
-        @Nullable String starredAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (starred_at)")
+        Instant starredAt,
+
         String statusesUrl,
         String subscribersUrl,
         String subscriptionUrl,

@@ -3,7 +3,6 @@ package io.github.piotr_janczukowicz.github.webhook.projectsv2item;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
-import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import java.util.Map;
 import org.jspecify.annotations.Nullable;
 
@@ -24,13 +23,6 @@ public record GitHubWebhookProjectsV2ItemEditedChangesFieldValueValue(
         @Nullable String fieldName,
         @Nullable String fieldNodeId,
         @Nullable String fieldType,
-
-        @Nullable @SuppressSchemaTypeMismatch(
-                "a string or number or boolean is read as the value of `value` of a free-form object")
-        Map<String, Object> from,
-
+        @Nullable Map<String, Object> from,
         @Nullable Long projectNumber,
-
-        @Nullable @SuppressSchemaTypeMismatch(
-                "a string or number or boolean is read as the value of `value` of a free-form object")
-        Map<String, Object> to) {}
+        @Nullable Map<String, Object> to) {}

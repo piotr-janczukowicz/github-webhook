@@ -1,6 +1,6 @@
 {
   "commit": "commit",
-  "created_at": "created_at",
+  "created_at": "2026-01-01T00:00:00Z",
   "duration": 1,
   "error": {
     "message": "message"
@@ -30,6 +30,6 @@
     "user_view_type": "user_view_type"
   },
   "status": "status",
-  "updated_at": "updated_at",
+  "updated_at": "2026-01-01T00:00:00Z",
   "url": "https://api.github.com/url"
 }

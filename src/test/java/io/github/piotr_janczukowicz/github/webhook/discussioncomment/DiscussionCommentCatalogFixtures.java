@@ -26,7 +26,7 @@ final class DiscussionCommentCatalogFixtures {
     static GitHubWebhookDiscussion webhookDiscussion() {
         return GitHubWebhookDiscussionBuilder.builder()
                 .activeLockReason("active_lock_reason")
-                .answerChosenAt("answer_chosen_at")
+                .answerChosenAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .answerChosenBy(webhookUser())
                 .answerHtmlUrl("answer_html_url")
                 .authorAssociation(GitHubWebhookIssueAuthorAssociation.COLLABORATOR)
@@ -86,7 +86,7 @@ final class DiscussionCommentCatalogFixtures {
                 .authorAssociation(GitHubWebhookIssueAuthorAssociation.COLLABORATOR)
                 .body("body")
                 .childCommentCount(1L)
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .discussionId(1L)
                 .htmlUrl("html_url")
                 .id(1L)
@@ -94,7 +94,7 @@ final class DiscussionCommentCatalogFixtures {
                 .parentId(1L)
                 .reactions(webhookReactions())
                 .repositoryUrl("repository_url")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .user(webhookUser())
                 .build();
     }

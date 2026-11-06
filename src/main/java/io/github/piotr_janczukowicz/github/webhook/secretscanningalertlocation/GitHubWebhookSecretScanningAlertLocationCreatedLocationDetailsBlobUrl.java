@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -34,12 +35,21 @@ public record GitHubWebhookSecretScanningAlertLocationCreatedLocationDetailsBlob
         String blobUrl,
         String commitSha,
         String commitUrl,
-        double endColumn,
-        double endLine,
+
+        @SuppressSchemaTypeMismatch("type rule: int (end_column)")
+        int endColumn,
+
+        @SuppressSchemaTypeMismatch("type rule: int (end_line)")
+        int endLine,
+
         @Nullable String htmlUrl,
         String path,
-        double startColumn,
-        double startLine)
+
+        @SuppressSchemaTypeMismatch("type rule: int (start_column)")
+        int startColumn,
+
+        @SuppressSchemaTypeMismatch("type rule: int (start_line)")
+        int startLine)
         implements GitHubWebhookSecretScanningAlertLocationCreatedLocationDetails {
     public GitHubWebhookSecretScanningAlertLocationCreatedLocationDetailsBlobUrl {
         requireNonNull(blobSha, "blobSha");

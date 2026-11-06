@@ -48,7 +48,7 @@
     },
     "id": "id",
     "message": "message",
-    "timestamp": "timestamp",
+    "timestamp": "2026-01-01T00:00:00Z",
     "tree_id": "tree_id"
   },
   "head_repository": {
@@ -151,7 +151,7 @@
         },
         "sha": "sha"
       },
-      "id": 1.5,
+      "id": 1,
       "number": 1.5,
       "url": "https://api.github.com/url"
     }

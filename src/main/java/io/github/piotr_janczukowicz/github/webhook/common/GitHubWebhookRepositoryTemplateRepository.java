@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import java.util.List;
 import org.jspecify.annotations.Nullable;
 
@@ -129,7 +131,10 @@ public record GitHubWebhookRepositoryTemplateRepository(
         @Nullable String compareUrl,
         @Nullable String contentsUrl,
         @Nullable String contributorsUrl,
-        @Nullable String createdAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         @Nullable String defaultBranch,
         @Nullable Boolean deleteBranchOnMerge,
         @Nullable String deploymentsUrl,
@@ -176,7 +181,10 @@ public record GitHubWebhookRepositoryTemplateRepository(
         @Nullable GitHubWebhookRepositoryTemplateRepositoryPermissions permissions,
         @Nullable @JsonProperty("private") Boolean privateValue,
         @Nullable String pullsUrl,
-        @Nullable String pushedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (pushed_at)")
+        Instant pushedAt,
+
         @Nullable String releasesUrl,
         @Nullable Long size,
         @Nullable GitHubWebhookRepositorySquashMergeCommitMessage squashMergeCommitMessage,
@@ -194,7 +202,10 @@ public record GitHubWebhookRepositoryTemplateRepository(
         @Nullable String tempCloneToken,
         @Nullable List<String> topics,
         @Nullable String treesUrl,
-        @Nullable String updatedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         @Nullable String url,
         @Nullable String visibility,
         @Nullable Long watchersCount) {}

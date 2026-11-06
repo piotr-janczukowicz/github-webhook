@@ -11,6 +11,7 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
 
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookUserType;
+import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 
@@ -33,7 +34,7 @@ final class PackageCatalogFixtures {
 
     static GitHubWebhookPackagePublishedPackage webhookPackagePublishedPackage() {
         return GitHubWebhookPackagePublishedPackageBuilder.builder()
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .description("description")
                 .ecosystem("ecosystem")
                 .htmlUrl("https://api.github.com/html_url")
@@ -44,7 +45,7 @@ final class PackageCatalogFixtures {
                 .packageType("package_type")
                 .packageVersion(webhookPackagePublishedPackagePackageVersion())
                 .registry(webhookPackageUpdatedPackageRegistry())
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 
@@ -54,7 +55,7 @@ final class PackageCatalogFixtures {
                 .body(Map.of("key", "body"))
                 .bodyHtml("body_html")
                 .containerMetadata(webhookPackageVersionContainerMetadata())
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .description("description")
                 .dockerMetadata(List.of(webhookPackageUpdatedPackagePackageVersionDockerMetadata()))
                 .draft(true)
@@ -76,7 +77,7 @@ final class PackageCatalogFixtures {
                 .tagName("tag_name")
                 .targetCommitish("target_commitish")
                 .targetOid("target_oid")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .version("version")
                 .build();
     }
@@ -137,13 +138,13 @@ final class PackageCatalogFixtures {
             webhookPackagePublishedPackagePackageVersionRelease() {
         return GitHubWebhookPackagePublishedPackagePackageVersionReleaseBuilder.builder()
                 .author(webhookUser())
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .draft(true)
                 .htmlUrl("https://api.github.com/html_url")
                 .id(1L)
                 .name("name")
                 .prerelease(true)
-                .publishedAt("published_at")
+                .publishedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .tagName("tag_name")
                 .targetCommitish("target_commitish")
                 .url("https://api.github.com/url")
@@ -163,7 +164,7 @@ final class PackageCatalogFixtures {
 
     static GitHubWebhookPackageUpdatedPackage webhookPackageUpdatedPackage() {
         return GitHubWebhookPackageUpdatedPackageBuilder.builder()
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .description("description")
                 .ecosystem("ecosystem")
                 .htmlUrl("https://api.github.com/html_url")
@@ -174,7 +175,7 @@ final class PackageCatalogFixtures {
                 .packageType("package_type")
                 .packageVersion(webhookPackageUpdatedPackagePackageVersion())
                 .registry(webhookPackageUpdatedPackageRegistry())
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 
@@ -183,7 +184,7 @@ final class PackageCatalogFixtures {
                 .author(webhookUser())
                 .body("body")
                 .bodyHtml("body_html")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .description("description")
                 .dockerMetadata(List.of(webhookPackageUpdatedPackagePackageVersionDockerMetadata()))
                 .draft(true)
@@ -203,7 +204,7 @@ final class PackageCatalogFixtures {
                 .tagName("tag_name")
                 .targetCommitish("target_commitish")
                 .targetOid("target_oid")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .version("version")
                 .build();
     }
@@ -212,7 +213,7 @@ final class PackageCatalogFixtures {
             webhookPackageUpdatedPackagePackageVersionPackageFile() {
         return GitHubWebhookPackageUpdatedPackagePackageVersionPackageFileBuilder.builder()
                 .contentType("content_type")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .downloadUrl("https://api.github.com/download_url")
                 .id(1L)
                 .md5("md5")
@@ -221,20 +222,20 @@ final class PackageCatalogFixtures {
                 .sha256("sha256")
                 .size(1L)
                 .state("state")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 
     static GitHubWebhookPackageUpdatedPackagePackageVersionRelease webhookPackageUpdatedPackagePackageVersionRelease() {
         return GitHubWebhookPackageUpdatedPackagePackageVersionReleaseBuilder.builder()
                 .author(webhookUser())
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .draft(true)
                 .htmlUrl("https://api.github.com/html_url")
                 .id(1L)
                 .name("name")
                 .prerelease(true)
-                .publishedAt("published_at")
+                .publishedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .tagName("tag_name")
                 .targetCommitish("target_commitish")
                 .url("https://api.github.com/url")

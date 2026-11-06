@@ -38,8 +38,8 @@ the class path. It is published on
 ```
 
 Replace `LATEST_VERSION` with the version in the Maven Central badge at the top of this page, or with the newest entry on
-the [releases page](https://github.com/piotr-janczukowicz/github-webhook/releases). The library is in prerelease; see the
-[Disclaimer](#disclaimer) before relying on it.
+the [releases page](https://github.com/piotr-janczukowicz/github-webhook/releases). The library is new and not yet proven in
+production; see the [Disclaimer](#disclaimer) before relying on it.
 
 ## Quick start
 
@@ -99,23 +99,6 @@ secret. GitHub's first delivery is a `ping`.
 | [Receiving GitHub webhooks](docs/guide/webhooks.md) | The receiver, the decoded types, what never fails and what does, the payload map, stability and products |
 | [Supported events](docs/guide/webhook-events.md) | Every event the library decodes, with the action, the record and the products that send it |
 
-## Comparison with hub4j/github-api
-
-[hub4j/github-api](https://github.com/hub4j/github-api) is the long-established Java library for GitHub. It also parses
-webhook payloads, as a part of a larger API client. The hub4j column is taken from its source and
-[documentation](https://hub4j.github.io/github-api/) as of November 2026.
-
-| | github-webhook | hub4j/github-api |
-|---|---|---|
-| Purpose | Webhooks only: a decoder and a signature-verifying receiver | A client for the GitHub REST API; webhook payload parsing is one feature of it |
-| Events | A record for every event GitHub documents (313 events in 88 families) | Payload classes for a subset of events (34 classes in `GHEventPayload`) |
-| Dependencies | No HTTP client and no dependency on a REST client | The whole API client |
-| Java | 21 | 11 |
-| Maturity | Prerelease, see the [Disclaimer](#disclaimer) | Long-established and widely used |
-
-Choose hub4j/github-api if you already use it as your GitHub client, or need Java 11. Choose this library if you only
-receive webhooks and want every event typed, with the signature checked before anything is parsed.
-
 ## Disclaimer
 
 This library is built on the OpenAPI descriptions that GitHub publishes in
@@ -123,7 +106,7 @@ This library is built on the OpenAPI descriptions that GitHub publishes in
 The caveats of that project apply here too: the descriptions of the webhooks are not always exact, and a payload GitHub
 sends can differ from its description.
 
-**The library is a prerelease. It is checked against the descriptions and a few real deliveries, not against every event
+**The library is new and not yet proven in production. It is checked against the descriptions and a few real deliveries, not against every event
 on a live GitHub instance. Verify the behavior of any event you depend on before using it in production.**
 
 ## License

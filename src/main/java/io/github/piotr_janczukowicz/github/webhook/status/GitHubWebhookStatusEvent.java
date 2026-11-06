@@ -11,6 +11,8 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookOrganizat
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleInstallation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSimpleUser;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import java.util.List;
 import org.jspecify.annotations.Nullable;
 
@@ -51,7 +53,10 @@ public record GitHubWebhookStatusEvent(
         List<GitHubWebhookStatusBranch> branches,
         GitHubWebhookStatusCommit commit,
         String context,
-        String createdAt,
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         @Nullable String description,
         @Nullable GitHubWebhookEnterprise enterprise,
         long id,
@@ -63,7 +68,9 @@ public record GitHubWebhookStatusEvent(
         String sha,
         GitHubWebhookStatusState state,
         @Nullable String targetUrl,
-        String updatedAt)
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt)
         implements GitHubWebhookEvent {
     public GitHubWebhookStatusEvent {
         requireNonNull(branches, "branches");

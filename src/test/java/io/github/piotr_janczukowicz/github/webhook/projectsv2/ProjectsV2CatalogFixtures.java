@@ -76,7 +76,7 @@ final class ProjectsV2CatalogFixtures {
                 .deletedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .deletedBy(webhookSimpleUser())
                 .description("description")
-                .id(1.5)
+                .id(1L)
                 .isTemplate(true)
                 .latestStatusUpdate(webhookProjectsV2StatusUpdate())
                 .nodeId("node_id")

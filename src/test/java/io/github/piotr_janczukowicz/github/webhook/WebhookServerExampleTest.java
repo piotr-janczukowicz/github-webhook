@@ -14,10 +14,12 @@ import java.util.List;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Isolated;
 import tools.jackson.databind.json.JsonMapper;
 import tools.jackson.databind.node.ObjectNode;
 
 @UnitTest
+@Isolated
 class WebhookServerExampleTest {
 
     private static final byte[] SECRET = "It's a Secret to Everybody".getBytes(StandardCharsets.UTF_8);

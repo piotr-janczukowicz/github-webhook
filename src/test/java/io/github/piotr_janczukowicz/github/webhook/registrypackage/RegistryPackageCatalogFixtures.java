@@ -11,6 +11,7 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleInstallation;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookSimpleUser;
 
+import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 
@@ -33,7 +34,7 @@ final class RegistryPackageCatalogFixtures {
 
     static GitHubWebhookRegistryPackagePublishedRegistryPackage webhookRegistryPackagePublishedRegistryPackage() {
         return GitHubWebhookRegistryPackagePublishedRegistryPackageBuilder.builder()
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .description("description")
                 .ecosystem("ecosystem")
                 .htmlUrl("html_url")
@@ -44,7 +45,7 @@ final class RegistryPackageCatalogFixtures {
                 .packageType("package_type")
                 .packageVersion(webhookRegistryPackagePublishedRegistryPackagePackageVersion())
                 .registry(webhookRegistryPackagePublishedRegistryPackageRegistry())
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 
@@ -55,7 +56,7 @@ final class RegistryPackageCatalogFixtures {
                 .body(Map.of("key", "body"))
                 .bodyHtml("body_html")
                 .containerMetadata(webhookPackageVersionContainerMetadata())
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .description("description")
                 .dockerMetadata(List.of(webhookPackageUpdatedPackagePackageVersionDockerMetadata()))
                 .draft(true)
@@ -76,7 +77,7 @@ final class RegistryPackageCatalogFixtures {
                 .tagName("tag_name")
                 .targetCommitish("target_commitish")
                 .targetOid("target_oid")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .version("version")
                 .build();
     }
@@ -137,13 +138,13 @@ final class RegistryPackageCatalogFixtures {
             webhookRegistryPackagePublishedRegistryPackagePackageVersionRelease() {
         return GitHubWebhookRegistryPackagePublishedRegistryPackagePackageVersionReleaseBuilder.builder()
                 .author(webhookDeploymentReviewApprovedApprover())
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .draft(true)
                 .htmlUrl("html_url")
                 .id(1L)
                 .name("name")
                 .prerelease(true)
-                .publishedAt("published_at")
+                .publishedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .tagName("tag_name")
                 .targetCommitish("target_commitish")
                 .url("url")
@@ -174,7 +175,7 @@ final class RegistryPackageCatalogFixtures {
 
     static GitHubWebhookRegistryPackageUpdatedRegistryPackage webhookRegistryPackageUpdatedRegistryPackage() {
         return GitHubWebhookRegistryPackageUpdatedRegistryPackageBuilder.builder()
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .ecosystem("ecosystem")
                 .htmlUrl("html_url")
                 .id(1L)
@@ -184,7 +185,7 @@ final class RegistryPackageCatalogFixtures {
                 .packageType("package_type")
                 .packageVersion(webhookRegistryPackageUpdatedRegistryPackagePackageVersion())
                 .registry(Map.of("key", Map.of()))
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 
@@ -218,7 +219,7 @@ final class RegistryPackageCatalogFixtures {
                 .author(webhookRegistryPackageUpdatedRegistryPackageOwner())
                 .body("body")
                 .bodyHtml("body_html")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .description("description")
                 .dockerMetadata(List.of(webhookPackageUpdatedPackagePackageVersionDockerMetadata()))
                 .draft(true)
@@ -237,7 +238,7 @@ final class RegistryPackageCatalogFixtures {
                 .tagName("tag_name")
                 .targetCommitish("target_commitish")
                 .targetOid("target_oid")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .version("version")
                 .build();
     }
@@ -246,7 +247,7 @@ final class RegistryPackageCatalogFixtures {
             webhookRegistryPackageUpdatedRegistryPackagePackageVersionPackageFile() {
         return GitHubWebhookRegistryPackageUpdatedRegistryPackagePackageVersionPackageFileBuilder.builder()
                 .contentType("content_type")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .downloadUrl("download_url")
                 .id(1L)
                 .md5("md5")
@@ -255,7 +256,7 @@ final class RegistryPackageCatalogFixtures {
                 .sha256("sha256")
                 .size(1L)
                 .state("state")
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .build();
     }
 
@@ -263,13 +264,13 @@ final class RegistryPackageCatalogFixtures {
             webhookRegistryPackageUpdatedRegistryPackagePackageVersionRelease() {
         return GitHubWebhookRegistryPackageUpdatedRegistryPackagePackageVersionReleaseBuilder.builder()
                 .author(webhookRegistryPackageUpdatedRegistryPackageOwner())
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .draft(true)
                 .htmlUrl("html_url")
                 .id(1L)
                 .name("name")
                 .prerelease(true)
-                .publishedAt("published_at")
+                .publishedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .tagName("tag_name")
                 .targetCommitish("target_commitish")
                 .url("url")

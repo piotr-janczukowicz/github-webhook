@@ -23,7 +23,7 @@
       "value": "value"
     }
   ],
-  "published_at": "published_at",
+  "published_at": "2026-01-01T00:00:00Z",
   "references": [
     {
       "url": "https://api.github.com/url"
@@ -31,7 +31,7 @@
   ],
   "severity": "severity",
   "summary": "summary",
-  "updated_at": "updated_at",
+  "updated_at": "2026-01-01T00:00:00Z",
   "vulnerabilities": [
     {
       "first_patched_version": {
@@ -45,5 +45,5 @@
       "vulnerable_version_range": "vulnerable_version_range"
     }
   ],
-  "withdrawn_at": "withdrawn_at"
+  "withdrawn_at": "2026-01-01T00:00:00Z"
 }

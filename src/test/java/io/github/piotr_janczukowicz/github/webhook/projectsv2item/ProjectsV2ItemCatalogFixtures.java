@@ -21,7 +21,7 @@ final class ProjectsV2ItemCatalogFixtures {
                 .contentType(GitHubWebhookProjectsV2ItemContentType.ISSUE)
                 .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .creator(webhookSimpleUser())
-                .id(1.5)
+                .id(1L)
                 .nodeId("node_id")
                 .projectNodeId("project_node_id")
                 .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))

@@ -5,6 +5,8 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -22,13 +24,17 @@ import org.jspecify.annotations.Nullable;
 @RecordBuilder
 @CatalogSchema("webhooks/deployment-review-requested/requestBody/properties/workflow_job_run")
 public record GitHubWebhookDeploymentReviewRequestedWorkflowJobRun(
-        String createdAt,
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         String environment,
         String htmlUrl,
         long id,
         @Nullable String name,
         String status,
-        String updatedAt) {
+
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt) {
     public GitHubWebhookDeploymentReviewRequestedWorkflowJobRun {
         requireNonNull(createdAt, "createdAt");
         requireNonNull(environment, "environment");

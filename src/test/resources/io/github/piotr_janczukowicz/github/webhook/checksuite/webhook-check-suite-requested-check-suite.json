@@ -102,7 +102,7 @@
     },
     "id": "id",
     "message": "message",
-    "timestamp": "timestamp",
+    "timestamp": "2026-01-01T00:00:00Z",
     "tree_id": "tree_id"
   },
   "head_sha": "head_sha",

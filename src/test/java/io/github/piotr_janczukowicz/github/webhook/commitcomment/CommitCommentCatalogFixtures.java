@@ -9,6 +9,7 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueAuthorAssociation;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookUserType;
+import java.time.Instant;
 
 final class CommitCommentCatalogFixtures {
 
@@ -21,7 +22,7 @@ final class CommitCommentCatalogFixtures {
                 .authorAssociation(GitHubWebhookIssueAuthorAssociation.COLLABORATOR)
                 .body("body")
                 .commitId("commit_id")
-                .createdAt("created_at")
+                .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .htmlUrl("https://api.github.com/html_url")
                 .id(1L)
                 .line(1L)
@@ -29,7 +30,7 @@ final class CommitCommentCatalogFixtures {
                 .path("path")
                 .position(1L)
                 .reactions(webhookReactions())
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .url("https://api.github.com/url")
                 .user(webhookUser())
                 .build();

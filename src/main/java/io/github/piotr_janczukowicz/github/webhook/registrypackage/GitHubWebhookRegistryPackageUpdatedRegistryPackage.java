@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
 import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import java.util.Map;
 import org.jspecify.annotations.Nullable;
 
@@ -28,7 +29,9 @@ import org.jspecify.annotations.Nullable;
 @RecordBuilder
 @CatalogSchema("webhooks/registry-package-updated/requestBody/properties/registry_package")
 public record GitHubWebhookRegistryPackageUpdatedRegistryPackage(
-        String createdAt,
+        @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         String ecosystem,
         String htmlUrl,
         long id,
@@ -41,7 +44,8 @@ public record GitHubWebhookRegistryPackageUpdatedRegistryPackage(
         @Nullable @SuppressSchemaTypeMismatch("free-form object: the dump gives no value type")
         Map<String, Object> registry,
 
-        String updatedAt) {
+        @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt) {
     public GitHubWebhookRegistryPackageUpdatedRegistryPackage {
         requireNonNull(createdAt, "createdAt");
         requireNonNull(ecosystem, "ecosystem");

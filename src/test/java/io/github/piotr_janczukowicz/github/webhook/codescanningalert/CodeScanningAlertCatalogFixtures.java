@@ -120,7 +120,7 @@ final class CodeScanningAlertCatalogFixtures {
                 .rule(webhookCodeScanningAlertFixedAlertRule())
                 .state(GitHubWebhookCodeScanningAlertCreatedAlertState.OPEN)
                 .tool(webhookCodeScanningAlertFixedAlertTool())
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .url("https://api.github.com/url")
                 .build();
     }
@@ -195,7 +195,7 @@ final class CodeScanningAlertCatalogFixtures {
         return GitHubWebhookCodeScanningAlertReopenedAlertBuilder.builder()
                 .assignees(List.of(webhookSimpleUser()))
                 .createdAt(Instant.parse("2026-01-01T00:00:00Z"))
-                .dismissedAt("dismissed_at")
+                .dismissedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .dismissedBy(Map.of("key", Map.of()))
                 .dismissedComment("dismissed_comment")
                 .dismissedReason("dismissed_reason")
@@ -206,7 +206,7 @@ final class CodeScanningAlertCatalogFixtures {
                 .rule(webhookCodeScanningAlertFixedAlertRule())
                 .state(GitHubWebhookAlertInstanceState.OPEN)
                 .tool(webhookCodeScanningAlertFixedAlertTool())
-                .updatedAt("updated_at")
+                .updatedAt(Instant.parse("2026-01-01T00:00:00Z"))
                 .url("https://api.github.com/url")
                 .build();
     }

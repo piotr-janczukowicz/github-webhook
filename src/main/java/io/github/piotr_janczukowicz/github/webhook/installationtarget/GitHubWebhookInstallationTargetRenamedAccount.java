@@ -5,6 +5,8 @@ import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.github.piotr_janczukowicz.annotation.RecordBuilder;
 import io.github.piotr_janczukowicz.openapi.model.CatalogSchema;
+import io.github.piotr_janczukowicz.openapi.model.SuppressSchemaTypeMismatch;
+import java.time.Instant;
 import org.jspecify.annotations.Nullable;
 
 /**
@@ -50,9 +52,14 @@ import org.jspecify.annotations.Nullable;
 @RecordBuilder
 @CatalogSchema("webhooks/installation-target-renamed/requestBody/properties/account")
 public record GitHubWebhookInstallationTargetRenamedAccount(
-        @Nullable String archivedAt,
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (archived_at)")
+        Instant archivedAt,
+
         String avatarUrl,
-        @Nullable String createdAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (created_at)")
+        Instant createdAt,
+
         @Nullable String eventsUrl,
         @Nullable Long followers,
         @Nullable String followersUrl,
@@ -82,7 +89,10 @@ public record GitHubWebhookInstallationTargetRenamedAccount(
         @Nullable String starredUrl,
         @Nullable String subscriptionsUrl,
         @Nullable String type,
-        @Nullable String updatedAt,
+
+        @Nullable @SuppressSchemaTypeMismatch("type rule: date-time (updated_at)")
+        Instant updatedAt,
+
         @Nullable String url,
         @Nullable String userViewType) {
     public GitHubWebhookInstallationTargetRenamedAccount {
