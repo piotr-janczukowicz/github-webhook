@@ -62,6 +62,7 @@ final class CustomPropertyCatalogFixtures {
                 .defaultValue(List.of("default_value"))
                 .description("description")
                 .propertyName("property_name")
+                .regex("^[a-z0-9-]+$")
                 .requireExplicitValues(true)
                 .required(true)
                 .sourceType(GitHubWebhookOrganizationCustomPropertySourceType.ORGANIZATION)

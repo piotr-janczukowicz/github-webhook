@@ -19,6 +19,8 @@ import org.jspecify.annotations.Nullable;
  * @param defaultValue Default value of the property
  * @param description Short description of the property
  * @param propertyName The name of the property
+ * @param regex A regular expression (RE2 syntax) that values of the property must match. Only present for properties
+ *     with a {@code value_type} of {@code string} that define a regular expression.
  * @param requireExplicitValues Whether setting properties values is mandatory
  * @param required Whether the property is required.
  * @param sourceType The source type of the property
@@ -34,6 +36,7 @@ public record GitHubWebhookOrganizationCustomProperty(
         @Nullable @CatalogSimpleXor("string|array") List<String> defaultValue,
         @Nullable String description,
         String propertyName,
+        @Nullable String regex,
         @Nullable Boolean requireExplicitValues,
         @Nullable Boolean required,
         @Nullable GitHubWebhookOrganizationCustomPropertySourceType sourceType,
