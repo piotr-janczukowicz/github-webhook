@@ -3,6 +3,7 @@ package io.github.piotr_janczukowicz.github.webhook;
 import static io.github.piotr_janczukowicz.util.ValidationUtils.requireNonNull;
 
 import io.github.piotr_janczukowicz.github.webhook.json.GitHubWebhookJsonMappers;
+import io.github.piotr_janczukowicz.json.jackson.JsonNodes;
 import java.util.Map;
 import org.jspecify.annotations.Nullable;
 import org.slf4j.Logger;
@@ -104,8 +105,7 @@ public final class GitHubWebhookDecoder {
         if (single != null) {
             return read(single, family, root, eventHeader, null, payload);
         }
-        final JsonNode actionNode = root.get(ACTION);
-        final String action = actionNode != null && actionNode.isString() ? actionNode.stringValue() : null;
+        final String action = JsonNodes.textOrNull(root, ACTION);
         final Class<? extends GitHubWebhookEvent> type =
                 action == null ? null : family.actions().get(action);
         if (type != null) {
