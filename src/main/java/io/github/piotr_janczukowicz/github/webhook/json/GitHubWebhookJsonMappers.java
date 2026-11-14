@@ -1,10 +1,7 @@
 package io.github.piotr_janczukowicz.github.webhook.json;
 
-import io.github.piotr_janczukowicz.json.jackson.module.immutable.ImmutableCollectionsModule;
+import io.github.piotr_janczukowicz.json.jackson.JsonMappers;
 import java.io.Serial;
-import tools.jackson.core.StreamReadFeature;
-import tools.jackson.databind.DeserializationFeature;
-import tools.jackson.databind.PropertyNamingStrategies;
 import tools.jackson.databind.cfg.CoercionAction;
 import tools.jackson.databind.cfg.CoercionInputShape;
 import tools.jackson.databind.cfg.DateTimeFeature;
@@ -23,28 +20,20 @@ import tools.jackson.databind.type.LogicalType;
  * text), and a single value is read into a collection property as a collection of one, so both hide a change of shape
  * in GitHub's JSON. A decimal or a text is never read into an integer property, and a primitive record component that
  * the body leaves out fails instead of becoming {@code 0} or {@code false}.
+ *
+ * <p>It starts from {@link JsonMappers#snakeCase()}, which the other GitHub clients share, and adds the rules above
+ * that are specific to webhooks. Like the shared mapper it reads an unknown enum constant as {@code null}, and a JSON
+ * string into a collection property as a collection of one.
  */
 public final class GitHubWebhookJsonMappers {
 
-    private static final JsonMapper DEFAULTS = JsonMapper.builder()
-            .disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
-            .enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
-            .disable(DeserializationFeature.ACCEPT_FLOAT_AS_INT)
+    private static final JsonMapper DEFAULTS = JsonMappers.snakeCase()
             .annotationIntrospector(new RequiredPrimitivesIntrospector())
-            .enable(StreamReadFeature.STRICT_DUPLICATE_DETECTION)
-            .disable(DateTimeFeature.WRITE_DATES_AS_TIMESTAMPS)
             .disable(DateTimeFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE)
-            .propertyNamingStrategy(PropertyNamingStrategies.SNAKE_CASE)
-            .withCoercionConfig(LogicalType.Textual, cfg -> {
-                cfg.setCoercion(CoercionInputShape.Integer, CoercionAction.TryConvert);
-                cfg.setCoercion(CoercionInputShape.Float, CoercionAction.TryConvert);
-                cfg.setCoercion(CoercionInputShape.Boolean, CoercionAction.TryConvert);
-            })
             .withCoercionConfig(LogicalType.Integer, cfg -> {
                 cfg.setCoercion(CoercionInputShape.String, CoercionAction.Fail);
                 cfg.setCoercion(CoercionInputShape.Float, CoercionAction.Fail);
             })
-            .addModule(new ImmutableCollectionsModule())
             .addModule(new GitHubWebhookModule())
             .build();
 
