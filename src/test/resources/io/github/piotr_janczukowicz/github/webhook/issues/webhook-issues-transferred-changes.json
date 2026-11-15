@@ -366,6 +366,11 @@
     "repository_url": "https://api.github.com/repository_url",
     "state": "open",
     "state_reason": "state_reason",
+    "status": {
+      "category": "started",
+      "id": 4,
+      "name": "In progress"
+    },
     "sub_issues_summary": {
       "completed": 1,
       "percent_completed": 1,

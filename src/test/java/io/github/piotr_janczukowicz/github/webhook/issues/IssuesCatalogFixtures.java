@@ -8,6 +8,7 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssueFieldValue;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuePullRequest;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssueReactions;
+import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssueStatus;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssueType;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesEditedChanges;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookIssuesEditedIssueAssignee;
@@ -16,6 +17,7 @@ import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFi
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookLabel;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookLicense;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookOrganizationSimple;
+import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookProjectCardEditedChangesNote;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookPullRequestLabeledLabel;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookReactions;
 import static io.github.piotr_janczukowicz.github.webhook.common.CommonCatalogFixtures.webhookRepositoryPermissions;
@@ -89,6 +91,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
@@ -179,6 +182,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("repository_url")
                 .state(GitHubWebhookIssuesClosedIssueState.CLOSED)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("timeline_url")
                 .title("title")
@@ -247,6 +251,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
@@ -316,6 +321,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
@@ -387,6 +393,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
@@ -523,6 +530,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
@@ -591,6 +599,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
@@ -681,6 +690,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
@@ -745,6 +755,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
@@ -896,6 +907,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
@@ -947,6 +959,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
@@ -1015,6 +1028,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
@@ -1068,6 +1082,39 @@ final class IssuesCatalogFixtures {
                 .build();
     }
 
+    static GitHubWebhookIssuesStatusChangedChanges webhookIssuesStatusChangedChanges() {
+        return GitHubWebhookIssuesStatusChangedChangesBuilder.builder()
+                .state(webhookIssuesStatusChangedChangesState())
+                .stateReason(webhookProjectCardEditedChangesNote())
+                .status(webhookIssuesStatusChangedChangesStatus())
+                .build();
+    }
+
+    static GitHubWebhookIssuesStatusChangedChangesState webhookIssuesStatusChangedChangesState() {
+        return GitHubWebhookIssuesStatusChangedChangesStateBuilder.builder()
+                .from(GitHubWebhookMilestoneState.OPEN)
+                .build();
+    }
+
+    static GitHubWebhookIssuesStatusChangedChangesStatus webhookIssuesStatusChangedChangesStatus() {
+        return GitHubWebhookIssuesStatusChangedChangesStatusBuilder.builder()
+                .from(webhookIssueStatus())
+                .build();
+    }
+
+    static GitHubWebhookIssuesStatusChangedEvent webhookIssuesStatusChangedEvent() {
+        return GitHubWebhookIssuesStatusChangedEventBuilder.builder()
+                .changes(webhookIssuesStatusChangedChanges())
+                .enterprise(webhookEnterprise())
+                .installation(webhookSimpleInstallation())
+                .issue(webhookIssue())
+                .organization(webhookOrganizationSimple())
+                .repository(webhookForkRepository())
+                .sender(webhookSimpleUser())
+                .status(webhookIssueStatus())
+                .build();
+    }
+
     static GitHubWebhookIssuesTransferredChanges webhookIssuesTransferredChanges() {
         return GitHubWebhookIssuesTransferredChangesBuilder.builder()
                 .newIssue(webhookIssuesTransferredChangesNewIssue())
@@ -1105,6 +1152,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
@@ -1303,6 +1351,7 @@ final class IssuesCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state(GitHubWebhookMilestoneState.OPEN)
                 .stateReason("state_reason")
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("title")
