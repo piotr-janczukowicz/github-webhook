@@ -1,6 +1,6 @@
 # github-webhook
 
-Typed GitHub webhook events for Java 21: a record for every event GitHub documents (313 events in 88 families, for
+Typed GitHub webhook events for Java 21: a record for every event GitHub documents (314 events in 88 families, for
 github.com, GitHub Enterprise Cloud and GitHub Enterprise Server), a decoder, and a receiver that verifies the signature
 before it parses anything.
 

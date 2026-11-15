@@ -12,6 +12,6 @@ import org.jspecify.annotations.Nullable;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @RecordBuilder
-@CatalogSchema("webhooks/organization-renamed/requestBody/properties/changes/properties/login")
+@CatalogSchema("webhooks/issues-status-changed/requestBody/properties/changes/properties/state_reason")
 public record GitHubWebhookProjectCardEditedChangesNote(
         @Nullable String from) {}

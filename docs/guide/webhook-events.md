@@ -1,6 +1,6 @@
 # Supported webhook events
 
-313 events in 88 families. Generated from the events table; do not edit.
+314 events in 88 families. Generated from the events table; do not edit.
 
 | `X-GitHub-Event` | Action | Type | GitHub.com | Enterprise Cloud | Enterprise Server |
 |---|---|---|---|---|---|
@@ -127,6 +127,7 @@
 | `issues` | `opened` | `GitHubWebhookIssuesOpenedEvent` | yes | yes | yes |
 | `issues` | `pinned` | `GitHubWebhookIssuesPinnedEvent` | yes | yes | yes |
 | `issues` | `reopened` | `GitHubWebhookIssuesReopenedEvent` | yes | yes | yes |
+| `issues` | `status_changed` | `GitHubWebhookIssuesStatusChangedEvent` | yes | yes | - |
 | `issues` | `transferred` | `GitHubWebhookIssuesTransferredEvent` | yes | yes | yes |
 | `issues` | `typed` | `GitHubWebhookIssuesTypedEvent` | yes | yes | - |
 | `issues` | `unassigned` | `GitHubWebhookIssuesUnassignedEvent` | yes | yes | yes |

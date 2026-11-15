@@ -11,6 +11,7 @@ import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueDepe
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueFieldValue;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssuePullRequest;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueReactions;
+import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueStatus;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookIssueType;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookPullRequestLabeledLabel;
 import io.github.piotr_janczukowicz.github.webhook.common.GitHubWebhookSubIssuesSummary;
@@ -53,6 +54,8 @@ import org.jspecify.annotations.Nullable;
  * @param repositoryUrl repository_url
  * @param state state
  * @param stateReason state_reason
+ * @param status The status of the issue, or {@code null} if it has none. Issue statuses are in preview and only
+ *     available to accounts enrolled in the preview.
  * @param subIssuesSummary sub_issues_summary
  * @param timelineUrl timeline_url
  * @param title title
@@ -100,6 +103,7 @@ public record GitHubWebhookIssuesClosedIssue(
         String repositoryUrl,
         GitHubWebhookIssuesClosedIssueState state,
         @Nullable String stateReason,
+        @Nullable GitHubWebhookIssueStatus status,
         @Nullable GitHubWebhookSubIssuesSummary subIssuesSummary,
         @Nullable String timelineUrl,
         String title,

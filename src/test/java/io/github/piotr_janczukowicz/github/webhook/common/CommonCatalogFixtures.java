@@ -574,6 +574,7 @@ public final class CommonCatalogFixtures {
                 .repositoryUrl("https://api.github.com/repository_url")
                 .state("open")
                 .stateReason(GitHubWebhookIssueStateReason.COMPLETED)
+                .status(webhookIssueStatus())
                 .subIssuesSummary(webhookSubIssuesSummary())
                 .timelineUrl("https://api.github.com/timeline_url")
                 .title("Widget creation fails in Safari on OS X 10.8")
@@ -715,6 +716,14 @@ public final class CommonCatalogFixtures {
                 .rocket(1L)
                 .totalCount(1L)
                 .url("url")
+                .build();
+    }
+
+    public static GitHubWebhookIssueStatus webhookIssueStatus() {
+        return GitHubWebhookIssueStatusBuilder.builder()
+                .category("started")
+                .id(4L)
+                .name("In progress")
                 .build();
     }
 

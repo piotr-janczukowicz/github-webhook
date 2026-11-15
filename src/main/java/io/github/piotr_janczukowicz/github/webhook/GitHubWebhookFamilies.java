@@ -153,6 +153,7 @@ import io.github.piotr_janczukowicz.github.webhook.issues.GitHubWebhookIssuesMil
 import io.github.piotr_janczukowicz.github.webhook.issues.GitHubWebhookIssuesOpenedEvent;
 import io.github.piotr_janczukowicz.github.webhook.issues.GitHubWebhookIssuesPinnedEvent;
 import io.github.piotr_janczukowicz.github.webhook.issues.GitHubWebhookIssuesReopenedEvent;
+import io.github.piotr_janczukowicz.github.webhook.issues.GitHubWebhookIssuesStatusChangedEvent;
 import io.github.piotr_janczukowicz.github.webhook.issues.GitHubWebhookIssuesTransferredEvent;
 import io.github.piotr_janczukowicz.github.webhook.issues.GitHubWebhookIssuesTypedEvent;
 import io.github.piotr_janczukowicz.github.webhook.issues.GitHubWebhookIssuesUnassignedEvent;
@@ -720,6 +721,7 @@ final class GitHubWebhookFamilies {
                                     Map.entry("opened", GitHubWebhookIssuesOpenedEvent.class),
                                     Map.entry("pinned", GitHubWebhookIssuesPinnedEvent.class),
                                     Map.entry("reopened", GitHubWebhookIssuesReopenedEvent.class),
+                                    Map.entry("status_changed", GitHubWebhookIssuesStatusChangedEvent.class),
                                     Map.entry("transferred", GitHubWebhookIssuesTransferredEvent.class),
                                     Map.entry("typed", GitHubWebhookIssuesTypedEvent.class),
                                     Map.entry("unassigned", GitHubWebhookIssuesUnassignedEvent.class),

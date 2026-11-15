@@ -17,6 +17,7 @@ public sealed interface GitHubWebhookIssuesEvent extends GitHubWebhookEvent
                 GitHubWebhookIssuesOpenedEvent,
                 GitHubWebhookIssuesPinnedEvent,
                 GitHubWebhookIssuesReopenedEvent,
+                GitHubWebhookIssuesStatusChangedEvent,
                 GitHubWebhookIssuesTransferredEvent,
                 GitHubWebhookIssuesTypedEvent,
                 GitHubWebhookIssuesUnassignedEvent,

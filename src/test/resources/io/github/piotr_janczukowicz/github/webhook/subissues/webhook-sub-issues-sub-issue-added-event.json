@@ -522,6 +522,11 @@
     "repository_url": "https://api.github.com/repository_url",
     "state": "open",
     "state_reason": "completed",
+    "status": {
+      "category": "started",
+      "id": 4,
+      "name": "In progress"
+    },
     "sub_issues_summary": {
       "completed": 1,
       "percent_completed": 1,
@@ -1375,6 +1380,11 @@
     "repository_url": "https://api.github.com/repository_url",
     "state": "open",
     "state_reason": "completed",
+    "status": {
+      "category": "started",
+      "id": 4,
+      "name": "In progress"
+    },
     "sub_issues_summary": {
       "completed": 1,
       "percent_completed": 1,
